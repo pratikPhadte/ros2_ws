@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target relbot_simulator[0m
+[  7%] [32mBuilding CXX object CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o[0m
+[ 23%] Built target sequence_controller
+[ 30%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxinverse.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxmatrix.cpp.o[0m

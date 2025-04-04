@@ -1,0 +1,10 @@
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/uninstall.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/ros_xeno_bridge_uninstall.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/RosXenoBridge.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/test.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/edit_cache.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/rebuild_cache.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/list_install_components.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/install.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/install/local.dir
+/home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/install/strip.dir

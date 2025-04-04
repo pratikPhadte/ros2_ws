@@ -1,0 +1,2 @@
+Invoking command in '/home/asdfr-19/28mar/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/28mar/ros2_ws/build/relbot_simulator -- -j3 -l3
+Invoked command in '/home/asdfr-19/28mar/ros2_ws/build/relbot_simulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/28mar/ros2_ws/build/relbot_simulator -- -j3 -l3

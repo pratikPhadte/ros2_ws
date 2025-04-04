@@ -1,0 +1,7 @@
+{
+  "package_name": "xrf2_msgs",
+  "non_idl_tuples": [
+    "/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs:msg/Ros2Xeno.msg",
+    "/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs:msg/Xeno2Ros.msg"
+  ]
+}

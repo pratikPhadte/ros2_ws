@@ -1,0 +1,46 @@
+[0.036s] Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[0.149s] [35m[1mConsolidate compiler generated dependencies of target sequence_controller[0m
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target colour_tracker[0m
+[0.153s] [35m[1mConsolidate compiler generated dependencies of target relbot_simulator[0m
+[0.517s] [  7%] [32mBuilding CXX object CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o[0m
+[0.580s] [ 23%] Built target colour_tracker
+[0.661s] [ 92%] Built target relbot_simulator
+[8.756s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:[m[K In constructor ‘[01m[KSequenceController::SequenceController()[m[K’:
+[8.758s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:6:81:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KSequenceController[m[K’ does not have any field named ‘[01m[Kimage_height_[m[K’
+[8.759s]     6 |     elapsed_time_(0.0), phase_(0), obj_x_(0.0), obj_y_(0.0), image_width_(0.0), [01;31m[Kimage_height_[m[K(0.0) {
+[8.760s]       |                                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[8.822s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_sub_[m[K’ was not declared in this scope
+[8.824s]    21 |     [01;31m[Kimage_sub_[m[K = create_subscription<sensor_msgs::msg::Image>(
+[8.825s]       |     [01;31m[K^~~~~~~~~~[m[K
+[8.846s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:21:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[8.847s]    21 |     image_sub_ = create_subscription<[01;31m[Ksensor_msgs[m[K::msg::Image>(
+[8.848s]       |                                      [01;31m[K^~~~~~~~~~~[m[K
+[8.849s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:21:18:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[8.851s]    21 |     image_sub_ = [01;31m[Kcreate_subscription<sensor_msgs::msg::Image>[m[K(
+[8.852s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.853s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:22:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_callback[m[K’ is not a member of ‘[01m[KSequenceController[m[K’
+[8.854s]    22 |         "/image", 10, std::bind(&SequenceController::[01;31m[Kimage_callback[m[K, this, std::placeholders::_1));
+[8.855s]       |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[8.888s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:[m[K At global scope:
+[8.889s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:30:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+[8.890s]    30 | void SequenceController::image_callback(const [01;31m[Ksensor_msgs[m[K::msg::Image::SharedPtr msg) {
+[8.892s]       |                                               [01;31m[K^~~~~~~~~~~[m[K
+[8.893s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:30:63:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[8.894s]    30 | void SequenceController::image_callback(const sensor_msgs::msg[01;31m[K::[m[KImage::SharedPtr msg) {
+[8.895s]       |                                                               [01;31m[K^~[m[K
+[8.897s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:30:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[8.898s]    30 | void SequenceController::image_callback[34m[K([m[Kconst sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KImage::SharedPtr msg) {
+[8.899s]       |                                        [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+[8.900s]       |                                                               [32m[K)[m[K
+[8.901s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:30:63:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[8.903s]    30 | void SequenceController::image_callback(const sensor_msgs::msg[01;31m[K::[m[KImage::SharedPtr msg) {
+[8.904s]       |                                                               [01;31m[K^~[m[K
+[8.913s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:[m[K In member function ‘[01m[Kvoid SequenceController::timer_callback()[m[K’:
+[8.915s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:42:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_height_[m[K’ was not declared in this scope; did you mean ‘[01m[Kimage_width_[m[K’?
+[8.916s]    42 |     if (image_width_ == 0.0 || [01;31m[Kimage_height_[m[K == 0.0) {
+[8.917s]       |                                [01;31m[K^~~~~~~~~~~~~[m[K
+[8.918s]       |                                [32m[Kimage_width_[m[K
+[17.182s] gmake[2]: *** [CMakeFiles/sequence_controller.dir/build.make:76: CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o] Error 1
+[17.183s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/sequence_controller.dir/all] Error 2
+[17.185s] gmake: *** [Makefile:146: all] Error 2
+[17.188s] Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3

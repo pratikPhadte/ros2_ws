@@ -1,0 +1,554 @@
+[0.000000] (-) TimerEvent: {}
+[0.001447] (-) JobUnselected: {'identifier': 'relbot_simulator'}
+[0.002002] (-) JobUnselected: {'identifier': 'template_20sim'}
+[0.002678] (-) JobUnselected: {'identifier': 'xrf2_msgs'}
+[0.003238] (ros_xeno_bridge) JobQueued: {'identifier': 'ros_xeno_bridge', 'dependencies': OrderedDict([('xrf2_msgs', '/home/asdfr-19/ros2_ws/install/xrf2_msgs')])}
+[0.003704] (ros_xeno_bridge) JobStarted: {'identifier': 'ros_xeno_bridge'}
+[0.030680] (ros_xeno_bridge) JobProgress: {'identifier': 'ros_xeno_bridge', 'progress': 'cmake'}
+[0.033087] (ros_xeno_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Ros/ros_xeno_bridge', '-DCMAKE_INSTALL_PREFIX=/home/asdfr-19/ros2_ws/install/ros_xeno_bridge'], 'cwd': '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.110 41626 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.110 41626 10.0.28.123 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099150] (-) TimerEvent: {}
+[0.200155] (-) TimerEvent: {}
+[0.221571] (ros_xeno_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300376] (-) TimerEvent: {}
+[0.401282] (-) TimerEvent: {}
+[0.411361] (ros_xeno_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.431255] (ros_xeno_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501543] (-) TimerEvent: {}
+[0.602649] (-) TimerEvent: {}
+[0.665377] (ros_xeno_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.692068] (ros_xeno_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.693297] (ros_xeno_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.694309] (ros_xeno_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.702793] (-) TimerEvent: {}
+[0.703499] (ros_xeno_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.802963] (-) TimerEvent: {}
+[0.903820] (-) TimerEvent: {}
+[0.966820] (ros_xeno_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.995191] (ros_xeno_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.996536] (ros_xeno_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.997595] (ros_xeno_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.003970] (-) TimerEvent: {}
+[1.004936] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.104119] (-) TimerEvent: {}
+[1.205001] (-) TimerEvent: {}
+[1.305916] (-) TimerEvent: {}
+[1.406772] (-) TimerEvent: {}
+[1.507596] (-) TimerEvent: {}
+[1.526162] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.607750] (-) TimerEvent: {}
+[1.708530] (-) TimerEvent: {}
+[1.809359] (-) TimerEvent: {}
+[1.823146] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.909526] (-) TimerEvent: {}
+[1.965569] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.979036] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.001759] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.009652] (-) TimerEvent: {}
+[2.037057] (ros_xeno_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.083468] (ros_xeno_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.109809] (-) TimerEvent: {}
+[2.210594] (-) TimerEvent: {}
+[2.266089] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.277998] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.310773] (-) TimerEvent: {}
+[2.411882] (-) TimerEvent: {}
+[2.513079] (-) TimerEvent: {}
+[2.578402] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.613270] (-) TimerEvent: {}
+[2.649528] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.713435] (-) TimerEvent: {}
+[2.745419] (ros_xeno_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.782108] (ros_xeno_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.813629] (-) TimerEvent: {}
+[2.914534] (-) TimerEvent: {}
+[3.015485] (-) TimerEvent: {}
+[3.026095] (ros_xeno_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.027736] (ros_xeno_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.115654] (-) TimerEvent: {}
+[3.216757] (-) TimerEvent: {}
+[3.267883] (ros_xeno_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.271541] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.316939] (-) TimerEvent: {}
+[3.417844] (-) TimerEvent: {}
+[3.507552] (ros_xeno_bridge) StdoutLine: {'line': b'-- Found xrf2_msgs: 0.0.0 (/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake)\n'}
+[3.517988] (-) TimerEvent: {}
+[3.618754] (-) TimerEvent: {}
+[3.719575] (-) TimerEvent: {}
+[3.785100] (ros_xeno_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.819765] (-) TimerEvent: {}
+[3.824557] (ros_xeno_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[3.845313] (ros_xeno_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/asdfr-19/ros2_ws/build/ros_xeno_bridge\n'}
+[3.878661] (ros_xeno_bridge) CommandEnded: {'returncode': 0}
+[3.882957] (ros_xeno_bridge) JobProgress: {'identifier': 'ros_xeno_bridge', 'progress': 'build'}
+[3.883910] (ros_xeno_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge', '--', '-j3', '-l3'], 'cwd': '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.110 41626 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.110 41626 10.0.28.123 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/opt/ros/humble')]), 'shell': False}
+[3.920093] (-) TimerEvent: {}
+[4.021508] (-) TimerEvent: {}
+[4.052666] (ros_xeno_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/RosXenoBridge.dir/src/RosXenoBridge.cpp.o\x1b[0m\n'}
+[4.121710] (-) TimerEvent: {}
+[4.222783] (-) TimerEvent: {}
+[4.323641] (-) TimerEvent: {}
+[4.424987] (-) TimerEvent: {}
+[4.527559] (-) TimerEvent: {}
+[4.628816] (-) TimerEvent: {}
+[4.729804] (-) TimerEvent: {}
+[4.830831] (-) TimerEvent: {}
+[4.931895] (-) TimerEvent: {}
+[5.032699] (-) TimerEvent: {}
+[5.133610] (-) TimerEvent: {}
+[5.234568] (-) TimerEvent: {}
+[5.335466] (-) TimerEvent: {}
+[5.436447] (-) TimerEvent: {}
+[5.537361] (-) TimerEvent: {}
+[5.638216] (-) TimerEvent: {}
+[5.739085] (-) TimerEvent: {}
+[5.839943] (-) TimerEvent: {}
+[5.940954] (-) TimerEvent: {}
+[6.041817] (-) TimerEvent: {}
+[6.142690] (-) TimerEvent: {}
+[6.243587] (-) TimerEvent: {}
+[6.344550] (-) TimerEvent: {}
+[6.445563] (-) TimerEvent: {}
+[6.546462] (-) TimerEvent: {}
+[6.647370] (-) TimerEvent: {}
+[6.748234] (-) TimerEvent: {}
+[6.849106] (-) TimerEvent: {}
+[6.950033] (-) TimerEvent: {}
+[7.050892] (-) TimerEvent: {}
+[7.151794] (-) TimerEvent: {}
+[7.252680] (-) TimerEvent: {}
+[7.353515] (-) TimerEvent: {}
+[7.454411] (-) TimerEvent: {}
+[7.555321] (-) TimerEvent: {}
+[7.656291] (-) TimerEvent: {}
+[7.757356] (-) TimerEvent: {}
+[7.858253] (-) TimerEvent: {}
+[7.959134] (-) TimerEvent: {}
+[8.060019] (-) TimerEvent: {}
+[8.160904] (-) TimerEvent: {}
+[8.261754] (-) TimerEvent: {}
+[8.362653] (-) TimerEvent: {}
+[8.463513] (-) TimerEvent: {}
+[8.564366] (-) TimerEvent: {}
+[8.665264] (-) TimerEvent: {}
+[8.766132] (-) TimerEvent: {}
+[8.867093] (-) TimerEvent: {}
+[8.967948] (-) TimerEvent: {}
+[9.068967] (-) TimerEvent: {}
+[9.193955] (-) TimerEvent: {}
+[9.294861] (-) TimerEvent: {}
+[9.395735] (-) TimerEvent: {}
+[9.496637] (-) TimerEvent: {}
+[9.597512] (-) TimerEvent: {}
+[9.698388] (-) TimerEvent: {}
+[9.799287] (-) TimerEvent: {}
+[9.900154] (-) TimerEvent: {}
+[10.001056] (-) TimerEvent: {}
+[10.101914] (-) TimerEvent: {}
+[10.202773] (-) TimerEvent: {}
+[10.303678] (-) TimerEvent: {}
+[10.404548] (-) TimerEvent: {}
+[10.505422] (-) TimerEvent: {}
+[10.606296] (-) TimerEvent: {}
+[10.707193] (-) TimerEvent: {}
+[10.808079] (-) TimerEvent: {}
+[10.908951] (-) TimerEvent: {}
+[11.009817] (-) TimerEvent: {}
+[11.110684] (-) TimerEvent: {}
+[11.211541] (-) TimerEvent: {}
+[11.312456] (-) TimerEvent: {}
+[11.413313] (-) TimerEvent: {}
+[11.514151] (-) TimerEvent: {}
+[11.614992] (-) TimerEvent: {}
+[11.715850] (-) TimerEvent: {}
+[11.816725] (-) TimerEvent: {}
+[11.917680] (-) TimerEvent: {}
+[12.018829] (-) TimerEvent: {}
+[12.119726] (-) TimerEvent: {}
+[12.220579] (-) TimerEvent: {}
+[12.321447] (-) TimerEvent: {}
+[12.422343] (-) TimerEvent: {}
+[12.523257] (-) TimerEvent: {}
+[12.624103] (-) TimerEvent: {}
+[12.725072] (-) TimerEvent: {}
+[12.826096] (-) TimerEvent: {}
+[12.927171] (-) TimerEvent: {}
+[13.028275] (-) TimerEvent: {}
+[13.129440] (-) TimerEvent: {}
+[13.230566] (-) TimerEvent: {}
+[13.331737] (-) TimerEvent: {}
+[13.432962] (-) TimerEvent: {}
+[13.534061] (-) TimerEvent: {}
+[13.635169] (-) TimerEvent: {}
+[13.736267] (-) TimerEvent: {}
+[13.837416] (-) TimerEvent: {}
+[13.938505] (-) TimerEvent: {}
+[14.039616] (-) TimerEvent: {}
+[14.140711] (-) TimerEvent: {}
+[14.241862] (-) TimerEvent: {}
+[14.342942] (-) TimerEvent: {}
+[14.444020] (-) TimerEvent: {}
+[14.545129] (-) TimerEvent: {}
+[14.646215] (-) TimerEvent: {}
+[14.747313] (-) TimerEvent: {}
+[14.848450] (-) TimerEvent: {}
+[14.949529] (-) TimerEvent: {}
+[15.050591] (-) TimerEvent: {}
+[15.151672] (-) TimerEvent: {}
+[15.252759] (-) TimerEvent: {}
+[15.353831] (-) TimerEvent: {}
+[15.454941] (-) TimerEvent: {}
+[15.556083] (-) TimerEvent: {}
+[15.657194] (-) TimerEvent: {}
+[15.758267] (-) TimerEvent: {}
+[15.859333] (-) TimerEvent: {}
+[15.960757] (-) TimerEvent: {}
+[16.061834] (-) TimerEvent: {}
+[16.162954] (-) TimerEvent: {}
+[16.264038] (-) TimerEvent: {}
+[16.365170] (-) TimerEvent: {}
+[16.466248] (-) TimerEvent: {}
+[16.567335] (-) TimerEvent: {}
+[16.668693] (-) TimerEvent: {}
+[16.769789] (-) TimerEvent: {}
+[16.870885] (-) TimerEvent: {}
+[16.971961] (-) TimerEvent: {}
+[17.073086] (-) TimerEvent: {}
+[17.174166] (-) TimerEvent: {}
+[17.275260] (-) TimerEvent: {}
+[17.376497] (-) TimerEvent: {}
+[17.478151] (-) TimerEvent: {}
+[17.579251] (-) TimerEvent: {}
+[17.680328] (-) TimerEvent: {}
+[17.781468] (-) TimerEvent: {}
+[17.882536] (-) TimerEvent: {}
+[17.983609] (-) TimerEvent: {}
+[18.084703] (-) TimerEvent: {}
+[18.185872] (-) TimerEvent: {}
+[18.287060] (-) TimerEvent: {}
+[18.388242] (-) TimerEvent: {}
+[18.489402] (-) TimerEvent: {}
+[18.590471] (-) TimerEvent: {}
+[18.691574] (-) TimerEvent: {}
+[18.792721] (-) TimerEvent: {}
+[18.893836] (-) TimerEvent: {}
+[18.994944] (-) TimerEvent: {}
+[19.096291] (-) TimerEvent: {}
+[19.197258] (-) TimerEvent: {}
+[19.298155] (-) TimerEvent: {}
+[19.399115] (-) TimerEvent: {}
+[19.500030] (-) TimerEvent: {}
+[19.601015] (-) TimerEvent: {}
+[19.701886] (-) TimerEvent: {}
+[19.802752] (-) TimerEvent: {}
+[19.903620] (-) TimerEvent: {}
+[20.004528] (-) TimerEvent: {}
+[20.105370] (-) TimerEvent: {}
+[20.206232] (-) TimerEvent: {}
+[20.307084] (-) TimerEvent: {}
+[20.407944] (-) TimerEvent: {}
+[20.508838] (-) TimerEvent: {}
+[20.609718] (-) TimerEvent: {}
+[20.710604] (-) TimerEvent: {}
+[20.811477] (-) TimerEvent: {}
+[20.912356] (-) TimerEvent: {}
+[21.013268] (-) TimerEvent: {}
+[21.114110] (-) TimerEvent: {}
+[21.214960] (-) TimerEvent: {}
+[21.315823] (-) TimerEvent: {}
+[21.416734] (-) TimerEvent: {}
+[21.517599] (-) TimerEvent: {}
+[21.618443] (-) TimerEvent: {}
+[21.719301] (-) TimerEvent: {}
+[21.820152] (-) TimerEvent: {}
+[21.921027] (-) TimerEvent: {}
+[22.021894] (-) TimerEvent: {}
+[22.123179] (-) TimerEvent: {}
+[22.224652] (-) TimerEvent: {}
+[22.326027] (-) TimerEvent: {}
+[22.426896] (-) TimerEvent: {}
+[22.527759] (-) TimerEvent: {}
+[22.628621] (-) TimerEvent: {}
+[22.729458] (-) TimerEvent: {}
+[22.830306] (-) TimerEvent: {}
+[22.931101] (-) TimerEvent: {}
+[23.031870] (-) TimerEvent: {}
+[23.132707] (-) TimerEvent: {}
+[23.233487] (-) TimerEvent: {}
+[23.334258] (-) TimerEvent: {}
+[23.435044] (-) TimerEvent: {}
+[23.535883] (-) TimerEvent: {}
+[23.636856] (-) TimerEvent: {}
+[23.737711] (-) TimerEvent: {}
+[23.838607] (-) TimerEvent: {}
+[23.939498] (-) TimerEvent: {}
+[24.040437] (-) TimerEvent: {}
+[24.141314] (-) TimerEvent: {}
+[24.242194] (-) TimerEvent: {}
+[24.343112] (-) TimerEvent: {}
+[24.443984] (-) TimerEvent: {}
+[24.545094] (-) TimerEvent: {}
+[24.646626] (-) TimerEvent: {}
+[24.747637] (-) TimerEvent: {}
+[24.848585] (-) TimerEvent: {}
+[24.949453] (-) TimerEvent: {}
+[25.050333] (-) TimerEvent: {}
+[25.151220] (-) TimerEvent: {}
+[25.252058] (-) TimerEvent: {}
+[25.352971] (-) TimerEvent: {}
+[25.454120] (-) TimerEvent: {}
+[25.555537] (-) TimerEvent: {}
+[25.656666] (-) TimerEvent: {}
+[25.758122] (-) TimerEvent: {}
+[25.859078] (-) TimerEvent: {}
+[25.959937] (-) TimerEvent: {}
+[26.060841] (-) TimerEvent: {}
+[26.161684] (-) TimerEvent: {}
+[26.262548] (-) TimerEvent: {}
+[26.363411] (-) TimerEvent: {}
+[26.464294] (-) TimerEvent: {}
+[26.565296] (-) TimerEvent: {}
+[26.666136] (-) TimerEvent: {}
+[26.767000] (-) TimerEvent: {}
+[26.867829] (-) TimerEvent: {}
+[26.968719] (-) TimerEvent: {}
+[27.069627] (-) TimerEvent: {}
+[27.170499] (-) TimerEvent: {}
+[27.271360] (-) TimerEvent: {}
+[27.372243] (-) TimerEvent: {}
+[27.473144] (-) TimerEvent: {}
+[27.573949] (-) TimerEvent: {}
+[27.674786] (-) TimerEvent: {}
+[27.775656] (-) TimerEvent: {}
+[27.876515] (-) TimerEvent: {}
+[27.977356] (-) TimerEvent: {}
+[28.078207] (-) TimerEvent: {}
+[28.179046] (-) TimerEvent: {}
+[28.279880] (-) TimerEvent: {}
+[28.380758] (-) TimerEvent: {}
+[28.481593] (-) TimerEvent: {}
+[28.582393] (-) TimerEvent: {}
+[28.683256] (-) TimerEvent: {}
+[28.784146] (-) TimerEvent: {}
+[28.885052] (-) TimerEvent: {}
+[28.985875] (-) TimerEvent: {}
+[29.086748] (-) TimerEvent: {}
+[29.187625] (-) TimerEvent: {}
+[29.288513] (-) TimerEvent: {}
+[29.389340] (-) TimerEvent: {}
+[29.490167] (-) TimerEvent: {}
+[29.591031] (-) TimerEvent: {}
+[29.691885] (-) TimerEvent: {}
+[29.792768] (-) TimerEvent: {}
+[29.893605] (-) TimerEvent: {}
+[29.994644] (-) TimerEvent: {}
+[30.095482] (-) TimerEvent: {}
+[30.196330] (-) TimerEvent: {}
+[30.297220] (-) TimerEvent: {}
+[30.398050] (-) TimerEvent: {}
+[30.498926] (-) TimerEvent: {}
+[30.599772] (-) TimerEvent: {}
+[30.700620] (-) TimerEvent: {}
+[30.801429] (-) TimerEvent: {}
+[30.902271] (-) TimerEvent: {}
+[31.003147] (-) TimerEvent: {}
+[31.103973] (-) TimerEvent: {}
+[31.204860] (-) TimerEvent: {}
+[31.305674] (-) TimerEvent: {}
+[31.406521] (-) TimerEvent: {}
+[31.507379] (-) TimerEvent: {}
+[31.608238] (-) TimerEvent: {}
+[31.709118] (-) TimerEvent: {}
+[31.810032] (-) TimerEvent: {}
+[31.910935] (-) TimerEvent: {}
+[32.011826] (-) TimerEvent: {}
+[32.112758] (-) TimerEvent: {}
+[32.213575] (-) TimerEvent: {}
+[32.314403] (-) TimerEvent: {}
+[32.415212] (-) TimerEvent: {}
+[32.516052] (-) TimerEvent: {}
+[32.616931] (-) TimerEvent: {}
+[32.717778] (-) TimerEvent: {}
+[32.818642] (-) TimerEvent: {}
+[32.919471] (-) TimerEvent: {}
+[33.020330] (-) TimerEvent: {}
+[33.121204] (-) TimerEvent: {}
+[33.222040] (-) TimerEvent: {}
+[33.322874] (-) TimerEvent: {}
+[33.423711] (-) TimerEvent: {}
+[33.524578] (-) TimerEvent: {}
+[33.625398] (-) TimerEvent: {}
+[33.726217] (-) TimerEvent: {}
+[33.827039] (-) TimerEvent: {}
+[33.927868] (-) TimerEvent: {}
+[34.028769] (-) TimerEvent: {}
+[34.129594] (-) TimerEvent: {}
+[34.230407] (-) TimerEvent: {}
+[34.331241] (-) TimerEvent: {}
+[34.432087] (-) TimerEvent: {}
+[34.532977] (-) TimerEvent: {}
+[34.633838] (-) TimerEvent: {}
+[34.734724] (-) TimerEvent: {}
+[34.835583] (-) TimerEvent: {}
+[34.936466] (-) TimerEvent: {}
+[35.037612] (-) TimerEvent: {}
+[35.138663] (-) TimerEvent: {}
+[35.239709] (-) TimerEvent: {}
+[35.340802] (-) TimerEvent: {}
+[35.441854] (-) TimerEvent: {}
+[35.542693] (-) TimerEvent: {}
+[35.643541] (-) TimerEvent: {}
+[35.744384] (-) TimerEvent: {}
+[35.845288] (-) TimerEvent: {}
+[35.946125] (-) TimerEvent: {}
+[36.046985] (-) TimerEvent: {}
+[36.147831] (-) TimerEvent: {}
+[36.248735] (-) TimerEvent: {}
+[36.349610] (-) TimerEvent: {}
+[36.450442] (-) TimerEvent: {}
+[36.551308] (-) TimerEvent: {}
+[36.652142] (-) TimerEvent: {}
+[36.753009] (-) TimerEvent: {}
+[36.853858] (-) TimerEvent: {}
+[36.954710] (-) TimerEvent: {}
+[37.055613] (-) TimerEvent: {}
+[37.156511] (-) TimerEvent: {}
+[37.257369] (-) TimerEvent: {}
+[37.358296] (-) TimerEvent: {}
+[37.459200] (-) TimerEvent: {}
+[37.560082] (-) TimerEvent: {}
+[37.661008] (-) TimerEvent: {}
+[37.761868] (-) TimerEvent: {}
+[37.862723] (-) TimerEvent: {}
+[37.963536] (-) TimerEvent: {}
+[38.064384] (-) TimerEvent: {}
+[38.165240] (-) TimerEvent: {}
+[38.266161] (-) TimerEvent: {}
+[38.367045] (-) TimerEvent: {}
+[38.467922] (-) TimerEvent: {}
+[38.569089] (-) TimerEvent: {}
+[38.670216] (-) TimerEvent: {}
+[38.771323] (-) TimerEvent: {}
+[38.872457] (-) TimerEvent: {}
+[38.973562] (-) TimerEvent: {}
+[39.074691] (-) TimerEvent: {}
+[39.175793] (-) TimerEvent: {}
+[39.276848] (-) TimerEvent: {}
+[39.377900] (-) TimerEvent: {}
+[39.478990] (-) TimerEvent: {}
+[39.580099] (-) TimerEvent: {}
+[39.681280] (-) TimerEvent: {}
+[39.782336] (-) TimerEvent: {}
+[39.883412] (-) TimerEvent: {}
+[39.984524] (-) TimerEvent: {}
+[40.085596] (-) TimerEvent: {}
+[40.186688] (-) TimerEvent: {}
+[40.287776] (-) TimerEvent: {}
+[40.388867] (-) TimerEvent: {}
+[40.489940] (-) TimerEvent: {}
+[40.591017] (-) TimerEvent: {}
+[40.692109] (-) TimerEvent: {}
+[40.793276] (-) TimerEvent: {}
+[40.894374] (-) TimerEvent: {}
+[40.995535] (-) TimerEvent: {}
+[41.096619] (-) TimerEvent: {}
+[41.197761] (-) TimerEvent: {}
+[41.299125] (-) TimerEvent: {}
+[41.400012] (-) TimerEvent: {}
+[41.500947] (-) TimerEvent: {}
+[41.601807] (-) TimerEvent: {}
+[41.702677] (-) TimerEvent: {}
+[41.803556] (-) TimerEvent: {}
+[41.904498] (-) TimerEvent: {}
+[42.005354] (-) TimerEvent: {}
+[42.106219] (-) TimerEvent: {}
+[42.207248] (-) TimerEvent: {}
+[42.308291] (-) TimerEvent: {}
+[42.409396] (-) TimerEvent: {}
+[42.510400] (-) TimerEvent: {}
+[42.611695] (-) TimerEvent: {}
+[42.712982] (-) TimerEvent: {}
+[42.813839] (-) TimerEvent: {}
+[42.914708] (-) TimerEvent: {}
+[43.015634] (-) TimerEvent: {}
+[43.116713] (-) TimerEvent: {}
+[43.217781] (-) TimerEvent: {}
+[43.319038] (-) TimerEvent: {}
+[43.420113] (-) TimerEvent: {}
+[43.521208] (-) TimerEvent: {}
+[43.622260] (-) TimerEvent: {}
+[43.723368] (-) TimerEvent: {}
+[43.824552] (-) TimerEvent: {}
+[43.925934] (-) TimerEvent: {}
+[44.027316] (-) TimerEvent: {}
+[44.128950] (-) TimerEvent: {}
+[44.230032] (-) TimerEvent: {}
+[44.331250] (-) TimerEvent: {}
+[44.432654] (-) TimerEvent: {}
+[44.533788] (-) TimerEvent: {}
+[44.635174] (-) TimerEvent: {}
+[44.736169] (-) TimerEvent: {}
+[44.837139] (-) TimerEvent: {}
+[44.938070] (-) TimerEvent: {}
+[45.038977] (-) TimerEvent: {}
+[45.139938] (-) TimerEvent: {}
+[45.241393] (-) TimerEvent: {}
+[45.342350] (-) TimerEvent: {}
+[45.443307] (-) TimerEvent: {}
+[45.544332] (-) TimerEvent: {}
+[45.559229] (ros_xeno_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable RosXenoBridge\x1b[0m\n'}
+[45.644781] (-) TimerEvent: {}
+[45.745924] (-) TimerEvent: {}
+[45.847006] (-) TimerEvent: {}
+[45.948381] (-) TimerEvent: {}
+[46.049639] (-) TimerEvent: {}
+[46.150624] (-) TimerEvent: {}
+[46.251960] (-) TimerEvent: {}
+[46.353006] (-) TimerEvent: {}
+[46.454214] (-) TimerEvent: {}
+[46.555702] (-) TimerEvent: {}
+[46.657042] (-) TimerEvent: {}
+[46.757973] (-) TimerEvent: {}
+[46.858737] (-) TimerEvent: {}
+[46.959511] (-) TimerEvent: {}
+[47.060388] (-) TimerEvent: {}
+[47.161451] (-) TimerEvent: {}
+[47.262196] (-) TimerEvent: {}
+[47.362952] (-) TimerEvent: {}
+[47.463758] (-) TimerEvent: {}
+[47.564743] (-) TimerEvent: {}
+[47.665602] (-) TimerEvent: {}
+[47.766349] (-) TimerEvent: {}
+[47.867056] (-) TimerEvent: {}
+[47.967788] (-) TimerEvent: {}
+[48.068636] (-) TimerEvent: {}
+[48.169432] (-) TimerEvent: {}
+[48.270151] (-) TimerEvent: {}
+[48.370911] (-) TimerEvent: {}
+[48.388184] (ros_xeno_bridge) StdoutLine: {'line': b'[100%] Built target RosXenoBridge\n'}
+[48.414953] (ros_xeno_bridge) CommandEnded: {'returncode': 0}
+[48.417908] (ros_xeno_bridge) JobProgress: {'identifier': 'ros_xeno_bridge', 'progress': 'install'}
+[48.441720] (ros_xeno_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge'], 'cwd': '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.110 41626 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.110 41626 10.0.28.123 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/opt/ros/humble')]), 'shell': False}
+[48.462615] (ros_xeno_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.464009] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/ros_xeno_bridge/RosXenoBridge\n'}
+[48.471030] (-) TimerEvent: {}
+[48.571766] (-) TimerEvent: {}
+[48.672516] (-) TimerEvent: {}
+[48.677895] (ros_xeno_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/ros_xeno_bridge/RosXenoBridge" to ""\n'}
+[48.679062] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/package_run_dependencies/ros_xeno_bridge\n'}
+[48.680105] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/parent_prefix_path/ros_xeno_bridge\n'}
+[48.681203] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/ament_prefix_path.sh\n'}
+[48.682218] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/ament_prefix_path.dsv\n'}
+[48.683212] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/path.sh\n'}
+[48.684219] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/path.dsv\n'}
+[48.685326] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.bash\n'}
+[48.686327] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.sh\n'}
+[48.687331] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.zsh\n'}
+[48.688341] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.dsv\n'}
+[48.689423] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.dsv\n'}
+[48.690454] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/packages/ros_xeno_bridge\n'}
+[48.691482] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/cmake/ros_xeno_bridgeConfig.cmake\n'}
+[48.692581] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/cmake/ros_xeno_bridgeConfig-version.cmake\n'}
+[48.693621] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.xml\n'}
+[48.697594] (ros_xeno_bridge) CommandEnded: {'returncode': 0}
+[48.768764] (ros_xeno_bridge) JobEnded: {'identifier': 'ros_xeno_bridge', 'rc': 0}
+[48.771171] (-) EventReactorShutdown: {}

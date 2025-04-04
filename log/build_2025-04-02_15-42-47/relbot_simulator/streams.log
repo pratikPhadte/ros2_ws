@@ -1,0 +1,33 @@
+[0.036s] Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[0.145s] [35m[1mConsolidate compiler generated dependencies of target sequence_controller[0m
+[0.148s] [35m[1mConsolidate compiler generated dependencies of target colour_tracker[0m
+[0.188s] [ 69%] Built target relbot_simulator
+[0.513s] [ 76%] [32mBuilding CXX object CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o[0m
+[0.584s] [ 84%] [32mBuilding CXX object CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o[0m
+[15.382s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[15.383s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[15.385s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[15.386s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[15.388s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[15.389s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[15.391s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[15.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[15.394s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.399s]                  from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/colour_tracker.hpp:4[m[K,
+[15.401s]                  from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:1[m[K:
+[15.402s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:[m[K In member function ‘[01m[Kvoid ColourTracker::image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[15.403s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:109:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kresized_image[m[K’ was not declared in this scope
+[15.405s]   109 |     RCLCPP_INFO(this->get_logger(), "Image size: %d x %d", [01;31m[Kresized_image[m[K.cols, resized_image.rows);
+[15.406s]       |                                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[15.430s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:112:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage[m[K’ was not declared in this scope
+[15.431s]   112 |     cv::imshow("Orange Object Detection", [01;31m[Kimage[m[K);
+[15.432s]       |                                           [01;31m[K^~~~~[m[K
+[27.689s] gmake[2]: *** [CMakeFiles/colour_tracker.dir/build.make:76: CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o] Error 1
+[27.690s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/colour_tracker.dir/all] Error 2
+[27.691s] gmake[1]: *** Waiting for unfinished jobs....
+[35.935s] [ 92%] [32m[1mLinking CXX executable sequence_controller[0m
+[38.238s] [ 92%] Built target sequence_controller
+[38.241s] gmake: *** [Makefile:146: all] Error 2
+[38.247s] Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3

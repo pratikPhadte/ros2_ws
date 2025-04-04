@@ -1,0 +1,911 @@
+[0.000000] (-) TimerEvent: {}
+[0.001423] (relbot_simulator) JobQueued: {'identifier': 'relbot_simulator', 'dependencies': OrderedDict()}
+[0.002086] (relbot_simulator) JobStarted: {'identifier': 'relbot_simulator'}
+[0.023616] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'cmake'}
+[0.026084] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'build'}
+[0.028388] (relbot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asdfr-19/ros2_ws/build/relbot_simulator', '--', '-j3', '-l3'], 'cwd': '/home/asdfr-19/ros2_ws/build/relbot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.245 51514 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/relbot_simulator'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.245 51514 10.0.28.122 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099161] (-) TimerEvent: {}
+[0.177490] (relbot_simulator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199365] (-) TimerEvent: {}
+[0.300358] (-) TimerEvent: {}
+[0.401297] (-) TimerEvent: {}
+[0.502664] (-) TimerEvent: {}
+[0.603653] (-) TimerEvent: {}
+[0.704548] (-) TimerEvent: {}
+[0.753411] (relbot_simulator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.804844] (-) TimerEvent: {}
+[0.906230] (-) TimerEvent: {}
+[0.921880] (relbot_simulator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.936160] (relbot_simulator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.969551] (relbot_simulator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.006382] (-) TimerEvent: {}
+[1.014567] (relbot_simulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.069005] (relbot_simulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.106538] (-) TimerEvent: {}
+[1.205513] (relbot_simulator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.206717] (-) TimerEvent: {}
+[1.213340] (relbot_simulator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.306903] (-) TimerEvent: {}
+[1.407967] (-) TimerEvent: {}
+[1.493988] (relbot_simulator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.508129] (-) TimerEvent: {}
+[1.608912] (-) TimerEvent: {}
+[1.700197] (relbot_simulator) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[1.709069] (-) TimerEvent: {}
+[1.809930] (-) TimerEvent: {}
+[1.855659] (relbot_simulator) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.907210] (relbot_simulator) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.910056] (-) TimerEvent: {}
+[1.993343] (relbot_simulator) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[2.010226] (-) TimerEvent: {}
+[2.019031] (relbot_simulator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.110430] (-) TimerEvent: {}
+[2.211725] (-) TimerEvent: {}
+[2.313561] (-) TimerEvent: {}
+[2.330150] (relbot_simulator) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.346484] (relbot_simulator) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.351214] (relbot_simulator) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/asdfr-19/ros2_ws/src/relbot_simulator/include;/home/asdfr-19/ros2_ws/src/relbot_simulator/common;$<BUILD_INTERFACE:/home/asdfr-19/ros2_ws/src/relbot_simulator/include>;$<BUILD_INTERFACE:/home/asdfr-19/ros2_ws/src/relbot_simulator/common>\n'}
+[2.353446] (relbot_simulator) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.364149] (relbot_simulator) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.366609] (relbot_simulator) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.369002] (relbot_simulator) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.374207] (relbot_simulator) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.378877] (relbot_simulator) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.390941] (relbot_simulator) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.392983] (relbot_simulator) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.395033] (relbot_simulator) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.401408] (relbot_simulator) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.413698] (-) TimerEvent: {}
+[2.514851] (-) TimerEvent: {}
+[2.616139] (-) TimerEvent: {}
+[2.717614] (-) TimerEvent: {}
+[2.720320] (relbot_simulator) StdoutLine: {'line': b'-- Generating done\n'}
+[2.765015] (relbot_simulator) StdoutLine: {'line': b'-- Build files have been written to: /home/asdfr-19/ros2_ws/build/relbot_simulator\n'}
+[2.817842] (-) TimerEvent: {}
+[2.857551] (relbot_simulator) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sequence_controller\x1b[0m\n'}
+[2.859143] (relbot_simulator) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target relbot_simulator\x1b[0m\n'}
+[2.860474] (relbot_simulator) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target colour_tracker\x1b[0m\n'}
+[2.918037] (-) TimerEvent: {}
+[3.019070] (-) TimerEvent: {}
+[3.120076] (-) TimerEvent: {}
+[3.220985] (-) TimerEvent: {}
+[3.322182] (-) TimerEvent: {}
+[3.423730] (-) TimerEvent: {}
+[3.525181] (-) TimerEvent: {}
+[3.626608] (-) TimerEvent: {}
+[3.728014] (-) TimerEvent: {}
+[3.829350] (-) TimerEvent: {}
+[3.930616] (-) TimerEvent: {}
+[4.031822] (-) TimerEvent: {}
+[4.133012] (-) TimerEvent: {}
+[4.234485] (-) TimerEvent: {}
+[4.413203] (-) TimerEvent: {}
+[4.514310] (-) TimerEvent: {}
+[4.597290] (relbot_simulator) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o\x1b[0m\n'}
+[4.612213] (relbot_simulator) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o\x1b[0m\n'}
+[4.614675] (-) TimerEvent: {}
+[4.616528] (relbot_simulator) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o\x1b[0m\n'}
+[4.714937] (-) TimerEvent: {}
+[4.816499] (-) TimerEvent: {}
+[4.917668] (-) TimerEvent: {}
+[5.019439] (-) TimerEvent: {}
+[5.120959] (-) TimerEvent: {}
+[5.222405] (-) TimerEvent: {}
+[5.323604] (-) TimerEvent: {}
+[5.424882] (-) TimerEvent: {}
+[5.526568] (-) TimerEvent: {}
+[5.627879] (-) TimerEvent: {}
+[5.728709] (-) TimerEvent: {}
+[5.829576] (-) TimerEvent: {}
+[5.930641] (-) TimerEvent: {}
+[6.031983] (-) TimerEvent: {}
+[6.134153] (-) TimerEvent: {}
+[6.235067] (-) TimerEvent: {}
+[6.335949] (-) TimerEvent: {}
+[6.436971] (-) TimerEvent: {}
+[6.538326] (-) TimerEvent: {}
+[6.639930] (-) TimerEvent: {}
+[6.741455] (-) TimerEvent: {}
+[6.843197] (-) TimerEvent: {}
+[6.944964] (-) TimerEvent: {}
+[7.046508] (-) TimerEvent: {}
+[7.147993] (-) TimerEvent: {}
+[7.249465] (-) TimerEvent: {}
+[7.351077] (-) TimerEvent: {}
+[7.452598] (-) TimerEvent: {}
+[7.554055] (-) TimerEvent: {}
+[7.655664] (-) TimerEvent: {}
+[7.757088] (-) TimerEvent: {}
+[7.858251] (-) TimerEvent: {}
+[7.959328] (-) TimerEvent: {}
+[8.060314] (-) TimerEvent: {}
+[8.161611] (-) TimerEvent: {}
+[8.262869] (-) TimerEvent: {}
+[8.364103] (-) TimerEvent: {}
+[8.465330] (-) TimerEvent: {}
+[8.566556] (-) TimerEvent: {}
+[8.667734] (-) TimerEvent: {}
+[8.768901] (-) TimerEvent: {}
+[8.870142] (-) TimerEvent: {}
+[8.971484] (-) TimerEvent: {}
+[9.072776] (-) TimerEvent: {}
+[9.174249] (-) TimerEvent: {}
+[9.275527] (-) TimerEvent: {}
+[9.377017] (-) TimerEvent: {}
+[11.915226] (-) TimerEvent: {}
+[12.016569] (-) TimerEvent: {}
+[12.117789] (-) TimerEvent: {}
+[12.219119] (-) TimerEvent: {}
+[12.320328] (-) TimerEvent: {}
+[12.421518] (-) TimerEvent: {}
+[12.522834] (-) TimerEvent: {}
+[12.624113] (-) TimerEvent: {}
+[12.725356] (-) TimerEvent: {}
+[12.826715] (-) TimerEvent: {}
+[12.927982] (-) TimerEvent: {}
+[13.029298] (-) TimerEvent: {}
+[13.130678] (-) TimerEvent: {}
+[13.232059] (-) TimerEvent: {}
+[13.333224] (-) TimerEvent: {}
+[13.434275] (-) TimerEvent: {}
+[13.535563] (-) TimerEvent: {}
+[13.636739] (-) TimerEvent: {}
+[13.737751] (-) TimerEvent: {}
+[13.838884] (-) TimerEvent: {}
+[13.940017] (-) TimerEvent: {}
+[14.041247] (-) TimerEvent: {}
+[14.142621] (-) TimerEvent: {}
+[14.243697] (-) TimerEvent: {}
+[14.345372] (-) TimerEvent: {}
+[14.447314] (-) TimerEvent: {}
+[14.548759] (-) TimerEvent: {}
+[14.650235] (-) TimerEvent: {}
+[14.751977] (-) TimerEvent: {}
+[14.853046] (-) TimerEvent: {}
+[14.954171] (-) TimerEvent: {}
+[15.055397] (-) TimerEvent: {}
+[15.156619] (-) TimerEvent: {}
+[15.257657] (-) TimerEvent: {}
+[15.358742] (-) TimerEvent: {}
+[15.460139] (-) TimerEvent: {}
+[15.561363] (-) TimerEvent: {}
+[15.662586] (-) TimerEvent: {}
+[15.763686] (-) TimerEvent: {}
+[15.864790] (-) TimerEvent: {}
+[15.965949] (-) TimerEvent: {}
+[16.067099] (-) TimerEvent: {}
+[16.168157] (-) TimerEvent: {}
+[16.269328] (-) TimerEvent: {}
+[16.370425] (-) TimerEvent: {}
+[16.471458] (-) TimerEvent: {}
+[16.572486] (-) TimerEvent: {}
+[16.673608] (-) TimerEvent: {}
+[16.774790] (-) TimerEvent: {}
+[16.875814] (-) TimerEvent: {}
+[16.976904] (-) TimerEvent: {}
+[17.078052] (-) TimerEvent: {}
+[17.179046] (-) TimerEvent: {}
+[17.280094] (-) TimerEvent: {}
+[17.381252] (-) TimerEvent: {}
+[17.482389] (-) TimerEvent: {}
+[17.583466] (-) TimerEvent: {}
+[17.684519] (-) TimerEvent: {}
+[17.785580] (-) TimerEvent: {}
+[17.886717] (-) TimerEvent: {}
+[17.987761] (-) TimerEvent: {}
+[18.088825] (-) TimerEvent: {}
+[18.189912] (-) TimerEvent: {}
+[18.290965] (-) TimerEvent: {}
+[18.392018] (-) TimerEvent: {}
+[18.493069] (-) TimerEvent: {}
+[18.594109] (-) TimerEvent: {}
+[18.695167] (-) TimerEvent: {}
+[18.796249] (-) TimerEvent: {}
+[18.897989] (-) TimerEvent: {}
+[18.999767] (-) TimerEvent: {}
+[19.101180] (-) TimerEvent: {}
+[19.202608] (-) TimerEvent: {}
+[19.304025] (-) TimerEvent: {}
+[19.405089] (-) TimerEvent: {}
+[19.506151] (-) TimerEvent: {}
+[19.607159] (-) TimerEvent: {}
+[19.708614] (-) TimerEvent: {}
+[19.809684] (-) TimerEvent: {}
+[19.910815] (-) TimerEvent: {}
+[20.012006] (-) TimerEvent: {}
+[20.113099] (-) TimerEvent: {}
+[20.214184] (-) TimerEvent: {}
+[20.315231] (-) TimerEvent: {}
+[20.416284] (-) TimerEvent: {}
+[20.517349] (-) TimerEvent: {}
+[20.618549] (-) TimerEvent: {}
+[20.719569] (-) TimerEvent: {}
+[20.820585] (-) TimerEvent: {}
+[20.921679] (-) TimerEvent: {}
+[21.023132] (-) TimerEvent: {}
+[21.124213] (-) TimerEvent: {}
+[21.225305] (-) TimerEvent: {}
+[21.326421] (-) TimerEvent: {}
+[21.427532] (-) TimerEvent: {}
+[21.528622] (-) TimerEvent: {}
+[21.629779] (-) TimerEvent: {}
+[21.731307] (-) TimerEvent: {}
+[21.832350] (-) TimerEvent: {}
+[21.933407] (-) TimerEvent: {}
+[22.034531] (-) TimerEvent: {}
+[22.135671] (-) TimerEvent: {}
+[22.236758] (-) TimerEvent: {}
+[22.337863] (-) TimerEvent: {}
+[22.438936] (-) TimerEvent: {}
+[22.539960] (-) TimerEvent: {}
+[22.640990] (-) TimerEvent: {}
+[22.741986] (-) TimerEvent: {}
+[22.842931] (-) TimerEvent: {}
+[22.943960] (-) TimerEvent: {}
+[23.045052] (-) TimerEvent: {}
+[23.146116] (-) TimerEvent: {}
+[23.247152] (-) TimerEvent: {}
+[23.348168] (-) TimerEvent: {}
+[23.449189] (-) TimerEvent: {}
+[23.550175] (-) TimerEvent: {}
+[23.651206] (-) TimerEvent: {}
+[23.752243] (-) TimerEvent: {}
+[23.853282] (-) TimerEvent: {}
+[23.954371] (-) TimerEvent: {}
+[24.055767] (-) TimerEvent: {}
+[24.157233] (-) TimerEvent: {}
+[24.258730] (-) TimerEvent: {}
+[24.359798] (-) TimerEvent: {}
+[24.461010] (-) TimerEvent: {}
+[24.562439] (-) TimerEvent: {}
+[24.663557] (-) TimerEvent: {}
+[24.764666] (-) TimerEvent: {}
+[24.865832] (-) TimerEvent: {}
+[24.966976] (-) TimerEvent: {}
+[25.068378] (-) TimerEvent: {}
+[25.169950] (-) TimerEvent: {}
+[25.271497] (-) TimerEvent: {}
+[25.373084] (-) TimerEvent: {}
+[25.474562] (-) TimerEvent: {}
+[25.575644] (-) TimerEvent: {}
+[25.676843] (-) TimerEvent: {}
+[25.777903] (-) TimerEvent: {}
+[25.878906] (-) TimerEvent: {}
+[25.979936] (-) TimerEvent: {}
+[26.081001] (-) TimerEvent: {}
+[26.182084] (-) TimerEvent: {}
+[26.283227] (-) TimerEvent: {}
+[26.384318] (-) TimerEvent: {}
+[26.485492] (-) TimerEvent: {}
+[26.586792] (-) TimerEvent: {}
+[26.687885] (-) TimerEvent: {}
+[26.788999] (-) TimerEvent: {}
+[26.890095] (-) TimerEvent: {}
+[26.991153] (-) TimerEvent: {}
+[27.092452] (-) TimerEvent: {}
+[27.193572] (-) TimerEvent: {}
+[27.294772] (-) TimerEvent: {}
+[27.396102] (-) TimerEvent: {}
+[27.497352] (-) TimerEvent: {}
+[27.598434] (-) TimerEvent: {}
+[27.699460] (-) TimerEvent: {}
+[27.800486] (-) TimerEvent: {}
+[27.901494] (-) TimerEvent: {}
+[28.002566] (-) TimerEvent: {}
+[28.103587] (-) TimerEvent: {}
+[28.204691] (-) TimerEvent: {}
+[28.305788] (-) TimerEvent: {}
+[28.406861] (-) TimerEvent: {}
+[28.507913] (-) TimerEvent: {}
+[28.608953] (-) TimerEvent: {}
+[28.709996] (-) TimerEvent: {}
+[28.811308] (-) TimerEvent: {}
+[28.912362] (-) TimerEvent: {}
+[29.013408] (-) TimerEvent: {}
+[29.114442] (-) TimerEvent: {}
+[29.215474] (-) TimerEvent: {}
+[29.316495] (-) TimerEvent: {}
+[29.417546] (-) TimerEvent: {}
+[29.518633] (-) TimerEvent: {}
+[29.619689] (-) TimerEvent: {}
+[29.720696] (-) TimerEvent: {}
+[29.821742] (-) TimerEvent: {}
+[29.922871] (-) TimerEvent: {}
+[30.024050] (-) TimerEvent: {}
+[30.125160] (-) TimerEvent: {}
+[30.226176] (-) TimerEvent: {}
+[30.327181] (-) TimerEvent: {}
+[30.428209] (-) TimerEvent: {}
+[30.529272] (-) TimerEvent: {}
+[30.630364] (-) TimerEvent: {}
+[30.731474] (-) TimerEvent: {}
+[30.832590] (-) TimerEvent: {}
+[30.933727] (-) TimerEvent: {}
+[31.034820] (-) TimerEvent: {}
+[31.135910] (-) TimerEvent: {}
+[31.236983] (-) TimerEvent: {}
+[31.338006] (-) TimerEvent: {}
+[31.439104] (-) TimerEvent: {}
+[31.540275] (-) TimerEvent: {}
+[31.641408] (-) TimerEvent: {}
+[31.742462] (-) TimerEvent: {}
+[31.843486] (-) TimerEvent: {}
+[31.944532] (-) TimerEvent: {}
+[32.045591] (-) TimerEvent: {}
+[32.146650] (-) TimerEvent: {}
+[32.247659] (-) TimerEvent: {}
+[32.348670] (-) TimerEvent: {}
+[32.449715] (-) TimerEvent: {}
+[32.550787] (-) TimerEvent: {}
+[32.651840] (-) TimerEvent: {}
+[32.752903] (-) TimerEvent: {}
+[32.853972] (-) TimerEvent: {}
+[32.955024] (-) TimerEvent: {}
+[33.056057] (-) TimerEvent: {}
+[33.157082] (-) TimerEvent: {}
+[33.258120] (-) TimerEvent: {}
+[33.359145] (-) TimerEvent: {}
+[33.460162] (-) TimerEvent: {}
+[33.561196] (-) TimerEvent: {}
+[33.662293] (-) TimerEvent: {}
+[33.763703] (-) TimerEvent: {}
+[33.865244] (-) TimerEvent: {}
+[33.966843] (-) TimerEvent: {}
+[34.068431] (-) TimerEvent: {}
+[34.169964] (-) TimerEvent: {}
+[34.271550] (-) TimerEvent: {}
+[34.372628] (-) TimerEvent: {}
+[34.473705] (-) TimerEvent: {}
+[34.574758] (-) TimerEvent: {}
+[34.675820] (-) TimerEvent: {}
+[34.776850] (-) TimerEvent: {}
+[34.877893] (-) TimerEvent: {}
+[34.978916] (-) TimerEvent: {}
+[35.080029] (-) TimerEvent: {}
+[35.181152] (-) TimerEvent: {}
+[35.282260] (-) TimerEvent: {}
+[35.383298] (-) TimerEvent: {}
+[35.484319] (-) TimerEvent: {}
+[35.585313] (-) TimerEvent: {}
+[35.686325] (-) TimerEvent: {}
+[35.787383] (-) TimerEvent: {}
+[35.888412] (-) TimerEvent: {}
+[35.989492] (-) TimerEvent: {}
+[36.090576] (-) TimerEvent: {}
+[36.191614] (-) TimerEvent: {}
+[36.292676] (-) TimerEvent: {}
+[36.393737] (-) TimerEvent: {}
+[36.494822] (-) TimerEvent: {}
+[36.595869] (-) TimerEvent: {}
+[36.696883] (-) TimerEvent: {}
+[36.797956] (-) TimerEvent: {}
+[36.898992] (-) TimerEvent: {}
+[37.000032] (-) TimerEvent: {}
+[37.101065] (-) TimerEvent: {}
+[37.202108] (-) TimerEvent: {}
+[37.303144] (-) TimerEvent: {}
+[37.404196] (-) TimerEvent: {}
+[37.505248] (-) TimerEvent: {}
+[37.606301] (-) TimerEvent: {}
+[37.707356] (-) TimerEvent: {}
+[37.808392] (-) TimerEvent: {}
+[37.909473] (-) TimerEvent: {}
+[38.010659] (-) TimerEvent: {}
+[38.111742] (-) TimerEvent: {}
+[38.212788] (-) TimerEvent: {}
+[38.313878] (-) TimerEvent: {}
+[38.414956] (-) TimerEvent: {}
+[38.516025] (-) TimerEvent: {}
+[38.617118] (-) TimerEvent: {}
+[38.718209] (-) TimerEvent: {}
+[38.819292] (-) TimerEvent: {}
+[38.920799] (-) TimerEvent: {}
+[39.022467] (-) TimerEvent: {}
+[39.124111] (-) TimerEvent: {}
+[39.225821] (-) TimerEvent: {}
+[39.327657] (-) TimerEvent: {}
+[39.428815] (-) TimerEvent: {}
+[39.529982] (-) TimerEvent: {}
+[39.631115] (-) TimerEvent: {}
+[39.732239] (-) TimerEvent: {}
+[39.833345] (-) TimerEvent: {}
+[39.934459] (-) TimerEvent: {}
+[40.035525] (-) TimerEvent: {}
+[40.136632] (-) TimerEvent: {}
+[40.237733] (-) TimerEvent: {}
+[40.358612] (-) TimerEvent: {}
+[40.459647] (-) TimerEvent: {}
+[40.560669] (-) TimerEvent: {}
+[40.661656] (-) TimerEvent: {}
+[40.762684] (-) TimerEvent: {}
+[40.863662] (-) TimerEvent: {}
+[40.964650] (-) TimerEvent: {}
+[41.065702] (-) TimerEvent: {}
+[41.166981] (-) TimerEvent: {}
+[41.268046] (-) TimerEvent: {}
+[41.369141] (-) TimerEvent: {}
+[41.470215] (-) TimerEvent: {}
+[41.571259] (-) TimerEvent: {}
+[41.672313] (-) TimerEvent: {}
+[41.773360] (-) TimerEvent: {}
+[41.874446] (-) TimerEvent: {}
+[41.975631] (-) TimerEvent: {}
+[42.077280] (-) TimerEvent: {}
+[42.178983] (-) TimerEvent: {}
+[42.280064] (-) TimerEvent: {}
+[42.381107] (-) TimerEvent: {}
+[42.482137] (-) TimerEvent: {}
+[42.583196] (-) TimerEvent: {}
+[42.684215] (-) TimerEvent: {}
+[42.785439] (-) TimerEvent: {}
+[42.887322] (-) TimerEvent: {}
+[42.988954] (-) TimerEvent: {}
+[43.090362] (-) TimerEvent: {}
+[43.191600] (-) TimerEvent: {}
+[43.292654] (-) TimerEvent: {}
+[43.393754] (-) TimerEvent: {}
+[43.494849] (-) TimerEvent: {}
+[43.595908] (-) TimerEvent: {}
+[43.696946] (-) TimerEvent: {}
+[43.798390] (-) TimerEvent: {}
+[43.899833] (-) TimerEvent: {}
+[44.001291] (-) TimerEvent: {}
+[44.102698] (-) TimerEvent: {}
+[44.204133] (-) TimerEvent: {}
+[44.305534] (-) TimerEvent: {}
+[44.407018] (-) TimerEvent: {}
+[44.508468] (-) TimerEvent: {}
+[44.609948] (-) TimerEvent: {}
+[44.711379] (-) TimerEvent: {}
+[44.812811] (-) TimerEvent: {}
+[44.914267] (-) TimerEvent: {}
+[45.015633] (-) TimerEvent: {}
+[45.117013] (-) TimerEvent: {}
+[45.218459] (-) TimerEvent: {}
+[46.074500] (-) TimerEvent: {}
+[46.176032] (-) TimerEvent: {}
+[46.277110] (-) TimerEvent: {}
+[46.378123] (-) TimerEvent: {}
+[46.479187] (-) TimerEvent: {}
+[46.580439] (-) TimerEvent: {}
+[46.681617] (-) TimerEvent: {}
+[46.782803] (-) TimerEvent: {}
+[46.883996] (-) TimerEvent: {}
+[46.985098] (-) TimerEvent: {}
+[47.086174] (-) TimerEvent: {}
+[47.187301] (-) TimerEvent: {}
+[47.288425] (-) TimerEvent: {}
+[47.389523] (-) TimerEvent: {}
+[47.490640] (-) TimerEvent: {}
+[47.591750] (-) TimerEvent: {}
+[47.692979] (-) TimerEvent: {}
+[47.794211] (-) TimerEvent: {}
+[47.895378] (-) TimerEvent: {}
+[47.996629] (-) TimerEvent: {}
+[48.097857] (-) TimerEvent: {}
+[48.199088] (-) TimerEvent: {}
+[48.300264] (-) TimerEvent: {}
+[48.401463] (-) TimerEvent: {}
+[48.502632] (-) TimerEvent: {}
+[48.603850] (-) TimerEvent: {}
+[48.705022] (-) TimerEvent: {}
+[48.823821] (-) TimerEvent: {}
+[48.925021] (-) TimerEvent: {}
+[49.026162] (-) TimerEvent: {}
+[49.127243] (-) TimerEvent: {}
+[49.228316] (-) TimerEvent: {}
+[49.329355] (-) TimerEvent: {}
+[49.430434] (-) TimerEvent: {}
+[49.531498] (-) TimerEvent: {}
+[49.632596] (-) TimerEvent: {}
+[49.733728] (-) TimerEvent: {}
+[49.834881] (-) TimerEvent: {}
+[49.935986] (-) TimerEvent: {}
+[50.037116] (-) TimerEvent: {}
+[50.138191] (-) TimerEvent: {}
+[50.239248] (-) TimerEvent: {}
+[50.340309] (-) TimerEvent: {}
+[50.441439] (-) TimerEvent: {}
+[50.542617] (-) TimerEvent: {}
+[50.643706] (-) TimerEvent: {}
+[50.744921] (-) TimerEvent: {}
+[50.846569] (-) TimerEvent: {}
+[50.948522] (-) TimerEvent: {}
+[51.049698] (-) TimerEvent: {}
+[51.150795] (-) TimerEvent: {}
+[51.251887] (-) TimerEvent: {}
+[51.352990] (-) TimerEvent: {}
+[51.454041] (-) TimerEvent: {}
+[51.555055] (-) TimerEvent: {}
+[51.656120] (-) TimerEvent: {}
+[51.757177] (-) TimerEvent: {}
+[51.858950] (-) TimerEvent: {}
+[51.959993] (-) TimerEvent: {}
+[52.061057] (-) TimerEvent: {}
+[52.162148] (-) TimerEvent: {}
+[52.263387] (-) TimerEvent: {}
+[52.365160] (-) TimerEvent: {}
+[52.466490] (-) TimerEvent: {}
+[52.568896] (-) TimerEvent: {}
+[52.671031] (-) TimerEvent: {}
+[52.773032] (-) TimerEvent: {}
+[52.874595] (-) TimerEvent: {}
+[52.976404] (-) TimerEvent: {}
+[53.077951] (-) TimerEvent: {}
+[53.179516] (-) TimerEvent: {}
+[53.281475] (-) TimerEvent: {}
+[53.383412] (-) TimerEvent: {}
+[53.484890] (-) TimerEvent: {}
+[53.587007] (-) TimerEvent: {}
+[53.688363] (-) TimerEvent: {}
+[53.789243] (-) TimerEvent: {}
+[53.890170] (-) TimerEvent: {}
+[53.991026] (-) TimerEvent: {}
+[54.091947] (-) TimerEvent: {}
+[54.192896] (-) TimerEvent: {}
+[54.293879] (-) TimerEvent: {}
+[54.394903] (-) TimerEvent: {}
+[54.495924] (-) TimerEvent: {}
+[54.596986] (-) TimerEvent: {}
+[54.698002] (-) TimerEvent: {}
+[54.799421] (-) TimerEvent: {}
+[54.900807] (-) TimerEvent: {}
+[55.002188] (-) TimerEvent: {}
+[55.103561] (-) TimerEvent: {}
+[55.204931] (-) TimerEvent: {}
+[55.363207] (-) TimerEvent: {}
+[55.464596] (-) TimerEvent: {}
+[55.565921] (-) TimerEvent: {}
+[55.667367] (-) TimerEvent: {}
+[55.768732] (-) TimerEvent: {}
+[55.870116] (-) TimerEvent: {}
+[55.971509] (-) TimerEvent: {}
+[56.072846] (-) TimerEvent: {}
+[56.174169] (-) TimerEvent: {}
+[56.275184] (-) TimerEvent: {}
+[56.376817] (-) TimerEvent: {}
+[56.479195] (-) TimerEvent: {}
+[56.580763] (-) TimerEvent: {}
+[56.681928] (-) TimerEvent: {}
+[56.783289] (-) TimerEvent: {}
+[56.884649] (-) TimerEvent: {}
+[56.985935] (-) TimerEvent: {}
+[57.086908] (-) TimerEvent: {}
+[57.187883] (-) TimerEvent: {}
+[57.288794] (-) TimerEvent: {}
+[57.389732] (-) TimerEvent: {}
+[57.490695] (-) TimerEvent: {}
+[57.591610] (-) TimerEvent: {}
+[57.692537] (-) TimerEvent: {}
+[57.694122] (relbot_simulator) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking CXX executable sequence_controller\x1b[0m\n'}
+[57.792811] (-) TimerEvent: {}
+[57.894554] (-) TimerEvent: {}
+[57.996404] (-) TimerEvent: {}
+[58.097684] (-) TimerEvent: {}
+[58.199144] (-) TimerEvent: {}
+[58.300468] (-) TimerEvent: {}
+[58.401883] (-) TimerEvent: {}
+[58.503176] (-) TimerEvent: {}
+[58.604640] (-) TimerEvent: {}
+[58.706122] (-) TimerEvent: {}
+[58.807537] (-) TimerEvent: {}
+[58.908954] (-) TimerEvent: {}
+[59.010452] (-) TimerEvent: {}
+[59.111777] (-) TimerEvent: {}
+[59.213229] (-) TimerEvent: {}
+[59.314601] (-) TimerEvent: {}
+[59.416038] (-) TimerEvent: {}
+[59.517466] (-) TimerEvent: {}
+[59.618860] (-) TimerEvent: {}
+[59.720173] (-) TimerEvent: {}
+[59.821615] (-) TimerEvent: {}
+[59.923092] (-) TimerEvent: {}
+[60.025013] (-) TimerEvent: {}
+[60.127574] (-) TimerEvent: {}
+[60.229456] (-) TimerEvent: {}
+[62.191222] (-) TimerEvent: {}
+[62.292216] (-) TimerEvent: {}
+[62.394416] (-) TimerEvent: {}
+[62.496907] (-) TimerEvent: {}
+[62.599531] (-) TimerEvent: {}
+[62.701944] (-) TimerEvent: {}
+[62.803318] (-) TimerEvent: {}
+[62.905113] (-) TimerEvent: {}
+[62.944478] (relbot_simulator) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX executable colour_tracker\x1b[0m\n'}
+[63.005529] (-) TimerEvent: {}
+[63.107154] (-) TimerEvent: {}
+[63.209069] (-) TimerEvent: {}
+[63.310909] (-) TimerEvent: {}
+[63.412891] (-) TimerEvent: {}
+[63.515371] (-) TimerEvent: {}
+[63.617687] (-) TimerEvent: {}
+[63.720030] (-) TimerEvent: {}
+[63.822018] (-) TimerEvent: {}
+[63.923968] (-) TimerEvent: {}
+[64.025906] (-) TimerEvent: {}
+[64.127752] (-) TimerEvent: {}
+[64.238027] (-) TimerEvent: {}
+[64.340006] (-) TimerEvent: {}
+[64.441882] (-) TimerEvent: {}
+[64.543769] (-) TimerEvent: {}
+[64.645593] (-) TimerEvent: {}
+[64.747054] (-) TimerEvent: {}
+[64.848652] (-) TimerEvent: {}
+[64.950061] (-) TimerEvent: {}
+[65.051612] (-) TimerEvent: {}
+[65.153099] (-) TimerEvent: {}
+[65.245028] (relbot_simulator) StdoutLine: {'line': b'[ 38%] Built target sequence_controller\n'}
+[65.253345] (-) TimerEvent: {}
+[65.269854] (relbot_simulator) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/Plant.cpp.o\x1b[0m\n'}
+[65.353571] (-) TimerEvent: {}
+[65.454896] (-) TimerEvent: {}
+[65.556198] (-) TimerEvent: {}
+[65.657573] (-) TimerEvent: {}
+[65.758965] (-) TimerEvent: {}
+[65.860246] (-) TimerEvent: {}
+[65.961789] (-) TimerEvent: {}
+[66.063227] (-) TimerEvent: {}
+[66.164519] (-) TimerEvent: {}
+[66.265833] (-) TimerEvent: {}
+[66.367581] (-) TimerEvent: {}
+[66.469526] (-) TimerEvent: {}
+[66.570476] (-) TimerEvent: {}
+[66.671805] (-) TimerEvent: {}
+[66.773349] (-) TimerEvent: {}
+[66.874701] (-) TimerEvent: {}
+[66.967272] (relbot_simulator) StdoutLine: {'line': b'[ 46%] Built target colour_tracker\n'}
+[66.974905] (-) TimerEvent: {}
+[67.075780] (-) TimerEvent: {}
+[67.176642] (-) TimerEvent: {}
+[67.277491] (-) TimerEvent: {}
+[67.378373] (-) TimerEvent: {}
+[67.479248] (-) TimerEvent: {}
+[67.580532] (-) TimerEvent: {}
+[67.681561] (-) TimerEvent: {}
+[67.782642] (-) TimerEvent: {}
+[67.883674] (-) TimerEvent: {}
+[67.984711] (-) TimerEvent: {}
+[68.085738] (-) TimerEvent: {}
+[68.186792] (-) TimerEvent: {}
+[68.287817] (-) TimerEvent: {}
+[68.388841] (-) TimerEvent: {}
+[68.489910] (-) TimerEvent: {}
+[68.590946] (-) TimerEvent: {}
+[68.691984] (-) TimerEvent: {}
+[68.793035] (-) TimerEvent: {}
+[68.894095] (-) TimerEvent: {}
+[68.995151] (-) TimerEvent: {}
+[69.096181] (-) TimerEvent: {}
+[69.197208] (-) TimerEvent: {}
+[69.298271] (-) TimerEvent: {}
+[69.399154] (-) TimerEvent: {}
+[69.500020] (-) TimerEvent: {}
+[69.601050] (-) TimerEvent: {}
+[69.702327] (-) TimerEvent: {}
+[69.803385] (-) TimerEvent: {}
+[69.904422] (-) TimerEvent: {}
+[70.005466] (-) TimerEvent: {}
+[70.106565] (-) TimerEvent: {}
+[70.207622] (-) TimerEvent: {}
+[70.308682] (-) TimerEvent: {}
+[70.409532] (-) TimerEvent: {}
+[70.510443] (-) TimerEvent: {}
+[70.611277] (-) TimerEvent: {}
+[70.712140] (-) TimerEvent: {}
+[70.813000] (-) TimerEvent: {}
+[70.913869] (-) TimerEvent: {}
+[71.014733] (-) TimerEvent: {}
+[71.115588] (-) TimerEvent: {}
+[71.216411] (-) TimerEvent: {}
+[71.317247] (-) TimerEvent: {}
+[71.418132] (-) TimerEvent: {}
+[71.518968] (-) TimerEvent: {}
+[71.619800] (-) TimerEvent: {}
+[71.720640] (-) TimerEvent: {}
+[71.821471] (-) TimerEvent: {}
+[71.922319] (-) TimerEvent: {}
+[72.023155] (-) TimerEvent: {}
+[72.123989] (-) TimerEvent: {}
+[72.224830] (-) TimerEvent: {}
+[72.325674] (-) TimerEvent: {}
+[72.426533] (-) TimerEvent: {}
+[72.527380] (-) TimerEvent: {}
+[72.628195] (-) TimerEvent: {}
+[72.729014] (-) TimerEvent: {}
+[72.829882] (-) TimerEvent: {}
+[72.930719] (-) TimerEvent: {}
+[73.031568] (-) TimerEvent: {}
+[73.132393] (-) TimerEvent: {}
+[73.233190] (-) TimerEvent: {}
+[73.334106] (-) TimerEvent: {}
+[73.434967] (-) TimerEvent: {}
+[73.535803] (-) TimerEvent: {}
+[73.636615] (-) TimerEvent: {}
+[73.737419] (-) TimerEvent: {}
+[73.838292] (-) TimerEvent: {}
+[73.939141] (-) TimerEvent: {}
+[74.039991] (-) TimerEvent: {}
+[74.140858] (-) TimerEvent: {}
+[74.241697] (-) TimerEvent: {}
+[74.342594] (-) TimerEvent: {}
+[74.443429] (-) TimerEvent: {}
+[74.544240] (-) TimerEvent: {}
+[74.645069] (-) TimerEvent: {}
+[74.745925] (-) TimerEvent: {}
+[74.846766] (-) TimerEvent: {}
+[74.947604] (-) TimerEvent: {}
+[75.048446] (-) TimerEvent: {}
+[75.149276] (-) TimerEvent: {}
+[75.250121] (-) TimerEvent: {}
+[75.350949] (-) TimerEvent: {}
+[75.451788] (-) TimerEvent: {}
+[75.552645] (-) TimerEvent: {}
+[75.653493] (-) TimerEvent: {}
+[75.754371] (-) TimerEvent: {}
+[75.855175] (-) TimerEvent: {}
+[75.956030] (-) TimerEvent: {}
+[76.056888] (-) TimerEvent: {}
+[76.157776] (-) TimerEvent: {}
+[76.258666] (-) TimerEvent: {}
+[76.359508] (-) TimerEvent: {}
+[76.460400] (-) TimerEvent: {}
+[76.561410] (-) TimerEvent: {}
+[76.662338] (-) TimerEvent: {}
+[76.763180] (-) TimerEvent: {}
+[76.863996] (-) TimerEvent: {}
+[76.964788] (-) TimerEvent: {}
+[77.065635] (-) TimerEvent: {}
+[77.166525] (-) TimerEvent: {}
+[77.267408] (-) TimerEvent: {}
+[77.368281] (-) TimerEvent: {}
+[77.469145] (-) TimerEvent: {}
+[77.569988] (-) TimerEvent: {}
+[77.670920] (-) TimerEvent: {}
+[77.771743] (-) TimerEvent: {}
+[77.872584] (-) TimerEvent: {}
+[77.973439] (-) TimerEvent: {}
+[78.074321] (-) TimerEvent: {}
+[78.175185] (-) TimerEvent: {}
+[78.276040] (-) TimerEvent: {}
+[78.376887] (-) TimerEvent: {}
+[78.477712] (-) TimerEvent: {}
+[78.578579] (-) TimerEvent: {}
+[78.679432] (-) TimerEvent: {}
+[78.780296] (-) TimerEvent: {}
+[78.881144] (-) TimerEvent: {}
+[78.981974] (-) TimerEvent: {}
+[79.082844] (-) TimerEvent: {}
+[79.183706] (-) TimerEvent: {}
+[79.284537] (-) TimerEvent: {}
+[79.385378] (-) TimerEvent: {}
+[79.486256] (-) TimerEvent: {}
+[79.587139] (-) TimerEvent: {}
+[79.687969] (-) TimerEvent: {}
+[79.788825] (-) TimerEvent: {}
+[79.889677] (-) TimerEvent: {}
+[79.990630] (-) TimerEvent: {}
+[80.092167] (-) TimerEvent: {}
+[80.195112] (-) TimerEvent: {}
+[80.296787] (-) TimerEvent: {}
+[82.790378] (-) TimerEvent: {}
+[82.891191] (-) TimerEvent: {}
+[82.991915] (-) TimerEvent: {}
+[83.092642] (-) TimerEvent: {}
+[83.193366] (-) TimerEvent: {}
+[83.294256] (-) TimerEvent: {}
+[83.395199] (-) TimerEvent: {}
+[83.496630] (-) TimerEvent: {}
+[83.597601] (-) TimerEvent: {}
+[83.698579] (-) TimerEvent: {}
+[83.799564] (-) TimerEvent: {}
+[83.900906] (-) TimerEvent: {}
+[84.001945] (-) TimerEvent: {}
+[84.057515] (relbot_simulator) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX executable relbot_simulator\x1b[0m\n'}
+[84.102180] (-) TimerEvent: {}
+[84.203527] (-) TimerEvent: {}
+[84.304697] (-) TimerEvent: {}
+[84.405699] (-) TimerEvent: {}
+[84.506700] (-) TimerEvent: {}
+[84.607830] (-) TimerEvent: {}
+[84.709295] (-) TimerEvent: {}
+[84.810525] (-) TimerEvent: {}
+[84.911902] (-) TimerEvent: {}
+[85.013125] (-) TimerEvent: {}
+[85.114372] (-) TimerEvent: {}
+[85.215784] (-) TimerEvent: {}
+[85.316850] (-) TimerEvent: {}
+[85.418123] (-) TimerEvent: {}
+[85.519536] (-) TimerEvent: {}
+[85.620555] (-) TimerEvent: {}
+[85.721571] (-) TimerEvent: {}
+[85.822748] (-) TimerEvent: {}
+[85.923960] (-) TimerEvent: {}
+[86.024916] (-) TimerEvent: {}
+[86.125944] (-) TimerEvent: {}
+[86.226856] (-) TimerEvent: {}
+[86.327767] (-) TimerEvent: {}
+[86.428603] (-) TimerEvent: {}
+[86.529340] (-) TimerEvent: {}
+[86.630093] (-) TimerEvent: {}
+[86.730837] (-) TimerEvent: {}
+[86.831721] (-) TimerEvent: {}
+[86.932910] (-) TimerEvent: {}
+[87.033682] (-) TimerEvent: {}
+[87.134464] (-) TimerEvent: {}
+[87.235221] (-) TimerEvent: {}
+[87.335992] (-) TimerEvent: {}
+[87.436882] (-) TimerEvent: {}
+[87.537919] (-) TimerEvent: {}
+[87.638804] (-) TimerEvent: {}
+[87.739754] (-) TimerEvent: {}
+[87.840722] (-) TimerEvent: {}
+[87.941619] (-) TimerEvent: {}
+[88.042406] (-) TimerEvent: {}
+[88.143119] (-) TimerEvent: {}
+[88.243821] (-) TimerEvent: {}
+[88.344534] (-) TimerEvent: {}
+[88.445312] (-) TimerEvent: {}
+[88.546204] (-) TimerEvent: {}
+[88.646991] (-) TimerEvent: {}
+[88.747704] (-) TimerEvent: {}
+[88.848410] (-) TimerEvent: {}
+[88.949153] (-) TimerEvent: {}
+[89.002167] (relbot_simulator) StdoutLine: {'line': b'[100%] Built target relbot_simulator\n'}
+[89.034276] (relbot_simulator) CommandEnded: {'returncode': 0}
+[89.037133] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'install'}
+[89.049535] (-) TimerEvent: {}
+[89.069241] (relbot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asdfr-19/ros2_ws/build/relbot_simulator'], 'cwd': '/home/asdfr-19/ros2_ws/build/relbot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.245 51514 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/relbot_simulator'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.245 51514 10.0.28.122 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[89.093251] (relbot_simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[89.094780] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/relbot_simulator\n'}
+[89.149660] (-) TimerEvent: {}
+[89.250489] (-) TimerEvent: {}
+[89.351243] (-) TimerEvent: {}
+[89.399367] (relbot_simulator) StdoutLine: {'line': b'-- Set runtime path of "/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/relbot_simulator" to ""\n'}
+[89.400540] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/sequence_controller\n'}
+[89.451408] (-) TimerEvent: {}
+[89.542758] (relbot_simulator) StdoutLine: {'line': b'-- Set runtime path of "/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/sequence_controller" to ""\n'}
+[89.543903] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/colour_tracker\n'}
+[89.551535] (-) TimerEvent: {}
+[89.652258] (-) TimerEvent: {}
+[89.686971] (relbot_simulator) StdoutLine: {'line': b'-- Set runtime path of "/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/colour_tracker" to ""\n'}
+[89.688305] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include\n'}
+[89.691797] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/Plant.h\n'}
+[89.693089] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/sequence_controller.hpp\n'}
+[89.694649] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/colour_tracker.hpp\n'}
+[89.695916] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/relbot_simulator.hpp\n'}
+[89.697021] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include\n'}
+[89.698108] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinverse.h\n'}
+[89.699281] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinteg.h\n'}
+[89.700338] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmatrix.cpp\n'}
+[89.701443] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmodel.h\n'}
+[89.702573] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/MotionProfiles.cpp\n'}
+[89.703662] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/EulerAngles.h\n'}
+[89.704756] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinverse.cpp\n'}
+[89.705958] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/MotionProfiles.h\n'}
+[89.707167] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxfuncs.cpp\n'}
+[89.708537] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxtypes.h\n'}
+[89.709648] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmatrix.h\n'}
+[89.710980] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinteg.cpp\n'}
+[89.712407] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxfuncs.h\n'}
+[89.713525] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/EulerAngles.cpp\n'}
+[89.714812] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/package_run_dependencies/relbot_simulator\n'}
+[89.716062] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/parent_prefix_path/relbot_simulator\n'}
+[89.717180] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.sh\n'}
+[89.718469] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.dsv\n'}
+[89.719574] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/path.sh\n'}
+[89.720758] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/path.dsv\n'}
+[89.721905] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.bash\n'}
+[89.723133] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.sh\n'}
+[89.724396] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.zsh\n'}
+[89.725898] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.dsv\n'}
+[89.728424] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.dsv\n'}
+[89.730693] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/packages/relbot_simulator\n'}
+[89.733343] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig.cmake\n'}
+[89.735233] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig-version.cmake\n'}
+[89.737315] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.xml\n'}
+[89.739068] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator//launch\n'}
+[89.743363] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator//launch/relbot_simulator.launch.py\n'}
+[89.744786] (relbot_simulator) CommandEnded: {'returncode': 0}
+[89.753243] (-) TimerEvent: {}
+[89.823606] (relbot_simulator) JobEnded: {'identifier': 'relbot_simulator', 'rc': 0}
+[89.826307] (-) EventReactorShutdown: {}

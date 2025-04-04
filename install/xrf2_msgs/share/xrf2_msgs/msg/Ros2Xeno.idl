@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xrf2_msgs/msg/Ros2Xeno.msg
+// generated code does not contain a copyright notice
+
+
+module xrf2_msgs {
+  module msg {
+    struct Ros2Xeno {
+      double left_mot_vel;
+
+      double right_mot_vel;
+    };
+  };
+};

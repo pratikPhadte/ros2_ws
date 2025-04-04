@@ -1,0 +1,14 @@
+[  7%] [32mBuilding CXX object CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o[0m
+[ 30%] Built target sequence_controller
+In file included from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:1[m[K:
+[01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/colour_tracker.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+    7 | #include [01;31m[K"cv_bridge/cv_bridge.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/colour_tracker.dir/build.make:76: CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/colour_tracker.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 38%] [32m[1mLinking CXX executable relbot_simulator[0m
+[ 92%] Built target relbot_simulator
+gmake: *** [Makefile:146: all] Error 2

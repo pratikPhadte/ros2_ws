@@ -1,0 +1,21 @@
+{
+  "package_name": "xrf2_msgs",
+  "output_dir": "/home/asdfr-19/ros2_ws/build/xrf2_msgs/rosidl_typesupport_introspection_cpp/xrf2_msgs",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/home/asdfr-19/ros2_ws/build/xrf2_msgs/rosidl_adapter/xrf2_msgs:msg/Ros2Xeno.idl",
+    "/home/asdfr-19/ros2_ws/build/xrf2_msgs/rosidl_adapter/xrf2_msgs:msg/Xeno2Ros.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/asdfr-19/ros2_ws/build/xrf2_msgs/rosidl_adapter/xrf2_msgs/msg/Ros2Xeno.idl",
+    "/home/asdfr-19/ros2_ws/build/xrf2_msgs/rosidl_adapter/xrf2_msgs/msg/Xeno2Ros.idl"
+  ]
+}

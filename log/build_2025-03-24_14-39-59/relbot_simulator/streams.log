@@ -1,0 +1,25 @@
+[0.033s] Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target relbot_simulator[0m
+[0.169s] [  7%] [32mBuilding CXX object CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o[0m
+[0.193s] [ 23%] Built target sequence_controller
+[0.272s] [ 30%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o[0m
+[0.275s] [ 38%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxinverse.cpp.o[0m
+[0.864s] In file included from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:1[m[K:
+[0.866s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/colour_tracker.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+[0.868s]     7 | #include [01;31m[K"cv_bridge/cv_bridge.hpp"[m[K
+[0.869s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.872s] compilation terminated.
+[0.873s] gmake[2]: *** [CMakeFiles/colour_tracker.dir/build.make:76: CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o] Error 1
+[0.874s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/colour_tracker.dir/all] Error 2
+[0.876s] gmake[1]: *** Waiting for unfinished jobs....
+[0.908s] [ 46%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxmatrix.cpp.o[0m
+[1.154s] In file included from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/relbot_simulator.cpp:1[m[K:
+[1.156s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/relbot_simulator.hpp:31:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+[1.158s]    31 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
+[1.159s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.161s] compilation terminated.
+[1.162s] gmake[2]: *** [CMakeFiles/relbot_simulator.dir/build.make:76: CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o] Error 1
+[1.163s] gmake[2]: *** Waiting for unfinished jobs....
+[1.673s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/relbot_simulator.dir/all] Error 2
+[1.674s] gmake: *** [Makefile:146: all] Error 2
+[1.680s] Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3

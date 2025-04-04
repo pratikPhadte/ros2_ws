@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "xrf2_msgs__py",
+		"source" : "/home/asdfr-19/ros2_ws/build/xrf2_msgs/xrf2_msgs__py"
+	}
+}

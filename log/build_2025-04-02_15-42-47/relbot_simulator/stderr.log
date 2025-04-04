@@ -1,0 +1,24 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/colour_tracker.hpp:4[m[K,
+                 from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:1[m[K:
+[01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:[m[K In member function ‘[01m[Kvoid ColourTracker::image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:109:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kresized_image[m[K’ was not declared in this scope
+  109 |     RCLCPP_INFO(this->get_logger(), "Image size: %d x %d", [01;31m[Kresized_image[m[K.cols, resized_image.rows);
+      |                                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:112:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage[m[K’ was not declared in this scope
+  112 |     cv::imshow("Orange Object Detection", [01;31m[Kimage[m[K);
+      |                                           [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/colour_tracker.dir/build.make:76: CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/colour_tracker.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

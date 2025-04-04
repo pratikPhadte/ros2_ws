@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target relbot_simulator[0m
+[  7%] [32mBuilding CXX object CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o[0m
+[ 23%] Built target sequence_controller
+[ 30%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o[0m
+In file included from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/relbot_simulator.cpp:1[m[K:
+[01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/relbot_simulator.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+   10 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/relbot_simulator.dir/build.make:76: CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/relbot_simulator.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/colour_tracker.cpp:1[m[K:
+[01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/colour_tracker.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+    7 | #include [01;31m[K"cv_bridge/cv_bridge.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/colour_tracker.dir/build.make:76: CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/colour_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
