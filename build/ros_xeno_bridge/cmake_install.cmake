@@ -1,4 +1,4 @@
-# Install script for directory: /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Ros/ros_xeno_bridge
+# Install script for directory: /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -118,7 +118,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_xeno_bridge" TYPE FILE FILES "/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Ros/ros_xeno_bridge/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_xeno_bridge" TYPE FILE FILES "/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs
+CMAKE_SOURCE_DIR = /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/asdfr-19/ros2_ws/build/xrf2_msgs

@@ -57,13 +57,13 @@ class Ros2Xeno(metaclass=Metaclass_Ros2Xeno):
     """Message class 'Ros2Xeno'."""
 
     __slots__ = [
-        '_left_mot_vel',
-        '_right_mot_vel',
+        '_leftmotvel',
+        '_rightmotvel',
     ]
 
     _fields_and_field_types = {
-        'left_mot_vel': 'double',
-        'right_mot_vel': 'double',
+        'leftmotvel': 'double',
+        'rightmotvel': 'double',
     }
 
     SLOT_TYPES = (
@@ -75,8 +75,8 @@ class Ros2Xeno(metaclass=Metaclass_Ros2Xeno):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.left_mot_vel = kwargs.get('left_mot_vel', float())
-        self.right_mot_vel = kwargs.get('right_mot_vel', float())
+        self.leftmotvel = kwargs.get('leftmotvel', float())
+        self.rightmotvel = kwargs.get('rightmotvel', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -107,9 +107,9 @@ class Ros2Xeno(metaclass=Metaclass_Ros2Xeno):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.left_mot_vel != other.left_mot_vel:
+        if self.leftmotvel != other.leftmotvel:
             return False
-        if self.right_mot_vel != other.right_mot_vel:
+        if self.rightmotvel != other.rightmotvel:
             return False
         return True
 
@@ -119,31 +119,31 @@ class Ros2Xeno(metaclass=Metaclass_Ros2Xeno):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def left_mot_vel(self):
-        """Message field 'left_mot_vel'."""
-        return self._left_mot_vel
+    def leftmotvel(self):
+        """Message field 'leftmotvel'."""
+        return self._leftmotvel
 
-    @left_mot_vel.setter
-    def left_mot_vel(self, value):
+    @leftmotvel.setter
+    def leftmotvel(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'left_mot_vel' field must be of type 'float'"
+                "The 'leftmotvel' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'left_mot_vel' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._left_mot_vel = value
+                "The 'leftmotvel' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._leftmotvel = value
 
     @builtins.property
-    def right_mot_vel(self):
-        """Message field 'right_mot_vel'."""
-        return self._right_mot_vel
+    def rightmotvel(self):
+        """Message field 'rightmotvel'."""
+        return self._rightmotvel
 
-    @right_mot_vel.setter
-    def right_mot_vel(self, value):
+    @rightmotvel.setter
+    def rightmotvel(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'right_mot_vel' field must be of type 'float'"
+                "The 'rightmotvel' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'right_mot_vel' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._right_mot_vel = value
+                "The 'rightmotvel' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._rightmotvel = value

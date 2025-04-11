@@ -25,17 +25,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: left_mot_vel
+  // member: leftmotvel
   {
-    out << "left_mot_vel: ";
-    rosidl_generator_traits::value_to_yaml(msg.left_mot_vel, out);
+    out << "leftmotvel: ";
+    rosidl_generator_traits::value_to_yaml(msg.leftmotvel, out);
     out << ", ";
   }
 
-  // member: right_mot_vel
+  // member: rightmotvel
   {
-    out << "right_mot_vel: ";
-    rosidl_generator_traits::value_to_yaml(msg.right_mot_vel, out);
+    out << "rightmotvel: ";
+    rosidl_generator_traits::value_to_yaml(msg.rightmotvel, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -44,23 +44,23 @@ inline void to_block_style_yaml(
   const Ros2Xeno & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: left_mot_vel
+  // member: leftmotvel
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "left_mot_vel: ";
-    rosidl_generator_traits::value_to_yaml(msg.left_mot_vel, out);
+    out << "leftmotvel: ";
+    rosidl_generator_traits::value_to_yaml(msg.leftmotvel, out);
     out << "\n";
   }
 
-  // member: right_mot_vel
+  // member: rightmotvel
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "right_mot_vel: ";
-    rosidl_generator_traits::value_to_yaml(msg.right_mot_vel, out);
+    out << "rightmotvel: ";
+    rosidl_generator_traits::value_to_yaml(msg.rightmotvel, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

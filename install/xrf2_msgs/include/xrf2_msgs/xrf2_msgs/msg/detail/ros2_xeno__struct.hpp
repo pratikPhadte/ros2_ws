@@ -38,8 +38,8 @@ struct Ros2Xeno_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->left_mot_vel = 0.0;
-      this->right_mot_vel = 0.0;
+      this->leftmotvel = 0.0;
+      this->rightmotvel = 0.0;
     }
   }
 
@@ -49,30 +49,30 @@ struct Ros2Xeno_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->left_mot_vel = 0.0;
-      this->right_mot_vel = 0.0;
+      this->leftmotvel = 0.0;
+      this->rightmotvel = 0.0;
     }
   }
 
   // field types and members
-  using _left_mot_vel_type =
+  using _leftmotvel_type =
     double;
-  _left_mot_vel_type left_mot_vel;
-  using _right_mot_vel_type =
+  _leftmotvel_type leftmotvel;
+  using _rightmotvel_type =
     double;
-  _right_mot_vel_type right_mot_vel;
+  _rightmotvel_type rightmotvel;
 
   // setters for named parameter idiom
-  Type & set__left_mot_vel(
+  Type & set__leftmotvel(
     const double & _arg)
   {
-    this->left_mot_vel = _arg;
+    this->leftmotvel = _arg;
     return *this;
   }
-  Type & set__right_mot_vel(
+  Type & set__rightmotvel(
     const double & _arg)
   {
-    this->right_mot_vel = _arg;
+    this->rightmotvel = _arg;
     return *this;
   }
 
@@ -118,10 +118,10 @@ struct Ros2Xeno_
   // comparison operators
   bool operator==(const Ros2Xeno_ & other) const
   {
-    if (this->left_mot_vel != other.left_mot_vel) {
+    if (this->leftmotvel != other.leftmotvel) {
       return false;
     }
-    if (this->right_mot_vel != other.right_mot_vel) {
+    if (this->rightmotvel != other.rightmotvel) {
       return false;
     }
     return true;

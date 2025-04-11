@@ -17,8 +17,8 @@ xrf2_msgs__msg__Ros2Xeno__init(xrf2_msgs__msg__Ros2Xeno * msg)
   if (!msg) {
     return false;
   }
-  // left_mot_vel
-  // right_mot_vel
+  // leftmotvel
+  // rightmotvel
   return true;
 }
 
@@ -28,8 +28,8 @@ xrf2_msgs__msg__Ros2Xeno__fini(xrf2_msgs__msg__Ros2Xeno * msg)
   if (!msg) {
     return;
   }
-  // left_mot_vel
-  // right_mot_vel
+  // leftmotvel
+  // rightmotvel
 }
 
 bool
@@ -38,12 +38,12 @@ xrf2_msgs__msg__Ros2Xeno__are_equal(const xrf2_msgs__msg__Ros2Xeno * lhs, const 
   if (!lhs || !rhs) {
     return false;
   }
-  // left_mot_vel
-  if (lhs->left_mot_vel != rhs->left_mot_vel) {
+  // leftmotvel
+  if (lhs->leftmotvel != rhs->leftmotvel) {
     return false;
   }
-  // right_mot_vel
-  if (lhs->right_mot_vel != rhs->right_mot_vel) {
+  // rightmotvel
+  if (lhs->rightmotvel != rhs->rightmotvel) {
     return false;
   }
   return true;
@@ -57,10 +57,10 @@ xrf2_msgs__msg__Ros2Xeno__copy(
   if (!input || !output) {
     return false;
   }
-  // left_mot_vel
-  output->left_mot_vel = input->left_mot_vel;
-  // right_mot_vel
-  output->right_mot_vel = input->right_mot_vel;
+  // leftmotvel
+  output->leftmotvel = input->leftmotvel;
+  // rightmotvel
+  output->rightmotvel = input->rightmotvel;
   return true;
 }
 

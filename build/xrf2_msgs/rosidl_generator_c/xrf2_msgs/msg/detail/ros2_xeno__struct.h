@@ -20,8 +20,8 @@ extern "C"
 /// Struct defined in msg/Ros2Xeno in the package xrf2_msgs.
 typedef struct xrf2_msgs__msg__Ros2Xeno
 {
-  double left_mot_vel;
-  double right_mot_vel;
+  double leftmotvel;
+  double rightmotvel;
 } xrf2_msgs__msg__Ros2Xeno;
 
 // Struct for a sequence of xrf2_msgs__msg__Ros2Xeno.

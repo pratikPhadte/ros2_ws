@@ -49,14 +49,14 @@ static bool _Ros2Xeno__cdr_serialize(
     return false;
   }
   const _Ros2Xeno__ros_msg_type * ros_message = static_cast<const _Ros2Xeno__ros_msg_type *>(untyped_ros_message);
-  // Field name: left_mot_vel
+  // Field name: leftmotvel
   {
-    cdr << ros_message->left_mot_vel;
+    cdr << ros_message->leftmotvel;
   }
 
-  // Field name: right_mot_vel
+  // Field name: rightmotvel
   {
-    cdr << ros_message->right_mot_vel;
+    cdr << ros_message->rightmotvel;
   }
 
   return true;
@@ -71,14 +71,14 @@ static bool _Ros2Xeno__cdr_deserialize(
     return false;
   }
   _Ros2Xeno__ros_msg_type * ros_message = static_cast<_Ros2Xeno__ros_msg_type *>(untyped_ros_message);
-  // Field name: left_mot_vel
+  // Field name: leftmotvel
   {
-    cdr >> ros_message->left_mot_vel;
+    cdr >> ros_message->leftmotvel;
   }
 
-  // Field name: right_mot_vel
+  // Field name: rightmotvel
   {
-    cdr >> ros_message->right_mot_vel;
+    cdr >> ros_message->rightmotvel;
   }
 
   return true;
@@ -98,15 +98,15 @@ size_t get_serialized_size_xrf2_msgs__msg__Ros2Xeno(
   (void)padding;
   (void)wchar_size;
 
-  // field.name left_mot_vel
+  // field.name leftmotvel
   {
-    size_t item_size = sizeof(ros_message->left_mot_vel);
+    size_t item_size = sizeof(ros_message->leftmotvel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name right_mot_vel
+  // field.name rightmotvel
   {
-    size_t item_size = sizeof(ros_message->right_mot_vel);
+    size_t item_size = sizeof(ros_message->rightmotvel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -139,7 +139,7 @@ size_t max_serialized_size_xrf2_msgs__msg__Ros2Xeno(
   full_bounded = true;
   is_plain = true;
 
-  // member: left_mot_vel
+  // member: leftmotvel
   {
     size_t array_size = 1;
 
@@ -147,7 +147,7 @@ size_t max_serialized_size_xrf2_msgs__msg__Ros2Xeno(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: right_mot_vel
+  // member: rightmotvel
   {
     size_t array_size = 1;
 
@@ -164,7 +164,7 @@ size_t max_serialized_size_xrf2_msgs__msg__Ros2Xeno(
     using DataType = xrf2_msgs__msg__Ros2Xeno;
     is_plain =
       (
-      offsetof(DataType, right_mot_vel) +
+      offsetof(DataType, rightmotvel) +
       last_member_size
       ) == ret_val;
   }

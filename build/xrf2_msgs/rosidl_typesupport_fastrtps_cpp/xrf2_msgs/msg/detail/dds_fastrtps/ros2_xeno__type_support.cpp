@@ -32,10 +32,10 @@ cdr_serialize(
   const xrf2_msgs::msg::Ros2Xeno & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: left_mot_vel
-  cdr << ros_message.left_mot_vel;
-  // Member: right_mot_vel
-  cdr << ros_message.right_mot_vel;
+  // Member: leftmotvel
+  cdr << ros_message.leftmotvel;
+  // Member: rightmotvel
+  cdr << ros_message.rightmotvel;
   return true;
 }
 
@@ -45,11 +45,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   xrf2_msgs::msg::Ros2Xeno & ros_message)
 {
-  // Member: left_mot_vel
-  cdr >> ros_message.left_mot_vel;
+  // Member: leftmotvel
+  cdr >> ros_message.leftmotvel;
 
-  // Member: right_mot_vel
-  cdr >> ros_message.right_mot_vel;
+  // Member: rightmotvel
+  cdr >> ros_message.rightmotvel;
 
   return true;
 }
@@ -67,15 +67,15 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: left_mot_vel
+  // Member: leftmotvel
   {
-    size_t item_size = sizeof(ros_message.left_mot_vel);
+    size_t item_size = sizeof(ros_message.leftmotvel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: right_mot_vel
+  // Member: rightmotvel
   {
-    size_t item_size = sizeof(ros_message.right_mot_vel);
+    size_t item_size = sizeof(ros_message.rightmotvel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -103,7 +103,7 @@ max_serialized_size_Ros2Xeno(
   is_plain = true;
 
 
-  // Member: left_mot_vel
+  // Member: leftmotvel
   {
     size_t array_size = 1;
 
@@ -112,7 +112,7 @@ max_serialized_size_Ros2Xeno(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: right_mot_vel
+  // Member: rightmotvel
   {
     size_t array_size = 1;
 
@@ -129,7 +129,7 @@ max_serialized_size_Ros2Xeno(
     using DataType = xrf2_msgs::msg::Ros2Xeno;
     is_plain =
       (
-      offsetof(DataType, right_mot_vel) +
+      offsetof(DataType, rightmotvel) +
       last_member_size
       ) == ret_val;
   }

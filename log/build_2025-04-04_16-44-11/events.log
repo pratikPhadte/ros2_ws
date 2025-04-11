@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001241] (-) JobUnselected: {'identifier': 'relbot_simulator'}
-[0.001505] (-) JobUnselected: {'identifier': 'ros_xeno_bridge'}
-[0.001774] (-) JobUnselected: {'identifier': 'template_20sim'}
-[0.002033] (-) JobUnselected: {'identifier': 'xrf2_msgs'}
-[0.002322] (-) EventReactorShutdown: {}

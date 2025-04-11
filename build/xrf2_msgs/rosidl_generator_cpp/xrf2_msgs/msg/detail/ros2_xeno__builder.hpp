@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Ros2Xeno_right_mot_vel
+class Init_Ros2Xeno_rightmotvel
 {
 public:
-  explicit Init_Ros2Xeno_right_mot_vel(::xrf2_msgs::msg::Ros2Xeno & msg)
+  explicit Init_Ros2Xeno_rightmotvel(::xrf2_msgs::msg::Ros2Xeno & msg)
   : msg_(msg)
   {}
-  ::xrf2_msgs::msg::Ros2Xeno right_mot_vel(::xrf2_msgs::msg::Ros2Xeno::_right_mot_vel_type arg)
+  ::xrf2_msgs::msg::Ros2Xeno rightmotvel(::xrf2_msgs::msg::Ros2Xeno::_rightmotvel_type arg)
   {
-    msg_.right_mot_vel = std::move(arg);
+    msg_.rightmotvel = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,16 +37,16 @@ private:
   ::xrf2_msgs::msg::Ros2Xeno msg_;
 };
 
-class Init_Ros2Xeno_left_mot_vel
+class Init_Ros2Xeno_leftmotvel
 {
 public:
-  Init_Ros2Xeno_left_mot_vel()
+  Init_Ros2Xeno_leftmotvel()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Ros2Xeno_right_mot_vel left_mot_vel(::xrf2_msgs::msg::Ros2Xeno::_left_mot_vel_type arg)
+  Init_Ros2Xeno_rightmotvel leftmotvel(::xrf2_msgs::msg::Ros2Xeno::_leftmotvel_type arg)
   {
-    msg_.left_mot_vel = std::move(arg);
-    return Init_Ros2Xeno_right_mot_vel(msg_);
+    msg_.leftmotvel = std::move(arg);
+    return Init_Ros2Xeno_rightmotvel(msg_);
   }
 
 private:
@@ -64,7 +64,7 @@ template<>
 inline
 auto build<::xrf2_msgs::msg::Ros2Xeno>()
 {
-  return xrf2_msgs::msg::builder::Init_Ros2Xeno_left_mot_vel();
+  return xrf2_msgs::msg::builder::Init_Ros2Xeno_leftmotvel();
 }
 
 }  // namespace xrf2_msgs

@@ -1,0 +1,61 @@
+[0.038s] Invoking command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge -DCMAKE_INSTALL_PREFIX=/home/asdfr-19/ros2_ws/install/ros_xeno_bridge
+[0.250s] -- The C compiler identification is GNU 11.4.0
+[0.485s] -- The CXX compiler identification is GNU 11.4.0
+[0.512s] -- Detecting C compiler ABI info
+[0.817s] -- Detecting C compiler ABI info - done
+[0.848s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.850s] -- Detecting C compile features
+[0.851s] -- Detecting C compile features - done
+[0.861s] -- Detecting CXX compiler ABI info
+[1.187s] -- Detecting CXX compiler ABI info - done
+[1.222s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.225s] -- Detecting CXX compile features
+[1.226s] -- Detecting CXX compile features - done
+[1.236s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.016s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.428s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.586s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.603s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.633s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.691s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.763s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.926s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.935s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.274s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.359s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.476s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.503s] -- Looking for pthread.h
+[3.768s] -- Looking for pthread.h - found
+[3.772s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.046s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.056s] -- Found Threads: TRUE  
+[4.291s] -- Found xrf2_msgs: 0.0.0 (/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake)
+[4.700s] -- Configuring done
+[4.772s] -- Generating done
+[4.812s] -- Build files have been written to: /home/asdfr-19/ros2_ws/build/ros_xeno_bridge
+[4.871s] Invoked command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge' returned '0': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge -DCMAKE_INSTALL_PREFIX=/home/asdfr-19/ros2_ws/install/ros_xeno_bridge
+[4.874s] Invoking command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/ros_xeno_bridge -- -j3 -l3
+[5.159s] [ 50%] [32mBuilding CXX object CMakeFiles/RosXenoBridge.dir/src/RosXenoBridge.cpp.o[0m
+[88.769s] [100%] [32m[1mLinking CXX executable RosXenoBridge[0m
+[91.680s] [100%] Built target RosXenoBridge
+[91.712s] Invoked command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge' returned '0': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/ros_xeno_bridge -- -j3 -l3
+[91.718s] Invoking command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/ros_xeno_bridge
+[91.738s] -- Install configuration: ""
+[91.740s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/ros_xeno_bridge/RosXenoBridge
+[91.962s] -- Set runtime path of "/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/ros_xeno_bridge/RosXenoBridge" to ""
+[91.963s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/package_run_dependencies/ros_xeno_bridge
+[91.965s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/parent_prefix_path/ros_xeno_bridge
+[91.966s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/ament_prefix_path.sh
+[91.968s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/ament_prefix_path.dsv
+[91.970s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/path.sh
+[91.971s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/path.dsv
+[91.973s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.bash
+[91.974s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.sh
+[91.976s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.zsh
+[91.977s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.dsv
+[91.979s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.dsv
+[91.981s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/packages/ros_xeno_bridge
+[91.982s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/cmake/ros_xeno_bridgeConfig.cmake
+[91.984s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/cmake/ros_xeno_bridgeConfig-version.cmake
+[92.000s] -- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.xml
+[92.001s] Invoked command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge' returned '0': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/ros_xeno_bridge

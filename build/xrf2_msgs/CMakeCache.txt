@@ -424,7 +424,7 @@ xrf2_msgs_BINARY_DIR:STATIC=/home/asdfr-19/ros2_ws/build/xrf2_msgs
 xrf2_msgs_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-xrf2_msgs_SOURCE_DIR:STATIC=/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs
+xrf2_msgs_SOURCE_DIR:STATIC=/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs
 
 //Dependencies for the target
 xrf2_msgs__rosidl_generator_c_LIB_DEPENDS:STATIC=general;rosidl_runtime_c::rosidl_runtime_c;general;rcutils::rcutils;
@@ -544,7 +544,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

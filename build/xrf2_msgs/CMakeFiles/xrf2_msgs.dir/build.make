@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs
+CMAKE_SOURCE_DIR = /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/asdfr-19/ros2_ws/build/xrf2_msgs
@@ -66,8 +66,8 @@ include CMakeFiles/xrf2_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/xrf2_msgs.dir/progress.make
 
-CMakeFiles/xrf2_msgs: /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs/msg/Ros2Xeno.msg
-CMakeFiles/xrf2_msgs: /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs/msg/Xeno2Ros.msg
+CMakeFiles/xrf2_msgs: /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs/msg/Ros2Xeno.msg
+CMakeFiles/xrf2_msgs: /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs/msg/Xeno2Ros.msg
 
 xrf2_msgs: CMakeFiles/xrf2_msgs
 xrf2_msgs: CMakeFiles/xrf2_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/xrf2_msgs.dir/clean:
 .PHONY : CMakeFiles/xrf2_msgs.dir/clean
 
 CMakeFiles/xrf2_msgs.dir/depend:
-	cd /home/asdfr-19/ros2_ws/build/xrf2_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs /home/asdfr-19/ros2_ws/build/xrf2_msgs /home/asdfr-19/ros2_ws/build/xrf2_msgs /home/asdfr-19/ros2_ws/build/xrf2_msgs/CMakeFiles/xrf2_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/asdfr-19/ros2_ws/build/xrf2_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs /home/asdfr-19/ros2_ws/build/xrf2_msgs /home/asdfr-19/ros2_ws/build/xrf2_msgs /home/asdfr-19/ros2_ws/build/xrf2_msgs/CMakeFiles/xrf2_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/xrf2_msgs.dir/depend
 

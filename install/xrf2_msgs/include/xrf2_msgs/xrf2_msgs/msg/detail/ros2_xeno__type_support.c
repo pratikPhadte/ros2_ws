@@ -33,14 +33,14 @@ void xrf2_msgs__msg__Ros2Xeno__rosidl_typesupport_introspection_c__Ros2Xeno_fini
 
 static rosidl_typesupport_introspection_c__MessageMember xrf2_msgs__msg__Ros2Xeno__rosidl_typesupport_introspection_c__Ros2Xeno_message_member_array[2] = {
   {
-    "left_mot_vel",  // name
+    "leftmotvel",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(xrf2_msgs__msg__Ros2Xeno, left_mot_vel),  // bytes offset in struct
+    offsetof(xrf2_msgs__msg__Ros2Xeno, leftmotvel),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,14 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember xrf2_msgs__msg__Ros2Xen
     NULL  // resize(index) function pointer
   },
   {
-    "right_mot_vel",  // name
+    "rightmotvel",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(xrf2_msgs__msg__Ros2Xeno, right_mot_vel),  // bytes offset in struct
+    offsetof(xrf2_msgs__msg__Ros2Xeno, rightmotvel),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

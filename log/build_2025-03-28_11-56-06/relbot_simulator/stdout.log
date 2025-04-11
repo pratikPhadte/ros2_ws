@@ -1,6 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target sequence_controller[0m
-[35m[1mConsolidate compiler generated dependencies of target colour_tracker[0m
-[35m[1mConsolidate compiler generated dependencies of target relbot_simulator[0m
-[  7%] [32mBuilding CXX object CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o[0m
-[ 23%] Built target colour_tracker
-[ 92%] Built target relbot_simulator

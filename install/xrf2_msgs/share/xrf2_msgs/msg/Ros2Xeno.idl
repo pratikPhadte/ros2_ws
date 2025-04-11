@@ -6,9 +6,9 @@
 module xrf2_msgs {
   module msg {
     struct Ros2Xeno {
-      double left_mot_vel;
+      double leftmotvel;
 
-      double right_mot_vel;
+      double rightmotvel;
     };
   };
 };

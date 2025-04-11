@@ -50,22 +50,22 @@ bool xrf2_msgs__msg__ros2_xeno__convert_from_py(PyObject * _pymsg, void * _ros_m
     assert(strncmp("xrf2_msgs.msg._ros2_xeno.Ros2Xeno", full_classname_dest, 33) == 0);
   }
   xrf2_msgs__msg__Ros2Xeno * ros_message = _ros_message;
-  {  // left_mot_vel
-    PyObject * field = PyObject_GetAttrString(_pymsg, "left_mot_vel");
+  {  // leftmotvel
+    PyObject * field = PyObject_GetAttrString(_pymsg, "leftmotvel");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->left_mot_vel = PyFloat_AS_DOUBLE(field);
+    ros_message->leftmotvel = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // right_mot_vel
-    PyObject * field = PyObject_GetAttrString(_pymsg, "right_mot_vel");
+  {  // rightmotvel
+    PyObject * field = PyObject_GetAttrString(_pymsg, "rightmotvel");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->right_mot_vel = PyFloat_AS_DOUBLE(field);
+    ros_message->rightmotvel = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -90,22 +90,22 @@ PyObject * xrf2_msgs__msg__ros2_xeno__convert_to_py(void * raw_ros_message)
     }
   }
   xrf2_msgs__msg__Ros2Xeno * ros_message = (xrf2_msgs__msg__Ros2Xeno *)raw_ros_message;
-  {  // left_mot_vel
+  {  // leftmotvel
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->left_mot_vel);
+    field = PyFloat_FromDouble(ros_message->leftmotvel);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "left_mot_vel", field);
+      int rc = PyObject_SetAttrString(_pymessage, "leftmotvel", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // right_mot_vel
+  {  // rightmotvel
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->right_mot_vel);
+    field = PyFloat_FromDouble(ros_message->rightmotvel);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "right_mot_vel", field);
+      int rc = PyObject_SetAttrString(_pymessage, "rightmotvel", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

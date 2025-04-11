@@ -1,4 +1,4 @@
-# Install script for directory: /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs
+# Install script for directory: /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -364,11 +364,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xrf2_msgs/msg" TYPE FILE FILES "/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs/msg/Ros2Xeno.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xrf2_msgs/msg" TYPE FILE FILES "/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs/msg/Ros2Xeno.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xrf2_msgs/msg" TYPE FILE FILES "/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs/msg/Xeno2Ros.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xrf2_msgs/msg" TYPE FILE FILES "/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs/msg/Xeno2Ros.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -623,7 +623,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xrf2_msgs" TYPE FILE FILES "/home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Common/XRF2_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xrf2_msgs" TYPE FILE FILES "/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

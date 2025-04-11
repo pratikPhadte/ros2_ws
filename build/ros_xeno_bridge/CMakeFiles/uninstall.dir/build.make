@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Ros/ros_xeno_bridge
+CMAKE_SOURCE_DIR = /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/asdfr-19/ros2_ws/build/ros_xeno_bridge
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/asdfr-19/ros2_ws/build/ros_xeno_bridge && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Ros/ros_xeno_bridge /home/asdfr-19/ros2_ws/src/XRF2/XRF2/XenoRosFramework/Ros/ros_xeno_bridge /home/asdfr-19/ros2_ws/build/ros_xeno_bridge /home/asdfr-19/ros2_ws/build/ros_xeno_bridge /home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/asdfr-19/ros2_ws/build/ros_xeno_bridge && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge /home/asdfr-19/ros2_ws/build/ros_xeno_bridge /home/asdfr-19/ros2_ws/build/ros_xeno_bridge /home/asdfr-19/ros2_ws/build/ros_xeno_bridge/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

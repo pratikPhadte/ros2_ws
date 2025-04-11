@@ -1,5 +1,0 @@
-[  7%] [32mBuilding CXX object CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o[0m
-[ 15%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o[0m
-[ 30%] Built target sequence_controller
-[ 38%] [32m[1mLinking CXX executable relbot_simulator[0m
-[ 92%] Built target relbot_simulator
