@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target xcontroller[0m
+[  4%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
+[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:[m[K In member function ‘[01m[Kvirtual int xcontroller::run()[m[K’:
+[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:80:25:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kxrf2_msgs::msg::Ros2Xeno_<std::allocator<void> >::_rightmotvel_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kconst char*[m[K’
+   80 |     evl_printf( [01;31m[Kros_msg.rightmotvel[m[K);
+      |                 [01;31m[K~~~~~~~~^~~~~~~~~~~[m[K
+      |                         [01;31m[K|[m[K
+      |                         [01;31m[Kxrf2_msgs::msg::Ros2Xeno_<std::allocator<void> >::_rightmotvel_type {aka double}[m[K
+In file included from [01m[K/usr/evl/include/evl/evl.h:21[m[K,
+                 from [01m[K/home/asdfr-19/ros2_ws/src/xcontroller/../XRF2/XenoRosFramework/Xenomai/include/XenoFrtLoop.hpp:6[m[K,
+                 from [01m[K/home/asdfr-19/ros2_ws/src/xcontroller/../XRF2/XenoRosFramework/Xenomai/include/XenoFrtRosIco.hpp:10[m[K,
+                 from [01m[K/home/asdfr-19/ros2_ws/src/xcontroller/../XRF2/XenoRosFramework/Xenomai/include/XenoFrt20Sim.hpp:4[m[K,
+                 from [01m[K/home/asdfr-19/ros2_ws/src/xcontroller/include/xcontroller.hpp:4[m[K,
+                 from [01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:1[m[K:
+[01m[K/usr/evl/include/evl/proxy.h:38:32:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kssize_t evl_printf(const char*, ...)[m[K’
+   38 | ssize_t evl_printf([01;36m[Kconst char *fmt[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/xcontroller.dir/build.make:258: CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xcontroller.dir/all] Error 2
+gmake: *** [Makefile:101: all] Error 2

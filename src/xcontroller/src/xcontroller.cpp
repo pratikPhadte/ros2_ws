@@ -71,16 +71,30 @@ int xcontroller::run()
     if(controller.IsFinished())
 	 return 1;
 // Printf encoder 1 to 4 data
-    monitor.printf("Encoder 1 value : %d\n",sample_data.channel1);
-    monitor.printf("Encoder 2 value : %d\n",sample_data.channel2);
-    monitor.printf("Encoder 3 value : %d\n",sample_data.channel3);
-    monitor.printf("Encoder 4 value : %d\n",sample_data.channel4);
+    evl_printf("Encoder 1 value : %d\n",sample_data.channel1);
+    evl_printf("Encoder 2 value : %d\n",sample_data.channel2);
+//    evl_printf("Encoder 3 value : %d\n",sample_data.channel3);
+//    evl_printf("Encoder 4 value : %d\n",sample_data.channel4);
 
     
-    monitor.printf("Published value: %d\n", ros_msg.rightmotvel);
-    // Set motor outputs to 25% of max
-    //actuate_data.pwm1 = 2047 * 0.25;
-    //actuate_data.pwm1 = 2047 * -0.25;
+    evl_printf("publish val Left Mot: %f \n ", ros_msg.leftmotvel);
+    evl_printf("publish val Right Mot: %f \n ", ros_msg.rightmotvel);
+    
+// Set motor outputs to 25% of max
+//XXDouble y;
+//controller.Calculate(0.25, &y);
+
+   u[0] = ros_msg.rightmotvel;
+   u[1] = ros_msg.leftmotvel;
+
+   controller.Calculate(u,y);
+
+   double right_motor_vel = y[0];
+   double left_motor_vel = y[1];
+   //Clip the values within -2047 and +2047
+   
+   actuate_data.pwm1 = 2047*ros_msg.rightmotvel;
+   actuate_data.pwm2 = 2047*ros_msg.leftmotvel;
 
 
     return 0;
@@ -88,6 +102,9 @@ int xcontroller::run()
 
 int xcontroller::stopping()
 {
+
+    actuate_data.pwm1=0;
+    actuate_data.pwm2=0;
     // Bring the physical system to a stop and set it in a state that the system can be deactivated
     // eturn 1 to go to stopped state
     logger.stop();                                // Stop logger

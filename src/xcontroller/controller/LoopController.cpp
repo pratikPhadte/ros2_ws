@@ -5,11 +5,11 @@
  *  subm:  LoopController
  *  model: RELbotSimple
  *  expmt: RELbotSimple
- *  date:  March 23, 2024
- *  time:  12:46:30 PM
- *  user:  Universiteit Twente
+ *  date:  April 16, 2025
+ *  time:  9:33:41 AM
+ *  user:  Vakgroep RaM
  *  from:  -
- *  build: 5.1.0.12836
+ *  build: 5.1.4.13773
  **********************************************************/
 
 /* Standard include files */
@@ -30,10 +30,10 @@ const XXDouble c_delta = 1.0e-7;
 void LoopController::CopyInputsToVariables (XXDouble *u)
 {
 	/* copy the input vector to the input variables */
-	m_V[14] = u[0];		/* PosLeft */
-	m_V[15] = u[1];		/* PosRight */
-	m_V[16] = u[2];		/* SetPosLeft */
-	m_V[17] = u[3];		/* SetPosRight */
+	m_V[12] = u[0];		/* PosLeft */
+	m_V[13] = u[1];		/* PosRight */
+	m_V[14] = u[2];		/* SetVelLeft */
+	m_V[15] = u[3];		/* SetVelRight */
 
 }
 
@@ -41,8 +41,8 @@ void LoopController::CopyInputsToVariables (XXDouble *u)
 void LoopController::CopyVariablesToOutputs (XXDouble *y)
 {
 	/* copy the output variables to the output vector */
-	y[0] = 	m_V[12];		/* SteerLeft */
-	y[1] = 	m_V[13];		/* SteerRight */
+	y[0] = 	m_V[10];		/* SteerLeft */
+	y[1] = 	m_V[11];		/* SteerRight */
 
 }
 
@@ -50,20 +50,20 @@ LoopController::LoopController(void)
 {
 	m_number_constants = 0;
 	m_number_parameters = 6;
-	m_number_initialvalues = 2;
-	m_number_variables = 20;
-	m_number_states = 2;
-	m_number_rates = 2;
+	m_number_initialvalues = 4;
+	m_number_variables = 18;
+	m_number_states = 4;
+	m_number_rates = 4;
 	m_number_matrices = 0;
 	m_number_unnamed = 0;
 
 	/* the variable arrays */
 	m_C = new XXDouble[0 + 1];		/* constants */
 	m_P = new XXDouble[6 + 1];		/* parameters */
-	m_I = new XXDouble[2 + 1];		/* initial values */
-	m_V = new XXDouble[20 + 1];		/* variables */
-	m_s = new XXDouble[2 + 1];		/* states */
-	m_R = new XXDouble[2 + 1];		/* rates (or new states) */
+	m_I = new XXDouble[4 + 1];		/* initial values */
+	m_V = new XXDouble[18 + 1];		/* variables */
+	m_s = new XXDouble[4 + 1];		/* states */
+	m_R = new XXDouble[4 + 1];		/* rates (or new states) */
 	m_M = new XXMatrix[0 + 1];		/* matrices */
 	m_U = new XXDouble[0 + 1];		/* unnamed */
 	m_workarray = new XXDouble[0 + 1];
@@ -83,10 +83,10 @@ void LoopController::Reset(XXDouble starttime)
 	/* Clear the allocated variable memory */
 	memset(m_C, 0, (0 + 1) * sizeof(XXDouble));
 	memset(m_P, 0, (6 + 1) * sizeof(XXDouble));
-	memset(m_I, 0, (2 + 1) * sizeof(XXDouble));
-	memset(m_V, 0, (20 + 1) * sizeof(XXDouble));
-	memset(m_s, 0, (2 + 1) * sizeof(XXDouble));
-	memset(m_R, 0, (2 + 1) * sizeof(XXDouble));
+	memset(m_I, 0, (4 + 1) * sizeof(XXDouble));
+	memset(m_V, 0, (18 + 1) * sizeof(XXDouble));
+	memset(m_s, 0, (4 + 1) * sizeof(XXDouble));
+	memset(m_R, 0, (4 + 1) * sizeof(XXDouble));
 	memset(m_M, 0, (0 + 1) * sizeof(XXDouble));
 	memset(m_U, 0, (0 + 1) * sizeof(XXDouble));
 	memset(m_workarray, 0, (0 + 1) * sizeof(XXDouble));
@@ -125,22 +125,26 @@ void LoopController::Initialize (XXDouble *u, XXDouble *y, XXDouble t)
 
 
 	/* set the parameters */
-	m_P[0] = 1.0;		/* PID_Left\Kp {} */
-	m_P[1] = 1.0;		/* PID_Left\Kd {} */
-	m_P[2] = 1.0;		/* PID_Left\Ki {} */
-	m_P[3] = 1.0;		/* PID_Right\Kp {} */
-	m_P[4] = 1.0;		/* PID_Right\Kd {} */
-	m_P[5] = 1.0;		/* PID_Right\Ki {} */
+	m_P[0] = 644.0;		/* PID_Left\Kp {} */
+	m_P[1] = 0.5;		/* PID_Left\Kd {} */
+	m_P[2] = 3.9;		/* PID_Left\Ki {} */
+	m_P[3] = 644.0;		/* PID_Right\Kp {} */
+	m_P[4] = 0.5;		/* PID_Right\Kd {} */
+	m_P[5] = 3.9;		/* PID_Right\Ki {} */
 
 
 	/* set the initial values */
 	m_I[0] = 0.0;		/* PID_Left\uI_state_initial */
 	m_I[1] = 0.0;		/* PID_Right\uI_state_initial */
+	m_I[2] = 0.0;		/* PosSPLeft\initial */
+	m_I[3] = 0.0;		/* PosSPRight\initial */
 
 
 	/* set the states */
 	m_s[0] = m_I[0];		/* PID_Left\uI_state */
 	m_s[1] = m_I[1];		/* PID_Right\uI_state */
+	m_s[2] = m_I[2];		/* PosSPLeft\output */
+	m_s[3] = m_I[3];		/* PosSPRight\output */
 
 
 	/* set the matrices */
@@ -159,6 +163,8 @@ void LoopController::Initialize (XXDouble *u, XXDouble *y, XXDouble t)
 	/* set the states again, they might have changed in the initial calculation */
 	m_s[0] = m_I[0];		/* PID_Left\uI_state */
 	m_s[1] = m_I[1];		/* PID_Right\uI_state */
+	m_s[2] = m_I[2];		/* PosSPLeft\output */
+	m_s[3] = m_I[3];		/* PosSPRight\output */
 
 
 	/* calculate static equations */
@@ -243,17 +249,6 @@ void LoopController::CalculateInitial (void)
  */
 void LoopController::CalculateStatic (void)
 {
-	/* PID_Left\error_dot = 1.0 - 1.0; */
-	m_V[18] = 1.0 - 1.0;
-
-	/* PID_Right\error_dot = 1.0 - 1.0; */
-	m_V[19] = 1.0 - 1.0;
-
-	/* PID_Left\uD = PID_Left\Kd * PID_Left\error_dot; */
-	m_V[2] = m_P[1] * m_V[18];
-
-	/* PID_Right\uD = PID_Right\Kd * PID_Right\error_dot; */
-	m_V[6] = m_P[4] * m_V[19];
 
 }
 
@@ -279,22 +274,34 @@ void LoopController::CalculateDynamic (void)
 	m_V[7] = m_P[5] * m_s[1];
 
 	/* PlusMinus1\minus1 = PosLeft; */
-	m_V[11] = m_V[14];
+	m_V[9] = m_V[12];
 
 	/* PlusMinus\minus1 = PosRight; */
-	m_V[9] = m_V[15];
+	m_V[8] = m_V[13];
 
-	/* PlusMinus1\plus1 = SetPosLeft; */
-	m_V[10] = m_V[16];
+	/* PosSPLeft\input = SetVelLeft; */
+	m_R[2] = m_V[14];
 
-	/* PlusMinus\plus1 = SetPosRight; */
-	m_V[8] = m_V[17];
+	/* PosSPRight\input = SetVelRight; */
+	m_R[3] = m_V[15];
 
-	/* PID_Right\uI_state_dot = PlusMinus\plus1 - PlusMinus\minus1; */
-	m_R[1] = m_V[8] - m_V[9];
+	/* PID_Left\error_dot_in = PosSPLeft\input - 1.0; */
+	m_V[16] = m_R[2] - 1.0;
 
-	/* PID_Left\uI_state_dot = PlusMinus1\plus1 - PlusMinus1\minus1; */
-	m_R[0] = m_V[10] - m_V[11];
+	/* PID_Right\error_dot_in = PosSPRight\input - 1.0; */
+	m_V[17] = m_R[3] - 1.0;
+
+	/* PID_Right\uI_state_dot = PosSPRight\output - PlusMinus\minus1; */
+	m_R[1] = m_s[3] - m_V[8];
+
+	/* PID_Left\uI_state_dot = PosSPLeft\output - PlusMinus1\minus1; */
+	m_R[0] = m_s[2] - m_V[9];
+
+	/* PID_Left\uD = PID_Left\Kd * PID_Left\error_dot_in; */
+	m_V[2] = m_P[1] * m_V[16];
+
+	/* PID_Right\uD = PID_Right\Kd * PID_Right\error_dot_in; */
+	m_V[6] = m_P[4] * m_V[17];
 
 	/* PID_Left\uP = PID_Left\Kp * PID_Left\uI_state_dot; */
 	m_V[1] = m_P[0] * m_R[0];
@@ -319,10 +326,10 @@ void LoopController::CalculateDynamic (void)
 void LoopController::CalculateOutput (void)
 {
 	/* SteerLeft = PID_Left\steering; */
-	m_V[12] = m_V[0];
+	m_V[10] = m_V[0];
 
 	/* SteerRight = PID_Right\steering; */
-	m_V[13] = m_V[4];
+	m_V[11] = m_V[4];
 
 }
 

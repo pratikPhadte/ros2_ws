@@ -1,0 +1,40 @@
+[0.088s] Invoking command in '/home/asdfr-19/ros2_ws/build/xcontroller': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3
+[0.650s] [0mTIME_STEP_SIZE_VALUE = 0.01[0m
+[0.657s] -- Found xrf2_msgs: 0.0.0 (/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake)
+[1.865s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.876s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.900s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.938s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.036s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.087s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.244s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.254s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.876s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.355s] -- Configuring done
+[3.505s] -- Generating done
+[3.554s] -- Build files have been written to: /home/asdfr-19/ros2_ws/build/xcontroller
+[3.792s] [35m[1mConsolidate compiler generated dependencies of target xcontroller[0m
+[5.131s] [  4%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/main.cpp.o[0m
+[5.142s] [  9%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/IcoIo.cpp.o[0m
+[5.144s] [ 13%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/FullStateMachine.cpp.o[0m
+[5.931s] [ 18%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoFileHandler.cpp.o[0m
+[8.140s] [ 22%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoFrtLogger.cpp.o[0m
+[11.773s] [ 27%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoFrtLoop.cpp.o[0m
+[14.115s] [ 31%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoFrtRosIco.cpp.o[0m
+[20.157s] [ 36%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoRosCommunication.cpp.o[0m
+[20.730s] [ 40%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoRosCommandBridge.cpp.o[0m
+[24.851s] [ 45%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoRosDataBridge.cpp.o[0m
+[29.829s] [ 50%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoSpiControllerHandler.cpp.o[0m
+[30.603s] [ 54%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoFrt20Sim.cpp.o[0m
+[37.401s] [ 59%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
+[43.531s] [ 63%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/controller/LoopController.cpp.o[0m
+[45.410s] [ 68%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/controller/common/EulerAngles.cpp.o[0m
+[45.598s] [ 72%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/controller/common/MotionProfiles.cpp.o[0m
+[45.802s] [ 77%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/controller/common/xxfuncs.cpp.o[0m
+[47.264s] [ 81%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/controller/common/xxinteg.cpp.o[0m
+[48.876s] [ 86%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/controller/common/xxinverse.cpp.o[0m
+[50.308s] [ 90%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/controller/common/xxmatrix.cpp.o[0m
+[52.834s] [ 95%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Xenomai/src/XenoFrtMonitor.cpp.o[0m
+[53.387s] [100%] [32m[1mLinking CXX executable xcontroller[0m
+[54.402s] [100%] Built target xcontroller
+[54.481s] Invoked command in '/home/asdfr-19/ros2_ws/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3

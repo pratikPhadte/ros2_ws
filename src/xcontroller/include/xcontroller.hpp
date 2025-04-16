@@ -3,6 +3,7 @@
 
 #include "XenoFrt20Sim.hpp"
 #include "LoopController.h"
+#include <algorithm>
 
 #pragma pack (1)    //https://carlosvin.github.io/langs/en/posts/cpp-pragma-pack/#_performance_test
 struct ThisIsAStruct

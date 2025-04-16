@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tokens>
-	<token name="MODEL_NAME"><![CDATA[Downloads]]></token>
+	<token name="MODEL_NAME"><![CDATA[RELbotSimple]]></token>
 	<token name="20SIM_DIR"><![CDATA[C:\Program Files (x86)\20-sim 5.1]]></token>
 	<token name="SUBMODEL_NAME"><![CDATA[LoopController]]></token>
 	<token name="ALGLOOP_NAMES"><![CDATA[	NULL]]></token>
@@ -122,7 +122,7 @@ PlusMinus\plus1
 	/* PID_Right\steering = (PID_Right\uP + PID_Right\uD) + PID_Right\uI; */
 	m_V[4] = (m_V[5] + m_V[6]) + m_V[7];
 ]]></token>
-	<token name="EXPERIMENT_NAME"><![CDATA[Downloads]]></token>
+	<token name="EXPERIMENT_NAME"><![CDATA[RELbotSimple]]></token>
 	<token name="EXPORT_NAMES"><![CDATA[	NULL]]></token>
 	<token name="EXPORT_NAMES2"><![CDATA[	NULL]]></token>
 	<token name="EXPORT_NAMES3"><![CDATA[]]></token>
@@ -141,10 +141,10 @@ PlusMinus\plus1
 	<token name="FINAL_EQUATIONS"><![CDATA[]]></token>
 	<token name="FINISH_TIME"><![CDATA[10.0]]></token>
 	<token name="FLOATPOSTFIX"><![CDATA[]]></token>
-	<token name="GENERATION_BUILD"><![CDATA[5.1.0.12836]]></token>
-	<token name="GENERATION_DATE"><![CDATA[April 11, 2024]]></token>
-	<token name="GENERATION_DIR"><![CDATA[C:\Users\jesus\OneDrive\Escritorio\20-sim]]></token>
-	<token name="GENERATION_TIME"><![CDATA[4:58:57 PM]]></token>
+	<token name="GENERATION_BUILD"><![CDATA[5.1.4.13773]]></token>
+	<token name="GENERATION_DATE"><![CDATA[April 16, 2025]]></token>
+	<token name="GENERATION_DIR"><![CDATA[C:\Users\naray\OneDrive\Documents\MSc\2A\ASDfR]]></token>
+	<token name="GENERATION_TIME"><![CDATA[9:33:41 AM]]></token>
 	<token name="HIERARCHICAL_SUBMODEL_NAME"><![CDATA[LoopController]]></token>
 	<token name="IMPORT_NAMES"><![CDATA[	NULL]]></token>
 	<token name="IMPORT_NAMES2"><![CDATA[	NULL]]></token>
@@ -194,19 +194,19 @@ PosSPRight\initial
 	<token name="INITIALIZE_OUTPUTS"><![CDATA[	y[0] = 0.0;		/* SteerLeft */
 	y[1] = 0.0;		/* SteerRight */
 ]]></token>
-	<token name="INITIALIZE_PARAMETERS"><![CDATA[	m_P[0] = 40.0;		/* PID_Left\Kp {} */
-	m_P[1] = 5.0;		/* PID_Left\Kd {} */
-	m_P[2] = 0.0;		/* PID_Left\Ki {} */
-	m_P[3] = 40.0;		/* PID_Right\Kp {} */
-	m_P[4] = 5.0;		/* PID_Right\Kd {} */
-	m_P[5] = 0.0;		/* PID_Right\Ki {} */
+	<token name="INITIALIZE_PARAMETERS"><![CDATA[	m_P[0] = 644.0;		/* PID_Left\Kp {} */
+	m_P[1] = 0.5;		/* PID_Left\Kd {} */
+	m_P[2] = 3.9;		/* PID_Left\Ki {} */
+	m_P[3] = 644.0;		/* PID_Right\Kp {} */
+	m_P[4] = 0.5;		/* PID_Right\Kd {} */
+	m_P[5] = 3.9;		/* PID_Right\Ki {} */
 ]]></token>
-	<token name="INITIALIZE_PARAMETERS2"><![CDATA[		40.0 /* PID_Left\Kp {} */, 
-		5.0 /* PID_Left\Kd {} */, 
-		0.0 /* PID_Left\Ki {} */, 
-		40.0 /* PID_Right\Kp {} */, 
-		5.0 /* PID_Right\Kd {} */, 
-		0.0 /* PID_Right\Ki {} */]]></token>
+	<token name="INITIALIZE_PARAMETERS2"><![CDATA[		644.0 /* PID_Left\Kp {} */, 
+		0.5 /* PID_Left\Kd {} */, 
+		3.9 /* PID_Left\Ki {} */, 
+		644.0 /* PID_Right\Kp {} */, 
+		0.5 /* PID_Right\Kd {} */, 
+		3.9 /* PID_Right\Ki {} */]]></token>
 	<token name="INITIALIZE_STATES"><![CDATA[	m_s[0] = m_I[0];		/* PID_Left\uI_state */
 	m_s[1] = m_I[1];		/* PID_Right\uI_state */
 	m_s[2] = m_I[2];		/* PosSPLeft\output */
@@ -246,8 +246,8 @@ SetVelRight
 ]]></token>
 	<token name="MATRIX_UNITS"><![CDATA[]]></token>
 	<token name="MODEL_DESCRIPTION"><![CDATA[]]></token>
-	<token name="MODEL_FILE"><![CDATA[C:\Users\jesus\Downloads.emx]]></token>
-	<token name="MODEL_FUNCTION_NAME"><![CDATA[Downloads]]></token>
+	<token name="MODEL_FILE"><![CDATA[C:\Users\naray\Downloads\RELbotSimple.emx]]></token>
+	<token name="MODEL_FUNCTION_NAME"><![CDATA[RELbotSimple]]></token>
 	<token name="MODEL_IS_DISCRETE"><![CDATA[0]]></token>
 	<token name="NUMBER_ALGLOOPS"><![CDATA[0]]></token>
 	<token name="NUMBER_ALIAS_MATRICES"><![CDATA[0]]></token>
@@ -504,12 +504,12 @@ PID_Right\Ki
 
 
 ]]></token>
-	<token name="PARAMETER_VALUES"><![CDATA[40.0
-5.0
-0.0
-40.0
-5.0
-0.0
+	<token name="PARAMETER_VALUES"><![CDATA[644.0
+0.5
+3.9
+644.0
+0.5
+3.9
 ]]></token>
 	<token name="RATE_NAMES"><![CDATA[	"",
 	"",
@@ -554,7 +554,7 @@ PosSPRight\output
 ]]></token>
 	<token name="STATIC_EQUATIONS"><![CDATA[]]></token>
 	<token name="TIME_STEP_SIZE"><![CDATA[0.01]]></token>
-	<token name="USER_NAME"><![CDATA[Universiteit Twente]]></token>
+	<token name="USER_NAME"><![CDATA[Vakgroep RaM]]></token>
 	<token name="VARIABLE_NAMES"><![CDATA[	"PID_Left\\steering",
 	"",
 	"",
@@ -667,8 +667,8 @@ PID_Right\error_dot_in
 	<token name="FORMINORBUILD"><![CDATA[0]]></token>
 	<token name="MAJORVERSION"><![CDATA[5]]></token>
 	<token name="MINORVERSION"><![CDATA[1]]></token>
-	<token name="MAJORBUILD"><![CDATA[0]]></token>
-	<token name="MINORBUILD"><![CDATA[12836]]></token>
+	<token name="MAJORBUILD"><![CDATA[4]]></token>
+	<token name="MINORBUILD"><![CDATA[13773]]></token>
 	<token name="SKIP_SIMULINK_MODEL"><![CDATA[1]]></token>
 	<token name="SKIP_SIMULINK_SUBMODEL"><![CDATA[1]]></token>
 	<token name="SKIP_MODEL_CONFIGURATION"><![CDATA[1]]></token>
