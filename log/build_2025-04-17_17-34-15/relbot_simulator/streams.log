@@ -1,0 +1,16 @@
+[0.038s] Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[0.159s] [35m[1mConsolidate compiler generated dependencies of target sequence_controller[0m
+[0.210s] [ 15%] Built target colour_tracker
+[0.239s] [ 84%] Built target relbot_simulator
+[0.691s] [ 92%] [32mBuilding CXX object CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o[0m
+[9.560s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:[m[K In member function ‘[01m[Kvoid SequenceController::timer_callback()[m[K’:
+[9.561s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:50:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_msg[m[K’ was not declared in this scope
+[9.563s]    50 |             [01;31m[Kleft_msg[m[K.data = 2.0;
+[9.565s]       |             [01;31m[K^~~~~~~~[m[K
+[9.585s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:51:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_msg[m[K’ was not declared in this scope
+[9.588s]    51 |             [01;31m[Kright_msg[m[K.data = -2.0;
+[9.591s]       |             [01;31m[K^~~~~~~~~[m[K
+[18.177s] gmake[2]: *** [CMakeFiles/sequence_controller.dir/build.make:76: CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o] Error 1
+[18.181s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/sequence_controller.dir/all] Error 2
+[18.184s] gmake: *** [Makefile:146: all] Error 2
+[18.192s] Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3

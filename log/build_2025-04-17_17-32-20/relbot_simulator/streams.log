@@ -1,0 +1,40 @@
+[0.039s] Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[0.162s] [35m[1mConsolidate compiler generated dependencies of target sequence_controller[0m
+[0.233s] [ 69%] Built target relbot_simulator
+[0.268s] [ 84%] Built target colour_tracker
+[0.633s] [ 92%] [32mBuilding CXX object CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o[0m
+[9.078s] In file included from [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:1[m[K:
+[9.079s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/sequence_controller.hpp:22:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kxrf2_msgs[m[K’ was not declared in this scope
+[9.081s]    22 |     rclcpp::Publisher<[01;31m[Kxrf2_msgs[m[K::msg::Ros2Xeno>::SharedPtr publisher_;
+[9.082s]       |                       [01;31m[K^~~~~~~~~[m[K
+[9.085s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/sequence_controller.hpp:22:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[9.090s]    22 |     rclcpp::Publisher<xrf2_msgs::msg::Ros2Xeno[01;31m[K>[m[K::SharedPtr publisher_;
+[9.093s]       |                                               [01;31m[K^[m[K
+[9.096s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/sequence_controller.hpp:22:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[9.099s]    22 |     rclcpp::Publisher<xrf2_msgs::msg::Ros2Xeno>::[01;31m[KSharedPtr[m[K publisher_;
+[9.102s]       |                                                  [01;31m[K^~~~~~~~~[m[K
+[9.106s]       |                                                           [32m[K;[m[K
+[9.110s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/include/sequence_controller.hpp:22:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[9.116s]    22 |  rclcpp::Publisher<xrf2_msgs::msg::Ros2Xeno>::SharedPtr [01;31m[Kpublisher_[m[K;
+[9.120s]       |                                                         [01;31m[K^~~~~~~~~~[m[K
+[9.124s]       |                                                         [32m[Krmw_publisher_t[m[K
+[9.447s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:[m[K In constructor ‘[01m[KSequenceController::SequenceController()[m[K’:
+[9.449s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:19:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[9.450s]    19 |     [01;31m[Kpublisher_[m[K = create_publisher<xrf2_msgs::msg::Ros2Xeno>("/Ros2Xeno",10);
+[9.452s]       |     [01;31m[K^~~~~~~~~~[m[K
+[9.456s]       |     [32m[Krmw_publisher_t[m[K
+[9.546s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:[m[K In member function ‘[01m[Kvoid SequenceController::timer_callback()[m[K’:
+[9.547s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:50:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_msg[m[K’ was not declared in this scope
+[9.549s]    50 |             [01;31m[Kleft_msg[m[K.data = 2.0;
+[9.555s]       |             [01;31m[K^~~~~~~~[m[K
+[9.570s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:51:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_msg[m[K’ was not declared in this scope
+[9.572s]    51 |             [01;31m[Kright_msg[m[K.data = -2.0;
+[9.573s]       |             [01;31m[K^~~~~~~~~[m[K
+[9.611s] [01m[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:112:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[9.612s]   112 |     [01;31m[Kpublisher_[m[K->publish(msg);
+[9.614s]       |     [01;31m[K^~~~~~~~~~[m[K
+[9.615s]       |     [32m[Krmw_publisher_t[m[K
+[17.952s] gmake[2]: *** [CMakeFiles/sequence_controller.dir/build.make:76: CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o] Error 1
+[17.958s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/sequence_controller.dir/all] Error 2
+[17.969s] gmake: *** [Makefile:146: all] Error 2
+[17.974s] Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3

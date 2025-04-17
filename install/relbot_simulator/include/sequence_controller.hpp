@@ -5,6 +5,7 @@
 #include <example_interfaces/msg/float64.hpp>
 #include <geometry_msgs/msg/point.hpp>
 #include <sensor_msgs/msg/image.hpp>
+#include <xrf2_msgs/msg/ros2_xeno.hpp>
 
 class SequenceController : public rclcpp::Node {
 public:
@@ -17,8 +18,9 @@ private:
     void object_position_callback(const geometry_msgs::msg::Point::SharedPtr msg);
     void image_callback(const sensor_msgs::msg::Image::SharedPtr msg);
 
-    rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_pub_;
-    rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_pub_;
+    // rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_pub_;
+    // rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_pub_;
+    rclcpp::Publisher<xrf2_msgs::msg::Ros2Xeno>::SharedPtr publisher_;
     rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr object_position_sub_;
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_sub_;
     rclcpp::TimerBase::SharedPtr timer_;

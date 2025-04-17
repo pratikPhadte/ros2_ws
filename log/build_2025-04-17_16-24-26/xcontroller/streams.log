@@ -1,0 +1,24 @@
+[0.065s] Invoking command in '/home/asdfr-19/ros2_ws/build/xcontroller': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3
+[0.196s] [35m[1mConsolidate compiler generated dependencies of target xcontroller[0m
+[1.196s] [  9%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/main.cpp.o[0m
+[1.200s] [  9%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
+[4.345s] [ 13%] [32m[1mLinking CXX executable xcontroller[0m
+[4.638s] /usr/bin/ld: CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o: in function `xcontroller::xcontroller(unsigned int, unsigned int)':
+[4.639s] xcontroller.cpp:(.text+0x1e8): undefined reference to `xcontroller::prev_enc1'
+[4.640s] /usr/bin/ld: xcontroller.cpp:(.text+0x1ec): undefined reference to `xcontroller::prev_enc1'
+[4.641s] /usr/bin/ld: xcontroller.cpp:(.text+0x1f4): undefined reference to `xcontroller::prev_enc2'
+[4.642s] /usr/bin/ld: xcontroller.cpp:(.text+0x1f8): undefined reference to `xcontroller::prev_enc2'
+[4.643s] /usr/bin/ld: CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o: in function `xcontroller::run()':
+[4.649s] xcontroller.cpp:(.text+0x448): undefined reference to `xcontroller::prev_enc1'
+[4.650s] /usr/bin/ld: xcontroller.cpp:(.text+0x44c): undefined reference to `xcontroller::prev_enc1'
+[4.651s] /usr/bin/ld: xcontroller.cpp:(.text+0x46c): undefined reference to `xcontroller::prev_enc2'
+[4.652s] /usr/bin/ld: xcontroller.cpp:(.text+0x470): undefined reference to `xcontroller::prev_enc2'
+[4.653s] /usr/bin/ld: xcontroller.cpp:(.text+0x4b8): undefined reference to `xcontroller::prev_enc1'
+[4.655s] /usr/bin/ld: xcontroller.cpp:(.text+0x4bc): undefined reference to `xcontroller::prev_enc1'
+[4.656s] /usr/bin/ld: xcontroller.cpp:(.text+0x4cc): undefined reference to `xcontroller::prev_enc2'
+[4.657s] /usr/bin/ld: xcontroller.cpp:(.text+0x4d0): undefined reference to `xcontroller::prev_enc2'
+[4.678s] collect2: error: ld returned 1 exit status
+[4.683s] gmake[2]: *** [CMakeFiles/xcontroller.dir/build.make:487: xcontroller] Error 1
+[4.687s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xcontroller.dir/all] Error 2
+[4.690s] gmake: *** [Makefile:101: all] Error 2
+[4.691s] Invoked command in '/home/asdfr-19/ros2_ws/build/xcontroller' returned '2': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3

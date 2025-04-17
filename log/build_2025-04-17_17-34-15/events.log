@@ -1,0 +1,206 @@
+[0.000000] (-) TimerEvent: {}
+[0.001885] (-) JobUnselected: {'identifier': 'ros_xeno_bridge'}
+[0.002545] (-) JobUnselected: {'identifier': 'xcontroller'}
+[0.003168] (-) JobUnselected: {'identifier': 'xrf2_msgs'}
+[0.003553] (relbot_simulator) JobQueued: {'identifier': 'relbot_simulator', 'dependencies': OrderedDict()}
+[0.003826] (relbot_simulator) JobStarted: {'identifier': 'relbot_simulator'}
+[0.028694] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'cmake'}
+[0.031253] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'build'}
+[0.033737] (relbot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asdfr-19/ros2_ws/build/relbot_simulator', '--', '-j3', '-l3'], 'cwd': '/home/asdfr-19/ros2_ws/build/relbot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.163 38292 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('COLCON_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/relbot_simulator'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.163 38292 10.0.28.104 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble')]), 'shell': False}
+[0.099216] (-) TimerEvent: {}
+[0.161578] (relbot_simulator) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sequence_controller\x1b[0m\n'}
+[0.199405] (-) TimerEvent: {}
+[0.211646] (relbot_simulator) StdoutLine: {'line': b'[ 15%] Built target colour_tracker\n'}
+[0.241849] (relbot_simulator) StdoutLine: {'line': b'[ 84%] Built target relbot_simulator\n'}
+[0.299566] (-) TimerEvent: {}
+[0.400335] (-) TimerEvent: {}
+[0.501131] (-) TimerEvent: {}
+[0.601907] (-) TimerEvent: {}
+[0.691912] (relbot_simulator) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o\x1b[0m\n'}
+[0.702093] (-) TimerEvent: {}
+[0.803725] (-) TimerEvent: {}
+[0.904687] (-) TimerEvent: {}
+[1.006611] (-) TimerEvent: {}
+[1.107842] (-) TimerEvent: {}
+[1.209100] (-) TimerEvent: {}
+[1.310477] (-) TimerEvent: {}
+[1.411772] (-) TimerEvent: {}
+[1.513187] (-) TimerEvent: {}
+[1.614645] (-) TimerEvent: {}
+[1.716038] (-) TimerEvent: {}
+[1.817418] (-) TimerEvent: {}
+[1.919027] (-) TimerEvent: {}
+[2.020030] (-) TimerEvent: {}
+[2.121129] (-) TimerEvent: {}
+[2.222135] (-) TimerEvent: {}
+[2.323107] (-) TimerEvent: {}
+[2.424174] (-) TimerEvent: {}
+[2.525328] (-) TimerEvent: {}
+[2.626340] (-) TimerEvent: {}
+[2.727455] (-) TimerEvent: {}
+[2.829115] (-) TimerEvent: {}
+[2.930562] (-) TimerEvent: {}
+[3.032128] (-) TimerEvent: {}
+[3.133684] (-) TimerEvent: {}
+[3.234777] (-) TimerEvent: {}
+[3.335822] (-) TimerEvent: {}
+[3.436884] (-) TimerEvent: {}
+[3.537880] (-) TimerEvent: {}
+[3.638829] (-) TimerEvent: {}
+[3.739844] (-) TimerEvent: {}
+[3.840837] (-) TimerEvent: {}
+[3.941814] (-) TimerEvent: {}
+[4.042827] (-) TimerEvent: {}
+[4.143813] (-) TimerEvent: {}
+[4.244839] (-) TimerEvent: {}
+[4.345793] (-) TimerEvent: {}
+[4.446762] (-) TimerEvent: {}
+[4.547756] (-) TimerEvent: {}
+[4.649118] (-) TimerEvent: {}
+[4.750181] (-) TimerEvent: {}
+[4.851439] (-) TimerEvent: {}
+[4.952482] (-) TimerEvent: {}
+[5.053592] (-) TimerEvent: {}
+[5.154670] (-) TimerEvent: {}
+[5.255687] (-) TimerEvent: {}
+[5.356730] (-) TimerEvent: {}
+[5.457753] (-) TimerEvent: {}
+[5.558789] (-) TimerEvent: {}
+[5.659821] (-) TimerEvent: {}
+[5.760967] (-) TimerEvent: {}
+[5.861931] (-) TimerEvent: {}
+[5.962920] (-) TimerEvent: {}
+[6.063931] (-) TimerEvent: {}
+[6.164922] (-) TimerEvent: {}
+[6.265895] (-) TimerEvent: {}
+[6.366883] (-) TimerEvent: {}
+[6.467888] (-) TimerEvent: {}
+[6.568934] (-) TimerEvent: {}
+[6.669907] (-) TimerEvent: {}
+[6.770934] (-) TimerEvent: {}
+[6.871933] (-) TimerEvent: {}
+[6.972954] (-) TimerEvent: {}
+[7.073942] (-) TimerEvent: {}
+[7.174985] (-) TimerEvent: {}
+[7.275986] (-) TimerEvent: {}
+[7.376951] (-) TimerEvent: {}
+[7.477994] (-) TimerEvent: {}
+[7.578995] (-) TimerEvent: {}
+[7.679992] (-) TimerEvent: {}
+[7.780934] (-) TimerEvent: {}
+[7.881918] (-) TimerEvent: {}
+[7.982892] (-) TimerEvent: {}
+[8.083923] (-) TimerEvent: {}
+[8.184971] (-) TimerEvent: {}
+[8.286050] (-) TimerEvent: {}
+[8.387037] (-) TimerEvent: {}
+[8.488023] (-) TimerEvent: {}
+[8.589041] (-) TimerEvent: {}
+[8.690034] (-) TimerEvent: {}
+[8.791032] (-) TimerEvent: {}
+[8.892007] (-) TimerEvent: {}
+[8.993356] (-) TimerEvent: {}
+[9.094648] (-) TimerEvent: {}
+[9.195664] (-) TimerEvent: {}
+[9.296684] (-) TimerEvent: {}
+[9.397869] (-) TimerEvent: {}
+[9.498967] (-) TimerEvent: {}
+[9.562521] (relbot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SequenceController::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.564258] (relbot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:50:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kleft_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.565786] (relbot_simulator) StderrLine: {'line': b'   50 |             \x1b[01;31m\x1b[Kleft_msg\x1b[m\x1b[K.data = 2.0;\n'}
+[9.567261] (relbot_simulator) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.586786] (relbot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/asdfr-19/ros2_ws/src/relbot_simulator/src/sequence_controller.cpp:51:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kright_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.590052] (relbot_simulator) StderrLine: {'line': b'   51 |             \x1b[01;31m\x1b[Kright_msg\x1b[m\x1b[K.data = -2.0;\n'}
+[9.592728] (relbot_simulator) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[9.599148] (-) TimerEvent: {}
+[9.700558] (-) TimerEvent: {}
+[9.802021] (-) TimerEvent: {}
+[9.903336] (-) TimerEvent: {}
+[10.004757] (-) TimerEvent: {}
+[10.106137] (-) TimerEvent: {}
+[10.207584] (-) TimerEvent: {}
+[10.308931] (-) TimerEvent: {}
+[10.409885] (-) TimerEvent: {}
+[10.510885] (-) TimerEvent: {}
+[10.611894] (-) TimerEvent: {}
+[10.712913] (-) TimerEvent: {}
+[10.813896] (-) TimerEvent: {}
+[10.914884] (-) TimerEvent: {}
+[11.015842] (-) TimerEvent: {}
+[11.116888] (-) TimerEvent: {}
+[11.217872] (-) TimerEvent: {}
+[11.318850] (-) TimerEvent: {}
+[11.419848] (-) TimerEvent: {}
+[11.520863] (-) TimerEvent: {}
+[11.621832] (-) TimerEvent: {}
+[11.722949] (-) TimerEvent: {}
+[11.823945] (-) TimerEvent: {}
+[11.924942] (-) TimerEvent: {}
+[12.025937] (-) TimerEvent: {}
+[12.126885] (-) TimerEvent: {}
+[12.227882] (-) TimerEvent: {}
+[12.328898] (-) TimerEvent: {}
+[12.429886] (-) TimerEvent: {}
+[12.530886] (-) TimerEvent: {}
+[12.631857] (-) TimerEvent: {}
+[12.732890] (-) TimerEvent: {}
+[12.833900] (-) TimerEvent: {}
+[12.934888] (-) TimerEvent: {}
+[13.035859] (-) TimerEvent: {}
+[13.136942] (-) TimerEvent: {}
+[13.237994] (-) TimerEvent: {}
+[13.338965] (-) TimerEvent: {}
+[13.439941] (-) TimerEvent: {}
+[13.540963] (-) TimerEvent: {}
+[13.641920] (-) TimerEvent: {}
+[13.742923] (-) TimerEvent: {}
+[13.843906] (-) TimerEvent: {}
+[13.945092] (-) TimerEvent: {}
+[14.046568] (-) TimerEvent: {}
+[14.147573] (-) TimerEvent: {}
+[14.248576] (-) TimerEvent: {}
+[14.349579] (-) TimerEvent: {}
+[14.450561] (-) TimerEvent: {}
+[14.551560] (-) TimerEvent: {}
+[14.652576] (-) TimerEvent: {}
+[14.753642] (-) TimerEvent: {}
+[14.854694] (-) TimerEvent: {}
+[14.955764] (-) TimerEvent: {}
+[15.056801] (-) TimerEvent: {}
+[15.157784] (-) TimerEvent: {}
+[15.258775] (-) TimerEvent: {}
+[15.359756] (-) TimerEvent: {}
+[15.460748] (-) TimerEvent: {}
+[15.561767] (-) TimerEvent: {}
+[15.662760] (-) TimerEvent: {}
+[15.763747] (-) TimerEvent: {}
+[15.864723] (-) TimerEvent: {}
+[15.965745] (-) TimerEvent: {}
+[16.066739] (-) TimerEvent: {}
+[16.167720] (-) TimerEvent: {}
+[16.268707] (-) TimerEvent: {}
+[16.369711] (-) TimerEvent: {}
+[16.470671] (-) TimerEvent: {}
+[16.571620] (-) TimerEvent: {}
+[16.672640] (-) TimerEvent: {}
+[16.773752] (-) TimerEvent: {}
+[16.874775] (-) TimerEvent: {}
+[16.975779] (-) TimerEvent: {}
+[17.076758] (-) TimerEvent: {}
+[17.177664] (-) TimerEvent: {}
+[17.278552] (-) TimerEvent: {}
+[17.379453] (-) TimerEvent: {}
+[17.480395] (-) TimerEvent: {}
+[17.581457] (-) TimerEvent: {}
+[17.682464] (-) TimerEvent: {}
+[17.783481] (-) TimerEvent: {}
+[17.884501] (-) TimerEvent: {}
+[17.985546] (-) TimerEvent: {}
+[18.086610] (-) TimerEvent: {}
+[18.179020] (relbot_simulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sequence_controller.dir/build.make:76: CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o] Error 1\n'}
+[18.182308] (relbot_simulator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/sequence_controller.dir/all] Error 2\n'}
+[18.185683] (relbot_simulator) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[18.189818] (-) TimerEvent: {}
+[18.193380] (relbot_simulator) CommandEnded: {'returncode': 2}
+[18.276105] (relbot_simulator) JobEnded: {'identifier': 'relbot_simulator', 'rc': 2}
+[18.280687] (-) EventReactorShutdown: {}

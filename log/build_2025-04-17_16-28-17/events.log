@@ -1,0 +1,335 @@
+[0.000000] (-) TimerEvent: {}
+[0.001634] (relbot_simulator) JobQueued: {'identifier': 'relbot_simulator', 'dependencies': OrderedDict()}
+[0.002261] (xrf2_msgs) JobQueued: {'identifier': 'xrf2_msgs', 'dependencies': OrderedDict()}
+[0.002905] (ros_xeno_bridge) JobQueued: {'identifier': 'ros_xeno_bridge', 'dependencies': OrderedDict([('xrf2_msgs', '/home/asdfr-19/ros2_ws/install/xrf2_msgs')])}
+[0.003284] (xcontroller) JobQueued: {'identifier': 'xcontroller', 'dependencies': OrderedDict([('xrf2_msgs', '/home/asdfr-19/ros2_ws/install/xrf2_msgs')])}
+[0.003855] (xrf2_msgs) JobStarted: {'identifier': 'xrf2_msgs'}
+[0.025416] (relbot_simulator) JobStarted: {'identifier': 'relbot_simulator'}
+[0.044970] (xrf2_msgs) JobProgress: {'identifier': 'xrf2_msgs', 'progress': 'cmake'}
+[0.047695] (xrf2_msgs) JobProgress: {'identifier': 'xrf2_msgs', 'progress': 'build'}
+[0.050070] (xrf2_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asdfr-19/ros2_ws/build/xrf2_msgs', '--', '-j3', '-l3'], 'cwd': '/home/asdfr-19/ros2_ws/build/xrf2_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.163 38292 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('COLCON_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/xrf2_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.163 38292 10.0.28.104 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble')]), 'shell': False}
+[0.062519] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'cmake'}
+[0.066231] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'build'}
+[0.068172] (relbot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asdfr-19/ros2_ws/build/relbot_simulator', '--', '-j3', '-l3'], 'cwd': '/home/asdfr-19/ros2_ws/build/relbot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.163 38292 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('COLCON_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/relbot_simulator'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.163 38292 10.0.28.104 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble')]), 'shell': False}
+[0.099089] (-) TimerEvent: {}
+[0.200294] (-) TimerEvent: {}
+[0.295076] (xrf2_msgs) StdoutLine: {'line': b'[  2%] Built target xrf2_msgs__cpp\n'}
+[0.300600] (-) TimerEvent: {}
+[0.311786] (xrf2_msgs) StdoutLine: {'line': b'[ 12%] Built target xrf2_msgs__rosidl_generator_c\n'}
+[0.395913] (relbot_simulator) StdoutLine: {'line': b'[ 15%] Built target sequence_controller\n'}
+[0.405915] (-) TimerEvent: {}
+[0.442650] (relbot_simulator) StdoutLine: {'line': b'[ 30%] Built target colour_tracker\n'}
+[0.486816] (xrf2_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_xrf2_msgs\n'}
+[0.510114] (xrf2_msgs) StdoutLine: {'line': b'[ 23%] Built target xrf2_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.511936] (-) TimerEvent: {}
+[0.519971] (relbot_simulator) StdoutLine: {'line': b'[100%] Built target relbot_simulator\n'}
+[0.531923] (xrf2_msgs) StdoutLine: {'line': b'[ 33%] Built target xrf2_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.575165] (relbot_simulator) CommandEnded: {'returncode': 0}
+[0.579699] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'install'}
+[0.615968] (relbot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asdfr-19/ros2_ws/build/relbot_simulator'], 'cwd': '/home/asdfr-19/ros2_ws/build/relbot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.163 38292 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('COLCON_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/relbot_simulator'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.163 38292 10.0.28.104 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble')]), 'shell': False}
+[0.620131] (-) TimerEvent: {}
+[0.652164] (relbot_simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.655221] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/relbot_simulator\n'}
+[0.660787] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/sequence_controller\n'}
+[0.662289] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/colour_tracker\n'}
+[0.666967] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include\n'}
+[0.668330] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/Plant.h\n'}
+[0.669518] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/sequence_controller.hpp\n'}
+[0.670675] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/colour_tracker.hpp\n'}
+[0.676736] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/relbot_simulator.hpp\n'}
+[0.678495] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include\n'}
+[0.689195] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinverse.h\n'}
+[0.690618] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinteg.h\n'}
+[0.692716] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmatrix.cpp\n'}
+[0.694213] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmodel.h\n'}
+[0.695524] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/MotionProfiles.cpp\n'}
+[0.705782] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/EulerAngles.h\n'}
+[0.707071] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinverse.cpp\n'}
+[0.708690] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/MotionProfiles.h\n'}
+[0.709899] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxfuncs.cpp\n'}
+[0.711019] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxtypes.h\n'}
+[0.736419] (-) TimerEvent: {}
+[0.737991] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmatrix.h\n'}
+[0.739507] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinteg.cpp\n'}
+[0.740849] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxfuncs.h\n'}
+[0.742107] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/EulerAngles.cpp\n'}
+[0.743453] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/package_run_dependencies/relbot_simulator\n'}
+[0.745182] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/parent_prefix_path/relbot_simulator\n'}
+[0.746463] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.sh\n'}
+[0.747778] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.dsv\n'}
+[0.749494] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/path.sh\n'}
+[0.751169] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/path.dsv\n'}
+[0.773774] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.bash\n'}
+[0.775081] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.sh\n'}
+[0.776510] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.zsh\n'}
+[0.778003] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.dsv\n'}
+[0.779295] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.dsv\n'}
+[0.780714] (xrf2_msgs) StdoutLine: {'line': b'[ 43%] Built target xrf2_msgs__rosidl_typesupport_cpp\n'}
+[0.782169] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/packages/relbot_simulator\n'}
+[0.793929] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig.cmake\n'}
+[0.795423] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig-version.cmake\n'}
+[0.797262] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.xml\n'}
+[0.804890] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator//launch\n'}
+[0.806067] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator//launch/relbot_simulator.launch.py\n'}
+[0.807226] (relbot_simulator) CommandEnded: {'returncode': 0}
+[0.813945] (xrf2_msgs) StdoutLine: {'line': b'[ 53%] Built target xrf2_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.815502] (xrf2_msgs) StdoutLine: {'line': b'[ 64%] Built target xrf2_msgs__rosidl_typesupport_c\n'}
+[0.836639] (-) TimerEvent: {}
+[0.847790] (xrf2_msgs) StdoutLine: {'line': b'[ 74%] Built target xrf2_msgs__rosidl_typesupport_introspection_c\n'}
+[0.891481] (relbot_simulator) JobEnded: {'identifier': 'relbot_simulator', 'rc': 0}
+[0.918590] (xrf2_msgs) StdoutLine: {'line': b'[ 74%] Built target xrf2_msgs\n'}
+[0.936850] (-) TimerEvent: {}
+[0.994497] (xrf2_msgs) StdoutLine: {'line': b'[ 76%] Built target xrf2_msgs__py\n'}
+[1.037019] (-) TimerEvent: {}
+[1.063291] (xrf2_msgs) StdoutLine: {'line': b'[ 84%] Built target xrf2_msgs__rosidl_generator_py\n'}
+[1.137361] (-) TimerEvent: {}
+[1.140697] (xrf2_msgs) StdoutLine: {'line': b'[ 89%] Built target xrf2_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.149798] (xrf2_msgs) StdoutLine: {'line': b'[ 94%] Built target xrf2_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.207881] (xrf2_msgs) StdoutLine: {'line': b'[100%] Built target xrf2_msgs__rosidl_typesupport_c__pyext\n'}
+[1.237519] (-) TimerEvent: {}
+[1.338365] (-) TimerEvent: {}
+[1.439454] (-) TimerEvent: {}
+[1.540281] (-) TimerEvent: {}
+[1.641177] (-) TimerEvent: {}
+[1.730015] (xrf2_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.733536] (xrf2_msgs) StdoutLine: {'line': b'writing xrf2_msgs.egg-info/PKG-INFO\n'}
+[1.734903] (xrf2_msgs) StdoutLine: {'line': b'writing dependency_links to xrf2_msgs.egg-info/dependency_links.txt\n'}
+[1.736403] (xrf2_msgs) StdoutLine: {'line': b'writing top-level names to xrf2_msgs.egg-info/top_level.txt\n'}
+[1.741339] (-) TimerEvent: {}
+[1.745197] (xrf2_msgs) StdoutLine: {'line': b"reading manifest file 'xrf2_msgs.egg-info/SOURCES.txt'\n"}
+[1.747620] (xrf2_msgs) StdoutLine: {'line': b"writing manifest file 'xrf2_msgs.egg-info/SOURCES.txt'\n"}
+[1.841583] (-) TimerEvent: {}
+[1.873519] (xrf2_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_xrf2_msgs_egg\n'}
+[1.911167] (xrf2_msgs) CommandEnded: {'returncode': 0}
+[1.914606] (xrf2_msgs) JobProgress: {'identifier': 'xrf2_msgs', 'progress': 'install'}
+[1.915696] (xrf2_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asdfr-19/ros2_ws/build/xrf2_msgs'], 'cwd': '/home/asdfr-19/ros2_ws/build/xrf2_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.163 38292 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('COLCON_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/xrf2_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.163 38292 10.0.28.104 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble')]), 'shell': False}
+[1.941842] (-) TimerEvent: {}
+[1.944866] (xrf2_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.966165] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/ament_index/resource_index/rosidl_interfaces/xrf2_msgs\n'}
+[1.967512] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs\n'}
+[1.968844] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg\n'}
+[1.976452] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.978437] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail\n'}
+[1.979800] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__struct.h\n'}
+[1.980941] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__functions.h\n'}
+[1.982515] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__functions.c\n'}
+[1.984125] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__struct.h\n'}
+[1.985635] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__type_support.h\n'}
+[1.987127] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__functions.c\n'}
+[1.988748] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__type_support.h\n'}
+[1.990997] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__functions.h\n'}
+[1.992757] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/xeno2_ros.h\n'}
+[1.994381] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/ros2_xeno.h\n'}
+[1.995975] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/environment/library_path.sh\n'}
+[1.997534] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/environment/library_path.dsv\n'}
+[1.999031] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/libxrf2_msgs__rosidl_generator_c.so\n'}
+[2.000829] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs\n'}
+[2.002490] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg\n'}
+[2.004601] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail\n'}
+[2.006269] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__rosidl_typesupport_fastrtps_c.h\n'}
+[2.007780] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__rosidl_typesupport_fastrtps_c.h\n'}
+[2.009542] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.011138] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/libxrf2_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.012877] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs\n'}
+[2.014313] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg\n'}
+[2.018411] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.020182] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail\n'}
+[2.021741] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__type_support.c\n'}
+[2.023352] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__rosidl_typesupport_introspection_c.h\n'}
+[2.024927] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__rosidl_typesupport_introspection_c.h\n'}
+[2.026411] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__type_support.c\n'}
+[2.027949] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/libxrf2_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.030119] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/libxrf2_msgs__rosidl_typesupport_c.so\n'}
+[2.031580] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs\n'}
+[2.033096] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg\n'}
+[2.034580] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.036234] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail\n'}
+[2.037828] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__struct.hpp\n'}
+[2.039304] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__traits.hpp\n'}
+[2.041132] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__builder.hpp\n'}
+[2.043216] (-) TimerEvent: {}
+[2.043995] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__struct.hpp\n'}
+[2.045540] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__type_support.hpp\n'}
+[2.046973] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__type_support.hpp\n'}
+[2.048496] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__traits.hpp\n'}
+[2.049940] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__builder.hpp\n'}
+[2.051445] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/xeno2_ros.hpp\n'}
+[2.053228] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/ros2_xeno.hpp\n'}
+[2.055603] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs\n'}
+[2.057154] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg\n'}
+[2.058581] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail\n'}
+[2.059960] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.061821] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.063413] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/dds_fastrtps\n'}
+[2.065064] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.066414] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/libxrf2_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.068154] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs\n'}
+[2.069732] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg\n'}
+[2.071304] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail\n'}
+[2.073244] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__type_support.cpp\n'}
+[2.074938] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__type_support.cpp\n'}
+[2.076286] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/xeno2_ros__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.078215] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/include/xrf2_msgs/xrf2_msgs/msg/detail/ros2_xeno__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.079782] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/libxrf2_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.081499] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/libxrf2_msgs__rosidl_typesupport_cpp.so\n'}
+[2.082979] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/environment/pythonpath.sh\n'}
+[2.084535] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/environment/pythonpath.dsv\n'}
+[2.086032] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs-0.0.0-py3.10.egg-info\n'}
+[2.087483] (xrf2_msgs) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.089038] (xrf2_msgs) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.090549] (xrf2_msgs) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.092227] (xrf2_msgs) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.093868] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs\n'}
+[2.095290] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/_xrf2_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.097999] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/_xrf2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.100989] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/xrf2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.103826] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/_xrf2_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.107203] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/libxrf2_msgs__rosidl_generator_py.so\n'}
+[2.110100] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/xrf2_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.112838] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/__init__.py\n'}
+[2.114939] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/msg\n'}
+[2.117301] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/msg/_ros2_xeno.py\n'}
+[2.120370] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/msg/_ros2_xeno_s.c\n'}
+[2.123015] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/msg/_xeno2_ros.py\n'}
+[2.124853] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/msg/__init__.py\n'}
+[2.126309] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/msg/_xeno2_ros_s.c\n'}
+[2.127798] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/xrf2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.129221] (xrf2_msgs) StdoutLine: {'line': b"Listing '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs'...\n"}
+[2.131006] (xrf2_msgs) StdoutLine: {'line': b"Listing '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/msg'...\n"}
+[2.132519] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/xrf2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.133953] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/xrf2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.135614] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages/xrf2_msgs/xrf2_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.137324] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/libxrf2_msgs__rosidl_generator_py.so\n'}
+[2.139675] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/msg/Ros2Xeno.idl\n'}
+[2.141271] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/msg/Xeno2Ros.idl\n'}
+[2.142398] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/msg/Ros2Xeno.msg\n'}
+[2.143692] (-) TimerEvent: {}
+[2.144420] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/msg/Xeno2Ros.msg\n'}
+[2.152121] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/ament_index/resource_index/package_run_dependencies/xrf2_msgs\n'}
+[2.153864] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/ament_index/resource_index/parent_prefix_path/xrf2_msgs\n'}
+[2.155268] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/environment/ament_prefix_path.sh\n'}
+[2.156776] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/environment/ament_prefix_path.dsv\n'}
+[2.158185] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/environment/path.sh\n'}
+[2.161305] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/environment/path.dsv\n'}
+[2.163962] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/local_setup.bash\n'}
+[2.165790] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/local_setup.sh\n'}
+[2.168064] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/local_setup.zsh\n'}
+[2.170107] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/local_setup.dsv\n'}
+[2.173562] (xrf2_msgs) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.dsv\n'}
+[2.175262] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/ament_index/resource_index/packages/xrf2_msgs\n'}
+[2.177075] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_generator_cExport.cmake\n'}
+[2.179225] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.181886] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.186388] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.188186] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.190540] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.192977] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.195022] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.196642] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.198377] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.199927] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.201179] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.205232] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.207331] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.209870] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.211969] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.214994] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/export_xrf2_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.218748] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.221805] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.224826] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.228991] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.231625] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.234529] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.239131] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.242773] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgsConfig.cmake\n'}
+[2.246096] (-) TimerEvent: {}
+[2.247567] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/cmake/xrf2_msgsConfig-version.cmake\n'}
+[2.250676] (xrf2_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.xml\n'}
+[2.253782] (xrf2_msgs) CommandEnded: {'returncode': 0}
+[2.257933] (xrf2_msgs) JobEnded: {'identifier': 'xrf2_msgs', 'rc': 0}
+[2.263752] (ros_xeno_bridge) JobStarted: {'identifier': 'ros_xeno_bridge'}
+[2.273436] (xcontroller) JobStarted: {'identifier': 'xcontroller'}
+[2.293491] (ros_xeno_bridge) JobProgress: {'identifier': 'ros_xeno_bridge', 'progress': 'cmake'}
+[2.296849] (ros_xeno_bridge) JobProgress: {'identifier': 'ros_xeno_bridge', 'progress': 'build'}
+[2.298480] (ros_xeno_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge', '--', '-j3', '-l3'], 'cwd': '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.163 38292 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('COLCON_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.163 38292 10.0.28.104 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble')]), 'shell': False}
+[2.312070] (xcontroller) JobProgress: {'identifier': 'xcontroller', 'progress': 'cmake'}
+[2.316403] (xcontroller) JobProgress: {'identifier': 'xcontroller', 'progress': 'build'}
+[2.317986] (xcontroller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asdfr-19/ros2_ws/build/xcontroller', '--', '-j3', '-l3'], 'cwd': '/home/asdfr-19/ros2_ws/build/xcontroller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.163 38292 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('COLCON_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/xcontroller'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.163 38292 10.0.28.104 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator')]), 'shell': False}
+[2.346346] (-) TimerEvent: {}
+[2.447773] (-) TimerEvent: {}
+[2.466024] (xcontroller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target xcontroller\x1b[0m\n'}
+[2.483306] (ros_xeno_bridge) StdoutLine: {'line': b'[100%] Built target RosXenoBridge\n'}
+[2.531890] (ros_xeno_bridge) CommandEnded: {'returncode': 0}
+[2.533762] (ros_xeno_bridge) JobProgress: {'identifier': 'ros_xeno_bridge', 'progress': 'install'}
+[2.534028] (ros_xeno_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge'], 'cwd': '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-19'), ('SSH_CLIENT', '10.0.100.163 38292 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-19'), ('OLDPWD', '/home/asdfr-19'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1019/bus'), ('COLCON_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-19'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1019'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.100.163 38292 10.0.28.104 22'), ('PYTHONPATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble')]), 'shell': False}
+[2.548398] (-) TimerEvent: {}
+[2.557162] (ros_xeno_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.559347] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/ros_xeno_bridge/RosXenoBridge\n'}
+[2.561586] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/package_run_dependencies/ros_xeno_bridge\n'}
+[2.563104] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/parent_prefix_path/ros_xeno_bridge\n'}
+[2.564724] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/ament_prefix_path.sh\n'}
+[2.566188] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/ament_prefix_path.dsv\n'}
+[2.567738] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/path.sh\n'}
+[2.569184] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/environment/path.dsv\n'}
+[2.570550] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.bash\n'}
+[2.572189] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.sh\n'}
+[2.574156] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.zsh\n'}
+[2.575658] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/local_setup.dsv\n'}
+[2.577113] (ros_xeno_bridge) StdoutLine: {'line': b'-- Installing: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.dsv\n'}
+[2.580190] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ament_index/resource_index/packages/ros_xeno_bridge\n'}
+[2.583613] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/cmake/ros_xeno_bridgeConfig.cmake\n'}
+[2.584830] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/cmake/ros_xeno_bridgeConfig-version.cmake\n'}
+[2.585723] (ros_xeno_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.xml\n'}
+[2.603538] (ros_xeno_bridge) CommandEnded: {'returncode': 0}
+[2.648583] (-) TimerEvent: {}
+[2.662104] (ros_xeno_bridge) JobEnded: {'identifier': 'ros_xeno_bridge', 'rc': 0}
+[2.748764] (-) TimerEvent: {}
+[2.849503] (-) TimerEvent: {}
+[2.950224] (-) TimerEvent: {}
+[3.050932] (-) TimerEvent: {}
+[3.151691] (-) TimerEvent: {}
+[3.252444] (-) TimerEvent: {}
+[3.353245] (-) TimerEvent: {}
+[3.454177] (-) TimerEvent: {}
+[3.473051] (xcontroller) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/xcontroller.dir/main.cpp.o\x1b[0m\n'}
+[3.475523] (xcontroller) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o\x1b[0m\n'}
+[3.554395] (-) TimerEvent: {}
+[3.655763] (-) TimerEvent: {}
+[3.757373] (-) TimerEvent: {}
+[3.858958] (-) TimerEvent: {}
+[3.960635] (-) TimerEvent: {}
+[4.062719] (-) TimerEvent: {}
+[4.164807] (-) TimerEvent: {}
+[4.266689] (-) TimerEvent: {}
+[4.368890] (-) TimerEvent: {}
+[4.469937] (-) TimerEvent: {}
+[4.571895] (-) TimerEvent: {}
+[4.673727] (-) TimerEvent: {}
+[4.776072] (-) TimerEvent: {}
+[4.878171] (-) TimerEvent: {}
+[4.980516] (-) TimerEvent: {}
+[5.082724] (-) TimerEvent: {}
+[5.185998] (-) TimerEvent: {}
+[5.287095] (-) TimerEvent: {}
+[5.388168] (-) TimerEvent: {}
+[5.489826] (-) TimerEvent: {}
+[5.591644] (-) TimerEvent: {}
+[5.693396] (-) TimerEvent: {}
+[5.794970] (-) TimerEvent: {}
+[5.896093] (-) TimerEvent: {}
+[5.997477] (-) TimerEvent: {}
+[6.099460] (-) TimerEvent: {}
+[6.200610] (-) TimerEvent: {}
+[6.301655] (-) TimerEvent: {}
+[6.402685] (-) TimerEvent: {}
+[6.503868] (-) TimerEvent: {}
+[6.605690] (-) TimerEvent: {}
+[6.640977] (xcontroller) StdoutLine: {'line': b'[ 13%] \x1b[32m\x1b[1mLinking CXX executable xcontroller\x1b[0m\n'}
+[6.705886] (-) TimerEvent: {}
+[6.807515] (-) TimerEvent: {}
+[6.909255] (-) TimerEvent: {}
+[7.007510] (xcontroller) StdoutLine: {'line': b'[100%] Built target xcontroller\n'}
+[7.009283] (-) TimerEvent: {}
+[7.042155] (xcontroller) CommandEnded: {'returncode': 0}
+[7.091865] (xcontroller) JobEnded: {'identifier': 'xcontroller', 'rc': 0}
+[7.097395] (-) EventReactorShutdown: {}

@@ -1,0 +1,3 @@
+[0.051s] Invoking command in '/home/asdfr-19/ros2_ws/build/xcontroller': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3
+[0.299s] [100%] Built target xcontroller
+[0.362s] Invoked command in '/home/asdfr-19/ros2_ws/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3

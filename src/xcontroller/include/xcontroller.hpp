@@ -22,6 +22,13 @@ class xcontroller : public XenoFrt20Sim
 public:
     xcontroller(uint write_decimator_freq, uint monitor_freq);
     ~xcontroller();
+
+
+//    static uint16_t prev_enc1;
+//    static uint16_t prev_enc2;
+
+   uint16_t curr_enc1 ;
+   uint16_t curr_enc2 ;
 private:
     XenoFileHandler file;
     struct ThisIsAStruct data_to_be_logged;
@@ -29,8 +36,20 @@ private:
 
     double u[4];
     double y[2];
-   double initial_u0;
-   double initial_u1;
+
+    // int initial_right;
+    // int initial_left;
+    // int previous_right;
+    // int previous_left;
+    // int delta_right;
+    // int delta_left;
+
+   int total_counts_left = 0;
+   int total_counts_right = 0;
+
+
+
+
    int i;
 protected:
     //Functions
@@ -46,6 +65,8 @@ protected:
 
     // current error
     int current_error = 0;
+
+
 };
 
 #endif // TEMPLATE20SIM_HPP

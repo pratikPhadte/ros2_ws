@@ -20,6 +20,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(OpenCV REQUIRED COMPONENTS core highgui imgcodecs imgproc videoio)
 find_package(cv_bridge REQUIRED)
+find_package(xrf2_msgs REQUIRED)
 
 
 include_directories(
@@ -69,6 +70,7 @@ ament_target_dependencies(sequence_controller
   geometry_msgs
   cv_bridge
   sensor_msgs
+  xrf2_msgs
 )
 
 target_include_directories(sequence_controller PUBLIC

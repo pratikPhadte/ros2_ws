@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target xcontroller[0m
+[  4%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
+[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:[m[K In member function ‘[01m[Kvirtual int xcontroller::run()[m[K’:
+[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:91:74:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+   91 | 16_t get_encoder_delta_14bit(uint16_t current, uint16_t previous) [01;31m[K{[m[K
+      |                                                                   [01;31m[K^[m[K
+
+[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:104:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_encoder_delta_14bit[m[K’ was not declared in this scope
+  104 | int16_t delta_enc1 = [01;31m[Kget_encoder_delta_14bit[m[K(curr_enc1, prev_enc1);
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/xcontroller.dir/build.make:258: CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xcontroller.dir/all] Error 2
+gmake: *** [Makefile:101: all] Error 2

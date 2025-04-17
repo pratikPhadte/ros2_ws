@@ -1,0 +1,97 @@
+[0.050s] Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[0.123s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.695s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.777s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.785s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.803s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.836s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.875s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.993s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.001s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.281s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.482s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.692s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.741s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.829s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.856s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.194s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.203s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.207s] -- Configured cppcheck include dirs: /home/asdfr-19/ros2_ws/src/relbot_simulator/include;/home/asdfr-19/ros2_ws/src/relbot_simulator/common;$<BUILD_INTERFACE:/home/asdfr-19/ros2_ws/src/relbot_simulator/include>;$<BUILD_INTERFACE:/home/asdfr-19/ros2_ws/src/relbot_simulator/common>
+[2.209s] -- Configured cppcheck exclude dirs and/or files: 
+[2.216s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.218s] -- Configured cpplint exclude dirs and/or files: 
+[2.221s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.225s] -- Added test 'lint_cmake' to check CMake code style
+[2.228s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.237s] -- Added test 'uncrustify' to check C / C++ code style
+[2.238s] -- Configured uncrustify additional arguments: 
+[2.241s] -- Added test 'xmllint' to check XML markup files
+[2.248s] -- Configuring done
+[2.363s] -- Generating done
+[2.421s] -- Build files have been written to: /home/asdfr-19/ros2_ws/build/relbot_simulator
+[2.518s] [35m[1mConsolidate compiler generated dependencies of target sequence_controller[0m
+[2.520s] [35m[1mConsolidate compiler generated dependencies of target colour_tracker[0m
+[2.554s] [35m[1mConsolidate compiler generated dependencies of target relbot_simulator[0m
+[3.314s] [  7%] [32mBuilding CXX object CMakeFiles/sequence_controller.dir/src/sequence_controller.cpp.o[0m
+[3.476s] [ 15%] [32mBuilding CXX object CMakeFiles/colour_tracker.dir/src/colour_tracker.cpp.o[0m
+[3.569s] [ 23%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o[0m
+[89.204s] [ 30%] [32m[1mLinking CXX executable sequence_controller[0m
+[93.120s] [ 38%] [32m[1mLinking CXX executable colour_tracker[0m
+[93.618s] [ 38%] Built target sequence_controller
+[98.223s] [ 38%] Built target colour_tracker
+[116.839s] [ 46%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/EulerAngles.cpp.o[0m
+[116.909s] [ 53%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/MotionProfiles.cpp.o[0m
+[116.981s] [ 61%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxfuncs.cpp.o[0m
+[117.620s] [ 69%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxinteg.cpp.o[0m
+[118.303s] [ 76%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxinverse.cpp.o[0m
+[118.952s] [ 84%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxmatrix.cpp.o[0m
+[119.739s] [ 92%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/Plant.cpp.o[0m
+[120.685s] [100%] [32m[1mLinking CXX executable relbot_simulator[0m
+[125.672s] [100%] Built target relbot_simulator
+[125.707s] Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[125.714s] Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/relbot_simulator
+[125.736s] -- Install configuration: ""
+[125.738s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/relbot_simulator
+[126.056s] -- Set runtime path of "/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/relbot_simulator" to ""
+[126.058s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/sequence_controller
+[126.206s] -- Set runtime path of "/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/sequence_controller" to ""
+[126.208s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/colour_tracker
+[126.355s] -- Set runtime path of "/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/relbot_simulator/colour_tracker" to ""
+[126.357s] -- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include
+[126.358s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/Plant.h
+[126.359s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/sequence_controller.hpp
+[126.362s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/colour_tracker.hpp
+[126.363s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/relbot_simulator.hpp
+[126.364s] -- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/include
+[126.365s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinverse.h
+[126.367s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinteg.h
+[126.368s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmatrix.cpp
+[126.369s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmodel.h
+[126.371s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/MotionProfiles.cpp
+[126.372s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/EulerAngles.h
+[126.373s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinverse.cpp
+[126.375s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/MotionProfiles.h
+[126.376s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxfuncs.cpp
+[126.377s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxtypes.h
+[126.378s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxmatrix.h
+[126.380s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxinteg.cpp
+[126.381s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/xxfuncs.h
+[126.382s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/include/EulerAngles.cpp
+[126.384s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/package_run_dependencies/relbot_simulator
+[126.385s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/parent_prefix_path/relbot_simulator
+[126.386s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.sh
+[126.388s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.dsv
+[126.389s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/path.sh
+[126.390s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/environment/path.dsv
+[126.392s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.bash
+[126.393s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.sh
+[126.394s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.zsh
+[126.396s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/local_setup.dsv
+[126.398s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.dsv
+[126.401s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/ament_index/resource_index/packages/relbot_simulator
+[126.402s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig.cmake
+[126.403s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig-version.cmake
+[126.405s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.xml
+[126.406s] -- Up-to-date: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator//launch
+[126.409s] -- Installing: /home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator//launch/relbot_simulator.launch.py
+[126.410s] Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/relbot_simulator

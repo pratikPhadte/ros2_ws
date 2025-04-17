@@ -74,7 +74,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/relbot_simulator/sequence_controller")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/relbot_simulator/sequence_controller"
-         OLD_RPATH "/opt/ros/humble/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/relbot_simulator/sequence_controller")

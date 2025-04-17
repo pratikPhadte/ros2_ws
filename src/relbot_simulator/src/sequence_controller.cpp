@@ -2,17 +2,22 @@
 #include <chrono>
 #include <algorithm>  // For std::min and std::max
 
+
+
 SequenceController::SequenceController() : Node("Sequence_Controller"), 
     elapsed_time_(0.0), phase_(0), obj_x_(0.0), obj_y_(0.0), image_width_(320.0) {
     
     // Declare and get parameter for mode selection (default: tracking)
     declare_parameter("mode", "tracking");
     mode_ = get_parameter("mode").as_string();
-
  
     // Publishers
-    left_pub_ = create_publisher<example_interfaces::msg::Float64>("/input/left_motor/setpoint_vel", 10);
-    right_pub_ = create_publisher<example_interfaces::msg::Float64>("/input/right_motor/setpoint_vel", 10);
+    // left_pub_ = create_publisher<example_interfaces::msg::Float64>("/input/left_motor/setpoint_vel", 10);
+    // right_pub_ = create_publisher<example_interfaces::msg::Float64>("/input/right_motor/setpoint_vel", 10);
+
+    //Ros2Xeno publisher
+    publisher_ = create_publisher<xrf2_msgs::msg::Ros2Xeno>("/Ros2Xeno",10);
+    
 
     // Subscriber for object position
     object_position_sub_ = create_subscription<geometry_msgs::msg::Point>(
@@ -29,8 +34,10 @@ SequenceController::SequenceController() : Node("Sequence_Controller"),
 }
 
 void SequenceController::timer_callback() {
-    auto left_msg = example_interfaces::msg::Float64();
-    auto right_msg = example_interfaces::msg::Float64();
+    // auto left_msg = example_interfaces::msg::Float64();
+    // auto right_msg = example_interfaces::msg::Float64();
+
+    xrf2_msgs::msg::Ros2Xeno msg;
 
     if (mode_ == "tracking") {
         // Tracking mode: Follow the bright spot
@@ -40,26 +47,30 @@ void SequenceController::timer_callback() {
 
         if(obj_x_ == -1 && obj_y_ == -1) {
             // Zoom out to find object in frame
-            left_msg.data = 2.0;
-            right_msg.data = -2.0;
+            // left_msg.data = 2.0;
+            // right_msg.data = -2.0;
+
+            msg.leftmotvel = -5.0;
+            msg.rightmotvel = +5.0;
+
             RCLCPP_INFO(get_logger(), "Zooming out to find object");
         } else {
             // std::cout << "Error: " << error_x << std::endl;
             if (error_x < 2) {
                 // Turn right
-                left_msg.data = -2.0;  
-                right_msg.data = 2.0;
+                msg.leftmotvel = +8.0;  
+                msg.rightmotvel = -8.0;
                 RCLCPP_INFO(get_logger(), "Zooming in to focus on object");
             } else {
                 if (obj_x_ > center_x) {
                     // Turn right
-                    left_msg.data = -turn_vel * (error_x / center_x);  
-                    right_msg.data = 0.0;
+                    msg.leftmotvel =   0.0;
+                    msg.rightmotvel = -3*turn_vel * (abs(error_x) / center_x);
                 }
                 if (obj_x_ < center_x) {
                     // Turn left
-                    left_msg.data = 0.0;     
-                    right_msg.data = turn_vel * (error_x / center_x);
+                    msg.leftmotvel = +3*turn_vel * (abs(error_x) / center_x);     
+                    msg.rightmotvel= 0.0;
                 }
             }
         }
@@ -67,40 +78,41 @@ void SequenceController::timer_callback() {
         // RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, 
         //                     "Tracking: Spot x=%.1f, Left=%.2f, Right=%.2f", 
         //                     obj_x_, left_msg.data, right_msg.data);
-    } else if(mode_ =="testing") {
+    } else if (mode_ == "testing") {
         // Sequence mode: Original pre-programmed sequence
         elapsed_time_ += 0.1;
-
+    
         if (elapsed_time_ < 5.0) {
-            left_msg.data = -1.0;      
-            right_msg.data = 1.0;
+            msg.leftmotvel = -1.0;      
+            msg.rightmotvel = 1.0;
             RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "Phase 1: Moving forward vel:1.0");
         } else if (elapsed_time_ < 10.0) {
-            left_msg.data = 0.0;    
-            right_msg.data = 0.5;
+            msg.leftmotvel = 0.0;    
+            msg.rightmotvel = 0.5;
             RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "Phase 2: Turning left vel:0.5");
         } else if (elapsed_time_ < 15.0) {
-            left_msg.data = -1.5;      
-            right_msg.data = 1.5;
+            msg.leftmotvel = -1.5;      
+            msg.rightmotvel = 1.5;
             RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "Phase 3: Moving forward vel:2.0");
         } else if (elapsed_time_ < 20.0) {
-            left_msg.data = -0.5;      
-            right_msg.data = 0.0;
+            msg.leftmotvel = -0.5;      
+            msg.rightmotvel = 0.0;
             RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "Phase 4: Turning right vel:0.5");
         } else if (elapsed_time_ < 25.0) {
-            left_msg.data = 2.0;     
-            right_msg.data = -2.0;
+            msg.leftmotvel = 2.0;     
+            msg.rightmotvel = -2.0;
             RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "Phase 5: Moving backward vel:2.0");
         } else {
-            left_msg.data = 0.0;
-            right_msg.data = 0.0;
+            msg.leftmotvel = 0.0;
+            msg.rightmotvel = 0.0;
             RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "Phase 6: Stopped");
         }
     }
-
+    
+    publisher_->publish(msg);
     // Publish setpoints
-    left_pub_->publish(left_msg);
-    right_pub_->publish(right_msg);
+    // left_pub_->publish(left_msg);
+    // right_pub_->publish(right_msg);
 }
 
 void SequenceController::object_position_callback(const geometry_msgs::msg::Point::SharedPtr msg) {

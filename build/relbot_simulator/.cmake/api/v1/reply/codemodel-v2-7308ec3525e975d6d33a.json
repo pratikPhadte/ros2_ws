@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7561cde129c6b5a92445.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "relbot_simulator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "colour_tracker::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-colour_tracker-d0c0068664b9f64f11e5.json",
+					"name" : "colour_tracker",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "relbot_simulator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-relbot_simulator-02f5c92cb8ddc8e1296c.json",
+					"name" : "relbot_simulator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "relbot_simulator_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-relbot_simulator_uninstall-71f851cd545e65eb7b88.json",
+					"name" : "relbot_simulator_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sequence_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sequence_controller-a1c072f661d40148cc57.json",
+					"name" : "sequence_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9d3a94b226d86b2b1eec.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/asdfr-19/ros2_ws/build/relbot_simulator",
+		"source" : "/home/asdfr-19/ros2_ws/src/relbot_simulator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
