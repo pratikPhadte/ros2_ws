@@ -1,0 +1,14 @@
+[0.041s] Invoking command in '/home/asdfr-19/ros2_ws/build/xcontroller': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3
+[0.164s] [35m[1mConsolidate compiler generated dependencies of target xcontroller[0m
+[1.074s] [  4%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
+[3.268s] [01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:[m[K In member function ‘[01m[Kvirtual int xcontroller::run()[m[K’:
+[3.269s] [01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:97:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_u0[m[K’ was not declared in this scope
+[3.270s]    97 |    u[0] = (sample_data.channel1-[01;31m[Kinitial_u0[m[K)*((2*3.14)/(16384*4)); //right
+[3.271s]       |                                 [01;31m[K^~~~~~~~~~[m[K
+[3.284s] [01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:98:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_u1[m[K’ was not declared in this scope
+[3.285s]    98 |    u[1] = (sample_data.channel2-[01;31m[Kinitial_u1[m[K)*((2*3.14)/(16384*4)); //left
+[3.286s]       |                                 [01;31m[K^~~~~~~~~~[m[K
+[3.520s] gmake[2]: *** [CMakeFiles/xcontroller.dir/build.make:258: CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o] Error 1
+[3.522s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xcontroller.dir/all] Error 2
+[3.523s] gmake: *** [Makefile:101: all] Error 2
+[3.526s] Invoked command in '/home/asdfr-19/ros2_ws/build/xcontroller' returned '2': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3

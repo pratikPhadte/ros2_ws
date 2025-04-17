@@ -27,8 +27,11 @@ private:
     struct ThisIsAStruct data_to_be_logged;
     LoopController controller;
 
-    double u[2];
+    double u[4];
     double y[2];
+   double initial_u0;
+   double initial_u1;
+   int i;
 protected:
     //Functions
     int initialising() override;
@@ -39,6 +42,7 @@ protected:
     int pausing() override;
     int paused() override;
     int error() override;
+    void clip();
 
     // current error
     int current_error = 0;

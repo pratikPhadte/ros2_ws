@@ -1,0 +1,515 @@
+[0.382s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.382s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff96610ee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff96610970>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff96610970>>, mixin_verb=('build',))
+[0.976s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.976s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.978s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/asdfr-19/ros2_ws'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extensions ['ignore', 'ignore_ament_install']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extension 'ignore'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extension 'ignore_ament_install'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extensions ['colcon_pkg']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extension 'colcon_pkg'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extensions ['colcon_meta']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extension 'colcon_meta'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extensions ['ros']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extension 'ros'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extensions ['cmake', 'python']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extension 'cmake'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extension 'python'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extensions ['python_setup_py']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2) by extension 'python_setup_py'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/Template) by extensions ['ignore', 'ignore_ament_install']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/Template) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/Template) ignored
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extensions ['ignore', 'ignore_ament_install']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extension 'ignore'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extension 'ignore_ament_install'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extensions ['colcon_pkg']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extension 'colcon_pkg'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extensions ['colcon_meta']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extension 'colcon_meta'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extensions ['ros']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extension 'ros'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extensions ['cmake', 'python']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extension 'cmake'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extension 'python'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extensions ['python_setup_py']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework) by extension 'python_setup_py'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extensions ['ignore', 'ignore_ament_install']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extension 'ignore'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extension 'ignore_ament_install'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extensions ['colcon_pkg']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extension 'colcon_pkg'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extensions ['colcon_meta']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extension 'colcon_meta'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extensions ['ros']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extension 'ros'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extensions ['cmake', 'python']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extension 'cmake'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extension 'python'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extensions ['python_setup_py']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common) by extension 'python_setup_py'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extension 'ignore'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extension 'ignore_ament_install'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extensions ['colcon_pkg']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extension 'colcon_pkg'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extensions ['colcon_meta']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extension 'colcon_meta'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extensions ['ros']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XRF2_msgs) by extension 'ros'
+[1.056s] DEBUG:colcon.colcon_core.package_identification:Package 'src/XRF2/XenoRosFramework/Common/XRF2_msgs' with type 'ros.ament_cmake' and name 'xrf2_msgs'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extensions ['ignore', 'ignore_ament_install']
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extension 'ignore'
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extension 'ignore_ament_install'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extensions ['colcon_pkg']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extension 'colcon_pkg'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extensions ['colcon_meta']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extension 'colcon_meta'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extensions ['ros']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extension 'ros'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extensions ['cmake', 'python']
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extension 'cmake'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extension 'python'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extensions ['python_setup_py']
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/XenoFrtLogger_decoder) by extension 'python_setup_py'
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extensions ['ignore', 'ignore_ament_install']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extension 'ignore'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extension 'ignore_ament_install'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extensions ['colcon_pkg']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extension 'colcon_pkg'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extensions ['colcon_meta']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extension 'colcon_meta'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extensions ['ros']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extension 'ros'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extensions ['cmake', 'python']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extension 'cmake'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extension 'python'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extensions ['python_setup_py']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/include) by extension 'python_setup_py'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extensions ['ignore', 'ignore_ament_install']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extension 'ignore_ament_install'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extensions ['colcon_pkg']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extension 'colcon_pkg'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extensions ['colcon_meta']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extension 'colcon_meta'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extensions ['ros']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extension 'ros'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extensions ['cmake', 'python']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extension 'cmake'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extension 'python'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extensions ['python_setup_py']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/python_script) by extension 'python_setup_py'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extensions ['ignore', 'ignore_ament_install']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extension 'ignore'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extension 'ignore_ament_install'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extensions ['colcon_pkg']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extension 'colcon_pkg'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extensions ['colcon_meta']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extension 'colcon_meta'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extensions ['ros']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extension 'ros'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extensions ['cmake', 'python']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extension 'cmake'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extension 'python'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extensions ['python_setup_py']
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Common/xbuf_dev_rule) by extension 'python_setup_py'
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extensions ['ignore', 'ignore_ament_install']
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extension 'ignore'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extension 'ignore_ament_install'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extensions ['colcon_pkg']
+[1.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extension 'colcon_pkg'
+[1.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extensions ['colcon_meta']
+[1.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extension 'colcon_meta'
+[1.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extensions ['ros']
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extension 'ros'
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extensions ['cmake', 'python']
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extension 'cmake'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extension 'python'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extensions ['python_setup_py']
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros) by extension 'python_setup_py'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extensions ['ignore', 'ignore_ament_install']
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extension 'ignore'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extension 'ignore_ament_install'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extensions ['colcon_pkg']
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extension 'colcon_pkg'
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extensions ['colcon_meta']
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extension 'colcon_meta'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extensions ['ros']
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge) by extension 'ros'
+[1.087s] DEBUG:colcon.colcon_core.package_identification:Package 'src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge' with type 'ros.ament_cmake' and name 'ros_xeno_bridge'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extensions ['ignore', 'ignore_ament_install']
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extension 'ignore'
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extension 'ignore_ament_install'
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extensions ['colcon_pkg']
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extension 'colcon_pkg'
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extensions ['colcon_meta']
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extension 'colcon_meta'
+[1.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extensions ['ros']
+[1.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extension 'ros'
+[1.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extensions ['cmake', 'python']
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extension 'cmake'
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extension 'python'
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extensions ['python_setup_py']
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests) by extension 'python_setup_py'
+[1.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/IcoIo) by extensions ['ignore', 'ignore_ament_install']
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/IcoIo) by extension 'ignore'
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/IcoIo) ignored
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/Logger) by extensions ['ignore', 'ignore_ament_install']
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/Logger) by extension 'ignore'
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/Logger) ignored
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/Monitor) by extensions ['ignore', 'ignore_ament_install']
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/Monitor) by extension 'ignore'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Unit-Tests/Monitor) ignored
+[1.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extensions ['ignore', 'ignore_ament_install']
+[1.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extension 'ignore'
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extension 'ignore_ament_install'
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extensions ['colcon_pkg']
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extension 'colcon_pkg'
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extensions ['colcon_meta']
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extension 'colcon_meta'
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extensions ['ros']
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extension 'ros'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extensions ['cmake', 'python']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extension 'cmake'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extension 'python'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extensions ['python_setup_py']
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai) by extension 'python_setup_py'
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extensions ['ignore', 'ignore_ament_install']
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extension 'ignore'
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extension 'ignore_ament_install'
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extensions ['colcon_pkg']
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extension 'colcon_pkg'
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extensions ['colcon_meta']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extension 'colcon_meta'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extensions ['ros']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extension 'ros'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extensions ['cmake', 'python']
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extension 'cmake'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extension 'python'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extensions ['python_setup_py']
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/include) by extension 'python_setup_py'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extensions ['ignore', 'ignore_ament_install']
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extension 'ignore'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extension 'ignore_ament_install'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extensions ['colcon_pkg']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extension 'colcon_pkg'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extensions ['colcon_meta']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extension 'colcon_meta'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extensions ['ros']
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extension 'ros'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extensions ['cmake', 'python']
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extension 'cmake'
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extension 'python'
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extensions ['python_setup_py']
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/XRF2/XenoRosFramework/Xenomai/src) by extension 'python_setup_py'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['ignore', 'ignore_ament_install']
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ignore'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ignore_ament_install'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['colcon_pkg']
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'colcon_pkg'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['colcon_meta']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'colcon_meta'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['ros']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ros'
+[1.117s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot_simulator' with type 'ros.ament_cmake' and name 'relbot_simulator'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extensions ['ignore', 'ignore_ament_install']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extension 'ignore'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extension 'ignore_ament_install'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extensions ['colcon_pkg']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extension 'colcon_pkg'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extensions ['colcon_meta']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extension 'colcon_meta'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extensions ['ros']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extension 'ros'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extensions ['cmake', 'python']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extension 'cmake'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/xcontroller) by extension 'python'
+[1.127s] DEBUG:colcon.colcon_core.package_identification:Package 'src/xcontroller' with type 'cmake' and name 'xcontroller'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extensions ['ignore', 'ignore_ament_install']
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extension 'ignore'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extension 'ignore_ament_install'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extensions ['colcon_pkg']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extension 'colcon_pkg'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extensions ['colcon_meta']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extension 'colcon_meta'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extensions ['ros']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extension 'ros'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extensions ['cmake', 'python']
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extension 'cmake'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extension 'python'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extensions ['python_setup_py']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(xrf2_logging) by extension 'python_setup_py'
+[1.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.242s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.249s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/asdfr-19/ros2_ws/install
+[1.254s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[1.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.395s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_args' from command line to 'None'
+[1.396s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_target' from command line to 'None'
+[1.396s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.396s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[1.398s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.398s] DEBUG:colcon.colcon_core.verb:Building package 'relbot_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asdfr-19/ros2_ws/build/relbot_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asdfr-19/ros2_ws/install/relbot_simulator', 'merge_install': False, 'path': '/home/asdfr-19/ros2_ws/src/relbot_simulator', 'symlink_install': False, 'test_result_base': None}
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'cmake_args' from command line to 'None'
+[1.400s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'cmake_target' from command line to 'None'
+[1.400s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.400s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.401s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.401s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.401s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.401s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.402s] Level 5:colcon.colcon_core.verb:set package 'xrf2_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.402s] DEBUG:colcon.colcon_core.verb:Building package 'xrf2_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asdfr-19/ros2_ws/build/xrf2_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asdfr-19/ros2_ws/install/xrf2_msgs', 'merge_install': False, 'path': '/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.403s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'cmake_args' from command line to 'None'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'cmake_target' from command line to 'None'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'ros_xeno_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.406s] DEBUG:colcon.colcon_core.verb:Building package 'ros_xeno_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge', 'merge_install': False, 'path': '/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge', 'symlink_install': False, 'test_result_base': None}
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_args' from command line to 'None'
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_target' from command line to 'None'
+[1.408s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.408s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.408s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_clean_first' from command line to 'False'
+[1.408s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_force_configure' from command line to 'False'
+[1.409s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'ament_cmake_args' from command line to 'None'
+[1.409s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.409s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.410s] DEBUG:colcon.colcon_core.verb:Building package 'xcontroller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asdfr-19/ros2_ws/build/xcontroller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asdfr-19/ros2_ws/install/xcontroller', 'merge_install': False, 'path': '/home/asdfr-19/ros2_ws/src/xcontroller', 'symlink_install': False, 'test_result_base': None}
+[1.410s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.413s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.414s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs' with build type 'ament_cmake'
+[1.415s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs'
+[1.423s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.424s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.424s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.439s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asdfr-19/ros2_ws/src/relbot_simulator' with build type 'ament_cmake'
+[1.440s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asdfr-19/ros2_ws/src/relbot_simulator'
+[1.441s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.442s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-19/ros2_ws/build/xrf2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xrf2_msgs -- -j3 -l3
+[1.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[3.502s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-19/ros2_ws/build/xrf2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xrf2_msgs -- -j3 -l3
+[3.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-19/ros2_ws/build/xrf2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/xrf2_msgs
+[3.766s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xrf2_msgs)
+[3.781s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs' for CMake module files
+[3.786s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs' for CMake config files
+[3.791s] Level 1:colcon.colcon_core.shell:create_environment_hook('xrf2_msgs', 'cmake_prefix_path')
+[3.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/cmake_prefix_path.ps1'
+[3.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/cmake_prefix_path.dsv'
+[3.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/cmake_prefix_path.sh'
+[3.804s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib'
+[3.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('xrf2_msgs', 'ld_library_path_lib')
+[3.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/ld_library_path_lib.ps1'
+[3.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/ld_library_path_lib.dsv'
+[3.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/ld_library_path_lib.sh'
+[3.814s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/bin'
+[3.815s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/pkgconfig/xrf2_msgs.pc'
+[3.816s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/python3.10/site-packages'
+[3.817s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/bin'
+[3.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.ps1'
+[3.824s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.dsv'
+[3.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.sh'
+[3.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.bash'
+[3.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-19/ros2_ws/build/xrf2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/xrf2_msgs
+[3.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.zsh'
+[3.840s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/colcon-core/packages/xrf2_msgs)
+[3.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xrf2_msgs)
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs' for CMake module files
+[3.849s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs' for CMake config files
+[3.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('xrf2_msgs', 'cmake_prefix_path')
+[3.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/cmake_prefix_path.ps1'
+[3.855s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/cmake_prefix_path.dsv'
+[3.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/cmake_prefix_path.sh'
+[3.860s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib'
+[3.861s] Level 1:colcon.colcon_core.shell:create_environment_hook('xrf2_msgs', 'ld_library_path_lib')
+[3.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/ld_library_path_lib.ps1'
+[3.864s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/ld_library_path_lib.dsv'
+[3.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/hook/ld_library_path_lib.sh'
+[3.869s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/bin'
+[3.869s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/pkgconfig/xrf2_msgs.pc'
+[3.871s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib/python3.10/site-packages'
+[3.872s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xrf2_msgs/bin'
+[3.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.ps1'
+[3.876s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.dsv'
+[3.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.sh'
+[3.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.bash'
+[3.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/xrf2_msgs/package.zsh'
+[3.889s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asdfr-19/ros2_ws/install/xrf2_msgs/share/colcon-core/packages/xrf2_msgs)
+[3.891s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge' with build type 'ament_cmake'
+[3.892s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge'
+[3.893s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.893s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.913s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asdfr-19/ros2_ws/src/xcontroller'
+[3.915s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.915s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/ros_xeno_bridge -- -j3 -l3
+[3.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-19/ros2_ws/build/xcontroller': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3
+[58.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-19/ros2_ws/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3
+[58.366s] WARNING:colcon.colcon_cmake.task.cmake.build:Could not run installation step for package 'xcontroller' because it has no 'install' target
+[58.371s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xcontroller)
+[58.372s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xcontroller' for CMake module files
+[58.375s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xcontroller' for CMake config files
+[58.379s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xcontroller/bin'
+[58.380s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xcontroller/lib/pkgconfig/xcontroller.pc'
+[58.381s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xcontroller/lib/python3.10/site-packages'
+[58.386s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/xcontroller/bin'
+[58.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xcontroller/share/xcontroller/package.ps1'
+[58.399s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asdfr-19/ros2_ws/install/xcontroller/share/xcontroller/package.dsv'
+[58.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xcontroller/share/xcontroller/package.sh'
+[58.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xcontroller/share/xcontroller/package.bash'
+[58.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/xcontroller/share/xcontroller/package.zsh'
+[58.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asdfr-19/ros2_ws/install/xcontroller/share/colcon-core/packages/xcontroller)
+[130.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge' returned '0': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/ros_xeno_bridge -- -j3 -l3
+[130.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/ros_xeno_bridge
+[131.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_xeno_bridge)
+[131.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-19/ros2_ws/build/ros_xeno_bridge' returned '0': CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:/home/asdfr-19/ros2_ws/install/ros_xeno_bridge:/home/asdfr-19/ros2_ws/install/relbot_simulator:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/ros_xeno_bridge
+[131.069s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge' for CMake module files
+[131.075s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge' for CMake config files
+[131.076s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_xeno_bridge', 'cmake_prefix_path')
+[131.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/hook/cmake_prefix_path.ps1'
+[131.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/hook/cmake_prefix_path.dsv'
+[131.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/hook/cmake_prefix_path.sh'
+[131.099s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib'
+[131.101s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/bin'
+[131.104s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/pkgconfig/ros_xeno_bridge.pc'
+[131.107s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/python3.10/site-packages'
+[131.111s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/bin'
+[131.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.ps1'
+[131.122s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.dsv'
+[131.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.sh'
+[131.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.bash'
+[131.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.zsh'
+[131.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/colcon-core/packages/ros_xeno_bridge)
+[131.157s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_xeno_bridge)
+[131.165s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge' for CMake module files
+[131.179s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge' for CMake config files
+[131.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_xeno_bridge', 'cmake_prefix_path')
+[131.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/hook/cmake_prefix_path.ps1'
+[131.194s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/hook/cmake_prefix_path.dsv'
+[131.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/hook/cmake_prefix_path.sh'
+[131.202s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib'
+[131.202s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/bin'
+[131.203s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/pkgconfig/ros_xeno_bridge.pc'
+[131.204s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/lib/python3.10/site-packages'
+[131.206s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/bin'
+[131.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.ps1'
+[131.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.dsv'
+[131.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.sh'
+[131.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.bash'
+[131.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/ros_xeno_bridge/package.zsh'
+[131.225s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asdfr-19/ros2_ws/install/ros_xeno_bridge/share/colcon-core/packages/ros_xeno_bridge)
+[163.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/relbot_simulator -- -j3 -l3
+[163.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-19/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/relbot_simulator
+[164.743s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_simulator)
+[164.746s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator' for CMake module files
+[164.762s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator' for CMake config files
+[164.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_simulator', 'cmake_prefix_path')
+[164.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.ps1'
+[164.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.dsv'
+[164.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.sh'
+[164.821s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/lib'
+[164.822s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/bin'
+[164.823s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/pkgconfig/relbot_simulator.pc'
+[164.825s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/python3.10/site-packages'
+[164.826s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/bin'
+[164.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.ps1'
+[164.832s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.dsv'
+[164.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-19/ros2_ws/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-19/ros2_ws/build/relbot_simulator
+[164.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.sh'
+[164.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.bash'
+[164.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.zsh'
+[164.848s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asdfr-19/ros2_ws/install/relbot_simulator/share/colcon-core/packages/relbot_simulator)
+[164.853s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_simulator)
+[164.854s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator' for CMake module files
+[164.857s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator' for CMake config files
+[164.859s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_simulator', 'cmake_prefix_path')
+[164.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.ps1'
+[164.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.dsv'
+[164.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.sh'
+[164.878s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/lib'
+[164.879s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/bin'
+[164.880s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/pkgconfig/relbot_simulator.pc'
+[164.882s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/lib/python3.10/site-packages'
+[164.883s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-19/ros2_ws/install/relbot_simulator/bin'
+[164.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.ps1'
+[164.888s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.dsv'
+[164.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.sh'
+[164.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.bash'
+[164.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-19/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.zsh'
+[164.909s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asdfr-19/ros2_ws/install/relbot_simulator/share/colcon-core/packages/relbot_simulator)
+[164.915s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[164.921s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[164.922s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[164.922s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[164.954s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[164.955s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[164.956s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[164.956s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[164.960s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[164.960s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[164.962s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asdfr-19/ros2_ws/install/local_setup.ps1'
+[164.968s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asdfr-19/ros2_ws/install/_local_setup_util_ps1.py'
+[164.986s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asdfr-19/ros2_ws/install/setup.ps1'
+[164.993s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asdfr-19/ros2_ws/install/local_setup.sh'
+[164.997s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asdfr-19/ros2_ws/install/_local_setup_util_sh.py'
+[165.002s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asdfr-19/ros2_ws/install/setup.sh'
+[165.009s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asdfr-19/ros2_ws/install/local_setup.bash'
+[165.013s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asdfr-19/ros2_ws/install/setup.bash'
+[165.019s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asdfr-19/ros2_ws/install/local_setup.zsh'
+[165.023s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asdfr-19/ros2_ws/install/setup.zsh'
