@@ -49,6 +49,9 @@ add_executable( xcontroller main.cpp
                 ${CONTROLLER_SRC} 
                 )
 
+add_executable(Testnode src/TestNode.cpp)
+ament_target_dependencies(Testnode rclcpp std_msgs xrf2_msgs)
+
 # Add the constant TIME_STEP_SIZE to definitions
 target_compile_definitions(xcontroller PRIVATE TIME_STEP_SIZE=${TIME_STEP_SIZE_VALUE})
 
@@ -63,7 +66,11 @@ target_include_directories( xcontroller BEFORE PUBLIC
                             controller/
                             controller/common/
                             )
-
+target_include_directories(Testnode PUBLIC
+$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/common>
+$<INSTALL_INTERFACE:include>
+)
 # Specify paths to library files
 target_link_directories(xcontroller PUBLIC /usr/evl/lib)
 

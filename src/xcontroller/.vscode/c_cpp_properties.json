@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/kaushik/Documents/ros2_ws/install/xrf2_msgs/include/**",
+        "/home/kaushik/Documents/ros2_ws/install/relbot_simulator/include/**",
+        "/home/kaushik/Documents/ASDFR_ws/install/relbot_simulator/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/kaushik/Documents/ros2_ws/src/XRF2/XenoRosFramework/Ros/ros_xeno_bridge/include/**",
+        "/home/kaushik/Documents/ros2_ws/src/relbot_simulator/include/**",
+        "/home/kaushik/Documents/ros2_ws/src/xcontroller/include/**",
+        "include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
