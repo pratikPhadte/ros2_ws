@@ -21,12 +21,12 @@ Type: uint32
     ros2 run ros_xeno_bridge RosXenoBridge
 
 3. In another terminal run 
-    ros2 run xcontrasdfr_19 testing_node \
+    ros2 run xcontroller testing_node \
   --ros-args \
   -p mode:=state \
   -p state:=1
 
-    ros2 run xcontrasdfr_19 testing_node \
+    ros2 run xcontroller testing_node \
   --ros-args \
   -p mode:=state \
   -p state:=2
@@ -37,7 +37,7 @@ Type: uint32
     ros2 topic pub-once /XenoCmd std_msgs/msg/Int32 "{data: 2}"
 
 4. In another terminal run 
-    ros2 run xcontrasdfr_19 testing_node \
+    ros2 run xcontroller testing_node \
   --ros-args \
   -p mode:=velocity \
   -p leftmotvel:=0.5 \

@@ -30,7 +30,7 @@ Assignment 3.2 XRF2: the FRT software architecture on RELbot’s Raspberry Pi
     ros2 topic pub-once /XenoCmd std_msgs/msg/Int32 "{data: 2}"
 
 5. In another terminal run 
-    ros2 run xcontrasdfr_19 testing_node \
+    ros2 run xcontroller testing_node \
   --ros-args \
   -p mode:=velocity \
   -p leftmotvel:=8.5 \
@@ -51,12 +51,12 @@ Assignment 3.3 Loop-Controller algorithm in FRT part
     ros2 run ros_xeno_bridge RosXenoBridge
 
 3. In another terminal run 
-    ros2 run xcontrasdfr_19 testing_node \
+    ros2 run xcontroller testing_node \
   --ros-args \
   -p mode:=state \
   -p state:=1
 
-    ros2 run xcontrasdfr_19 testing_node \
+    ros2 run xcontroller testing_node \
   --ros-args \
   -p mode:=state \
   -p state:=2
@@ -67,7 +67,7 @@ Assignment 3.3 Loop-Controller algorithm in FRT part
     ros2 topic pub-once /XenoCmd std_msgs/msg/Int32 "{data: 2}"
 
 4. In another terminal run 
-    ros2 run xcontrasdfr_19 testing_node \
+    ros2 run xcontroller testing_node \
   --ros-args \
   -p mode:=velocity \
   -p leftmotvel:=8.5 \
@@ -87,7 +87,7 @@ Assignment 3.3 Loop-Controller algorithm in FRT part
     ros2 run ros_xeno_bridge RosXenoBridge
 
 3. In another terminal run 
-    ros2 run xcontrasdfr_19 testing_node \
+    ros2 run xcontroller testing_node \
   --ros-args \
   -p mode:=state \
   -p state:=1
