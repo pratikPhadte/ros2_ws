@@ -1,2 +1,0 @@
-Invoking command in '/home/asdfr-19/ros2_ws/build/xrf2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs -DCMAKE_INSTALL_PREFIX=/home/asdfr-19/ros2_ws/install/xrf2_msgs
-Invoked command in '/home/asdfr-19/ros2_ws/build/xrf2_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs -DCMAKE_INSTALL_PREFIX=/home/asdfr-19/ros2_ws/install/xrf2_msgs

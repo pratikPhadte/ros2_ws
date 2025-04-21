@@ -1,2 +1,0 @@
-float64 leftmotvel
-float64 rightmotvel

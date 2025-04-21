@@ -1,9 +1,0 @@
-[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:22:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ksample_data[m[K’ was not declared in this scope
-   22 | uint16_t curr_enc1 = [01;31m[Ksample_data[m[K.channel2; //left
-      |                      [01;31m[K^~~~~~~~~~~[m[K
-[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:23:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ksample_data[m[K’ was not declared in this scope
-   23 | uint16_t curr_enc2 = [01;31m[Ksample_data[m[K.channel1; //right
-      |                      [01;31m[K^~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/xcontroller.dir/build.make:258: CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xcontroller.dir/all] Error 2
-gmake: *** [Makefile:101: all] Error 2

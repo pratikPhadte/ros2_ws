@@ -1,6 +1,0 @@
-[0.048s] Invoking command in '/home/asdfr-19/ros2_ws/build/xcontroller': AMENT_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs LD_LIBRARY_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3
-[0.199s] [35m[1mConsolidate compiler generated dependencies of target xcontroller[0m
-[1.290s] [  4%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
-[5.077s] [  9%] [32m[1mLinking CXX executable xcontroller[0m
-[5.727s] [100%] Built target xcontroller
-[5.761s] Invoked command in '/home/asdfr-19/ros2_ws/build/xcontroller' returned '0': AMENT_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs LD_LIBRARY_PATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/asdfr-19/ros2_ws/install/xrf2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/asdfr-19/ros2_ws/build/xcontroller -- -j3 -l3

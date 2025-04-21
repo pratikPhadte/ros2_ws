@@ -1,6 +1,0 @@
-[0.014s] Invoking command in '/home/kaushik/Documents/ros2_ws/build/xrf2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaushik/Documents/ASDFR_ws/install/motor_plotter:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaushik/Documents/ros2_ws/build/xrf2_msgs -- -j12 -l12
-[0.038s] [0mCMake Error: The current CMakeCache.txt directory /home/kaushik/Documents/ros2_ws/build/xrf2_msgs/CMakeCache.txt is different than the directory /home/asdfr-19/ros2_ws/build/xrf2_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.051s] [0mCMake Error: The source directory "/home/asdfr-19/ros2_ws/src/XRF2/XenoRosFramework/Common/XRF2_msgs" does not exist.
-[0.051s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.053s] gmake: *** [Makefile:963: cmake_check_build_system] Error 1
-[0.056s] Invoked command in '/home/kaushik/Documents/ros2_ws/build/xrf2_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaushik/Documents/ASDFR_ws/install/motor_plotter:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaushik/Documents/ros2_ws/build/xrf2_msgs -- -j12 -l12

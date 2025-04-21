@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target xcontroller[0m
-[  4%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/main.cpp.o[0m
-[  9%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
-[ 13%] [32m[1mLinking CXX executable xcontroller[0m
-[100%] Built target xcontroller

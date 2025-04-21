@@ -1,8 +1,0 @@
-[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:[m[K In member function ‘[01m[Kvirtual int xcontroller::run()[m[K’:
-[01m[K/home/asdfr-19/ros2_ws/src/xcontroller/src/xcontroller.cpp:80:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kevl_print[m[K’ was not declared in this scope; did you mean ‘[01m[Kevl_printf[m[K’?
-   80 |     [01;31m[Kevl_print[m[K( ros_msg.rightmotvel);
-      |     [01;31m[K^~~~~~~~~[m[K
-      |     [32m[Kevl_printf[m[K
-gmake[2]: *** [CMakeFiles/xcontroller.dir/build.make:258: CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xcontroller.dir/all] Error 2
-gmake: *** [Makefile:101: all] Error 2

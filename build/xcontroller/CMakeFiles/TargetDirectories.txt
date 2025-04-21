@@ -1,6 +1,0 @@
-/home/asdfr-19/ros2_ws/build/xcontroller/CMakeFiles/uninstall.dir
-/home/asdfr-19/ros2_ws/build/xcontroller/CMakeFiles/xcontroller_uninstall.dir
-/home/asdfr-19/ros2_ws/build/xcontroller/CMakeFiles/xcontroller.dir
-/home/asdfr-19/ros2_ws/build/xcontroller/CMakeFiles/test.dir
-/home/asdfr-19/ros2_ws/build/xcontroller/CMakeFiles/edit_cache.dir
-/home/asdfr-19/ros2_ws/build/xcontroller/CMakeFiles/rebuild_cache.dir
